@@ -19,9 +19,8 @@ body {
   min-height: 2000px;
 }
 
-/*navbar*/
 
-.navbar {
+.nafis {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,29 +34,29 @@ body {
   z-index: 9999;
 }
 
-.navbar .navbar-logo {
+.nafis .nafis-logo {
   font-size: 2rem;
   font-weight: 700;
   color: #ffffff;
   font-style: italic;
 }
 
-.navbar .navbar-logo span {
+.nafis .nafis-logo span {
   color: var(--primary);
 }
 
-.navbar .navbar-nav a {
+.nafis .nafis-nav a {
   color: #ffffff;
   display: inline-block;
   font-size: 1.4rem;
   margin: 0 1rem;
 }
 
-.navbar .navbar-nav a:hover {
+.nafis .nafis-nav a:hover {
   color: var(--primary);
 }
 
-.navbar .navbar-nav a::after {
+.nafis .nafis-nav a::after {
   content: "";
   display: block;
   padding-bottom: 0.5rem;
@@ -66,16 +65,16 @@ body {
   transition: 0.2s linear;
 }
 
-.navbar .navbar-nav a:hover::after {
+.nafis .nafis-nav a:hover::after {
   transform: scaleX(0.5);
 }
 
-.navbar .navbar-extra a {
+.nafis .nafis-extra a {
   color: #ffffff;
   margin: 0 0.5rem;
 }
 
-.navbar .navbar-extra a:hover {
+.nafis .nafis-extra a:hover {
   color: var(--primary);
 }
 
@@ -178,7 +177,7 @@ body {
   #hamburger-menu {
     display: inline-block;
   }
-  .navbar .navbar-nav {
+  .nafis .nafis-nav {
     position: absolute;
     top: 100%;
     right: -100%;
@@ -187,7 +186,7 @@ body {
     height: 100vh;
     transition: 0.3s;
   }
-  .navbar .navbar-nav.active {
+  .nafis .nafis-nav.active {
     right: 0;
   }
   .navbar .navbar-nav a {
@@ -197,7 +196,7 @@ body {
     padding: 0.5rem;
     font-size: 2rem;
   }
-  .navbar .navbar-nav a::after {
+  .nafis .nafis-nav a::after {
     transform-origin: 0 0;
   }
   .navbar .navbar-nav a:hover::after {
@@ -211,7 +210,7 @@ body {
   html {
     font-size: 55%;
   }
-  .navbar .navbar-nav {
+  .nafis .nafis-nav {
     position: fixed;
     top: 0;
     left: -100%;
@@ -224,10 +223,10 @@ body {
     align-items: center;
     transition: 0.3s linear;
   }
-  .navbar .navbar-nav.active {
+  .nafis .nafis-nav.active {
     left: 0;
   }
-  .navbar .navbar-nav a {
+  .nafis .nafis-nav a {
     font-size: 2rem;
     margin: 1rem 0;
   }
