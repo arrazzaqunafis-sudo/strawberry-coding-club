@@ -172,7 +172,7 @@ body {
 
 .about,
 .galeri {
-  padding: 8rem 7% 1.4rem;
+  padding: 7rem 7% 1.4rem;
 }
 
 .about h2,
@@ -212,6 +212,20 @@ body {
 .about .row .content p {
   margin-bottom: 0.8rem;
   font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6rem;
+}
+
+/*galeri*/
+
+.galeri h2 {
+  margin-bottom: 1rem;
+}
+
+.galeri p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
   font-weight: 100;
   line-height: 1.6rem;
 }
