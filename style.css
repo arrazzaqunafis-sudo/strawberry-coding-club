@@ -16,8 +16,10 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #ffffff;
-  min-height: 2000px;
+  min-height: 3000px;
 }
+
+/*Nafis*/
 
 .nafis {
   display: flex;
@@ -81,7 +83,7 @@ body {
   display: none;
 }
 
-/*hero section*/
+/*hero mikael*/
 
 .bg-video {
   position: absolute;
@@ -168,18 +170,50 @@ body {
 
 /*about section*/
 
-.about {
+.about,
+.galeri {
   padding: 8rem 7% 1.4rem;
 }
 
-.about h3 {
+.about h2,
+.galeri h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-top: 3rem;
 }
 
-a.about h3 span {
+.about h2 span,
+.galeri h2 span {
   color: var(--primary);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6rem;
 }
 
 /*media query*/
@@ -225,6 +259,21 @@ a.about h3 span {
   }
   .nafis .nafis-nav a:hover::after {
     transform: scaleX(0.2);
+  }
+  .about .row {
+    flex-wrap: wrap;
+  }
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  .about .row .content {
+    padding: 0;
+  }
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 1.6rem;
   }
 }
 
