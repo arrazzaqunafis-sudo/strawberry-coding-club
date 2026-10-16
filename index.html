@@ -1,106 +1,124 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lomba</title>
+    <meta name="theme-color" content="#fbf5e9" />
+    <title>Budaya Ciamis</title>
 
-    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-
-    <!--feather icons-->
-    <script src="https://unpkg.com/feather-icons"></script>
-
-    <!--My style-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/feather-icons" defer></script>
+    <script src="js/script.js" defer></script>
   </head>
 
   <body>
-    <!-- nafis start-->
-    <nav class="nafis">
-      <a href="#" class="nafis-logo">budaya<span>ciamis</span></a>
+    <header class="site-header" id="site-header">
+      <nav class="navbar" aria-label="Navigasi utama">
+        <a class="navbar__logo" href="#home">budaya<span>ciamis</span></a>
 
-      <div class="nafis-nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#galeri">galeri</a>
-        <a href="#kredit">kredit</a>
-      </div>
-
-      <div class="nafis-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-      </div>
-    </nav>
-    <!-- nafis end -->
-
-    <!--hero mikael start-->
-    <section class="hero" id="home">
-      <video autoplay loop muted class="bg-video">
-        <source src="video-ciamis.mp4" type="video/mp4" />
-      </video>
-
-      <main class="content">
-        <h1>apa<span>aja</span></h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptatum.
-        </p>
-        <a href="#" class="cta">Get Started</a>
-      </main>
-    </section>
-    <!--hero mikael end-->
-
-    <!--about start-->
-    <section class="about" id="about">
-      <h2>tentang <span>ini</span></h2>
-
-      <div class="row">
-        <div class="about-img">
-          <img src="img/about.jpg" alt="tentang ini" />
+        <div class="navbar__links" id="primary-navigation">
+          <a href="#home">Beranda</a>
+          <a href="#about">Tentang</a>
+          <a href="#peta">Peta wisata</a>
+          <a href="#galeri">Galeri</a>
+          <a href="#kredit">Kredit</a>
         </div>
 
-        <div class="content">
-          <h3>kenapa memilih ini</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum,
-            excepturi laudantium tenetur numquam sit vel.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-            tempore placeat. Veritatis ad sed obcaecati!
-          </p>
+        <button
+          class="navbar__toggle"
+          id="navbar-toggle"
+          type="button"
+          aria-label="Buka navigasi"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <i data-feather="menu" aria-hidden="true"></i>
+        </button>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-label="Aktifkan mode gelap"
+          title="Ganti tema"
+        >
+          <i data-feather="moon" aria-hidden="true"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <video class="hero__video" autoplay loop muted playsinline aria-hidden="true">
+          <source src="video-ciamis.mp4" type="video/mp4" />
+        </video>
+        <div class="hero__content">
+          <h1 id="hero-title">
+            <span class="hero__welcome">Wilujeng Sumping ka</span><br />
+            <span>Tatar Galuh Ciamis</span>
+          </h1>
         </div>
-      </div>
-      <!--about end-->
+      </section>
 
-      <!--galeri hikmah start-->
-      <section id="galeri" class="galeri">
-        <h2>tentang <span>galeri ini</span></h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
-          tempora, fugit error dignissimos modi aliquam.
+      <section class="map section" id="peta" aria-labelledby="map-title">
+        <h2 class="section__title" id="map-title">Peta <span>Ciamis</span></h2>
+        <p class="map__intro">
+          Temukan tempat wisata dan situs bersejarah di Kabupaten Ciamis.
         </p>
+        <div
+          class="map__canvas"
+          id="map"
+          role="region"
+          aria-label="Peta wisata dan tempat bersejarah Ciamis"
+        >
+          <p>Peta interaktif Ciamis akan ditampilkan di sini.</p>
+        </div>
+      </section>
 
-        <div class="row">
-          <div class="galeri-card">
-            <img src="" alt="" />
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <h2 class="section__title" id="about-title">Tentang <span>Ciamis</span></h2>
+        <div class="about__row">
+          <div class="about__image" role="img" aria-label="Suasana alam Ciamis"></div>
+          <div class="about__content">
+            <h3>Warisan budaya yang berharga</h3>
+            <p>
+              Ciamis memiliki kekayaan tradisi, seni, dan alam yang menjadi bagian
+              penting dari identitas masyarakatnya.
+            </p>
+            <p>
+              Mari mengenal lebih dekat cerita dan ragam budaya yang terus dijaga
+              dari generasi ke generasi.
+            </p>
           </div>
         </div>
       </section>
-      <!--galeri hikmah end-->
-    </section>
-    <!--feather icon-->
-    <script>
-      feather.replace();
-    </script>
 
-    <!--my javascript-->
-    <script src="script.js"></script>
+    </main>
+
+    <footer class="site-footer">
+      <section class="gallery section" id="galeri" aria-labelledby="gallery-title">
+        <h2 class="section__title" id="gallery-title">Galeri <span>Ciamis</span></h2>
+        <p class="gallery__intro">
+          Jelajahi keindahan alam dan kekayaan budaya Ciamis.
+        </p>
+        <div class="gallery__video">
+          <video controls preload="metadata" aria-label="Video tentang Ciamis">
+            <source src="video-ciamis.mp4" type="video/mp4" />
+            Browser Anda tidak mendukung pemutaran video.
+          </video>
+        </div>
+      </section>
+
+      <section class="credits section" id="kredit" aria-labelledby="credits-title">
+        <h2 class="section__title" id="credits-title">Kredit</h2>
+        <p>Dibuat sebagai pengenalan budaya, wisata, dan sejarah Ciamis.</p>
+        <p class="credits__copyright">&copy; 2026 Budaya Ciamis</p>
+      </section>
+    </footer>
   </body>
 </html>
