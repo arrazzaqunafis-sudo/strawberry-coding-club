@@ -16,12 +16,12 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #ffffff;
-  min-height: 2000px;
+  min-height: 3000px;
 }
 
-/*navbar*/
+/*Nafis*/
 
-.navbar {
+.nafis {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,29 +35,29 @@ body {
   z-index: 9999;
 }
 
-.navbar .navbar-logo {
+.nafis .nafis-logo {
   font-size: 2rem;
   font-weight: 700;
   color: #ffffff;
   font-style: italic;
 }
 
-.navbar .navbar-logo span {
+.nafis .nafis-logo span {
   color: var(--primary);
 }
 
-.navbar .navbar-nav a {
+.nafis .nafis-nav a {
   color: #ffffff;
   display: inline-block;
   font-size: 1.4rem;
   margin: 0 1rem;
 }
 
-.navbar .navbar-nav a:hover {
+.nafis .nafis-nav a:hover {
   color: var(--primary);
 }
 
-.navbar .navbar-nav a::after {
+.nafis .nafis-nav a::after {
   content: "";
   display: block;
   padding-bottom: 0.5rem;
@@ -66,16 +66,16 @@ body {
   transition: 0.2s linear;
 }
 
-.navbar .navbar-nav a:hover::after {
+.nafis .nafis-nav a:hover::after {
   transform: scaleX(0.5);
 }
 
-.navbar .navbar-extra a {
+.nafis .nafis-extra a {
   color: #ffffff;
   margin: 0 0.5rem;
 }
 
-.navbar .navbar-extra a:hover {
+.nafis .nafis-extra a:hover {
   color: var(--primary);
 }
 
@@ -83,13 +83,39 @@ body {
   display: none;
 }
 
-/*hero section*/
+/*hero mikael*/
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.hero .content {
+  position: relative;
+  z-index: 1;
+}
 
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("/img/header-bg.jpg");
+  background-image: url("video-ciamis.mp4");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -105,7 +131,7 @@ body {
   bottom: 0;
   background: linear-gradient(
     0deg,
-    rgb(1, 1, 3) 8%,
+    rgba(1, 1, 3, 1) 8%,
     rgba(255, 255, 255, 0) 50%
   );
 }
@@ -118,8 +144,7 @@ body {
 .hero .content h1 {
   font-size: 4rem;
   color: #ffffff;
-  text-shadow: 1px 1px 2px rgba(1, 1, 3, 0.5);
-  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 .hero .content h1 span {
@@ -127,36 +152,82 @@ body {
 }
 
 .hero .content p {
-  font-size: 1.4rem;
-  color: #ffffff;
+  font-size: 1.6rem;
   margin-top: 1rem;
   line-height: 1.4;
   font-weight: 100;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 .hero .content .cta {
-  display: inline-block;
   margin-top: 1rem;
+  display: inline-block;
   padding: 1rem 3rem;
   background-color: var(--primary);
   color: #ffffff;
   font-size: 1.4rem;
   border-radius: 0.5rem;
-  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 /*about section*/
 
-.about {
-  padding: 8rem 7% 1.4rem;
+.about,
+.galeri {
+  padding: 7rem 7% 1.4rem;
 }
 
-.about h2 {
+.about h2,
+.galeri h2 {
   text-align: center;
   font-size: 2.6rem;
-  color: #ffffff;
+  margin-top: 3rem;
+}
+
+.about h2 span,
+.galeri h2 span {
+  color: var(--primary);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6rem;
+}
+
+/*galeri*/
+
+.galeri h2 {
+  margin-bottom: 1rem;
+}
+
+.galeri p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6rem;
 }
 
 /*media query*/
@@ -178,7 +249,7 @@ body {
   #hamburger-menu {
     display: inline-block;
   }
-  .navbar .navbar-nav {
+  .nafis .nafis-nav {
     position: absolute;
     top: 100%;
     right: -100%;
@@ -187,21 +258,36 @@ body {
     height: 100vh;
     transition: 0.3s;
   }
-  .navbar .navbar-nav.active {
+  .nafis .nafis-nav.active {
     right: 0;
   }
-  .navbar .navbar-nav a {
+  .nafis .nafis-nav a {
     color: var(--bg);
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 2rem;
   }
-  .navbar .navbar-nav a::after {
+  .nafis .nafis-nav a::after {
     transform-origin: 0 0;
   }
-  .navbar .navbar-nav a:hover::after {
+  .nafis .nafis-nav a:hover::after {
     transform: scaleX(0.2);
+  }
+  .about .row {
+    flex-wrap: wrap;
+  }
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  .about .row .content {
+    padding: 0;
+  }
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -211,7 +297,7 @@ body {
   html {
     font-size: 55%;
   }
-  .navbar .navbar-nav {
+  .nafis .nafis-nav {
     position: fixed;
     top: 0;
     left: -100%;
@@ -224,14 +310,14 @@ body {
     align-items: center;
     transition: 0.3s linear;
   }
-  .navbar .navbar-nav.active {
+  .nafis .nafis-nav.active {
     left: 0;
   }
-  .navbar .navbar-nav a {
+  .nafis .nafis-nav a {
     font-size: 2rem;
     margin: 1rem 0;
   }
-  #hambuger-menu {
+  #hamburger-menu {
     display: block;
     cursor: pointer;
     font-size: 2rem;
