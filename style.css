@@ -1,6 +1,7 @@
 :root {
   --primary: #800080;
-  --bg: #010101;
+  --bg: #ffffff;
+  --text: #010101;
 }
 
 * {
@@ -15,18 +16,18 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
-  color: #ffffff;
+  color: var(--text);
   min-height: 3000px;
 }
 
-/*Nafis*/
+/*Navbar*/
 
-.nafis {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: rgba(1, 1, 1, 0.8);
+  background-color: rgb(1, 1, 1,);
   border-bottom: 1px solid #800080;
   position: fixed;
   top: 0;
@@ -35,29 +36,29 @@ body {
   z-index: 9999;
 }
 
-.nafis .nafis-logo {
+.navbar .navbar-logo {
   font-size: 2rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text);
   font-style: italic;
 }
 
-.nafis .nafis-logo span {
+.navbar .navbar-logo span {
   color: var(--primary);
 }
 
-.nafis .nafis-nav a {
-  color: #ffffff;
+.navbar .navbar-nav a {
+  color: var(--text);
   display: inline-block;
   font-size: 1.4rem;
   margin: 0 1rem;
 }
 
-.nafis .nafis-nav a:hover {
+.navbar .navbar-nav a:hover {
   color: var(--primary);
 }
 
-.nafis .nafis-nav a::after {
+.navbar .navbar-nav a::after {
   content: "";
   display: block;
   padding-bottom: 0.5rem;
@@ -66,22 +67,29 @@ body {
   transition: 0.2s linear;
 }
 
-.nafis .nafis-nav a:hover::after {
+.navbar .navbar-nav a:hover::after {
   transform: scaleX(0.5);
 }
 
-.nafis .nafis-extra a {
-  color: #ffffff;
+.navbar .navbar-extra a {
+  color: var(--text);
   margin: 0 0.5rem;
 }
 
-.nafis .nafis-extra a:hover {
+.navbar .navbar-extra a:hover {
   color: var(--primary);
+}
+
+.navbar .transparent {
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
 }
 
 #hamburger-menu {
   display: none;
 }
+
 
 /*hero mikael*/
 
@@ -112,7 +120,7 @@ body {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 40rem;
   display: flex;
   align-items: center;
   background-image: url("video-ciamis.mp4");
@@ -143,7 +151,7 @@ body {
 
 .hero .content h1 {
   font-size: 4rem;
-  color: #ffffff;
+  color: var(--text);
   margin-bottom: 1rem;
 }
 
@@ -163,7 +171,7 @@ body {
   display: inline-block;
   padding: 1rem 3rem;
   background-color: var(--primary);
-  color: #ffffff;
+  color: var(--text);
   font-size: 1.4rem;
   border-radius: 0.5rem;
 }
@@ -249,29 +257,29 @@ body {
   #hamburger-menu {
     display: inline-block;
   }
-  .nafis .nafis-nav {
+  .navbar .navbar-nav {
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: #fff;
+    background-color: var(--bg);
     width: 30rem;
     height: 100vh;
     transition: 0.3s;
   }
-  .nafis .nafis-nav.active {
+  .navbar .navbar-nav.active {
     right: 0;
   }
-  .nafis .nafis-nav a {
+  .navbar .navbar-nav a {
     color: var(--bg);
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 2rem;
   }
-  .nafis .nafis-nav a::after {
+  .navbar .navbar-nav a::after {
     transform-origin: 0 0;
   }
-  .nafis .nafis-nav a:hover::after {
+  .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
   }
   .about .row {
@@ -297,7 +305,7 @@ body {
   html {
     font-size: 55%;
   }
-  .nafis .nafis-nav {
+  .navbar .navbar-nav {
     position: fixed;
     top: 0;
     left: -100%;
@@ -310,10 +318,10 @@ body {
     align-items: center;
     transition: 0.3s linear;
   }
-  .nafis .nafis-nav.active {
+  .navbar .navbar-nav.active {
     left: 0;
   }
-  .nafis .nafis-nav a {
+  .navbar .navbar-nav a {
     font-size: 2rem;
     margin: 1rem 0;
   }
@@ -321,6 +329,6 @@ body {
     display: block;
     cursor: pointer;
     font-size: 2rem;
-    color: #ffffff;
+    color: var(--text);
   }
 }

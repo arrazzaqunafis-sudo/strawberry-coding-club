@@ -14,3 +14,20 @@ document.addEventListener("click", function (e) {
     nafisnav.classList.remove("active");
   }
 });
+
+
+const navbar = document.getElementById("navbar");
+const hero = document.getElementById("hero");
+
+function cekNavbar() {
+    if (window.scrollY < hero.offsetHeight - navbar.offsetHeight /2) {
+        navbar.classList.add("transparent");
+    } else {
+        navbar.classList.remove("transparent");
+    }
+}
+
+window.addEventListener("scroll", cekNavbar);
+window.addEventListener("resize", cekNavbar);
+
+cekNavbar();
