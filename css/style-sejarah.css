@@ -1,0 +1,131 @@
+:root {
+  color-scheme: light;
+  --primary-light: #fbf5e9;
+  --primary-dark: #17121a;
+  --text-light: #2b2118;
+  --text-dark: #f3eaf5;
+  --secondary-light: #7e328f;
+  --secondary-dark: #FEF001;
+  --hero-overlay: rgba(255, 255, 255, 0.55);
+  --page-gutter: 7%;
+  --header-height: 5.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--primary-light);
+  color: var(--text-light);
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+}
+
+.site-header {
+  position: fixed;
+  z-index: 10;
+  inset: 0 0 auto;
+  border-bottom: 1px solid var(--secondary-light);
+  background: var(--primary-light);
+  color: var(--text-light);
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+.site-header.is-over-hero {
+  border-color: transparent;
+  background: color-mix(in srgb, var(--primary-light) 72%, transparent);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  min-height: var(--header-height);
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--page-gutter);
+}
+
+.navbar__logo {
+  position: absolute;
+  left: var(--page-gutter);
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.navbar__logo span,
+.hero__content h1 span,
+.section__title span {
+  color: var(--secondary-light);
+}
+
+.navbar__toggle {
+  display: none;
+  padding: 0.5rem;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.theme-toggle {
+  position: absolute;
+  right: var(--page-gutter);
+  display: inline-flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  background: color-mix(in srgb, var(--secondary-light) 18%, transparent);
+}
+
+.btn-kembali {
+    color: black;
+    text-decoration: none;
+    border: 1px solid #6a0dad;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.btn-kembali:hover {
+    background-color: #6a0dad;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
