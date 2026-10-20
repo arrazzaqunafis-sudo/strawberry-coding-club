@@ -25,6 +25,11 @@ const dataSejarah = [
         judul: "Situs Jambansari",
         gambar: "./jpg/situs-jambansari.jpg",
         deskripsi: "Kompleks makam keluarga Bupati Ciamis terdahulu, khususnya Raden Tumenggung Aria (R.A.A.) Kusumadiningrat (Kanjeng Prebu) yang memimpin Ciamis pada abad ke-19, lengkap dengan museum benda-benda pusaka sejarah."
+    },
+    {
+        judul: "Situs Gunung Susuru",
+        gambar: "./jpg/situs-jambansari.jpg",
+        deskripsi: "Kompleks makam keluarga Bupati Ciamis terdahulu, khususnya Raden Tumenggung Aria (R.A.A.) Kusumadiningrat (Kanjeng Prebu) yang memimpin Ciamis pada abad ke-19, lengkap dengan museum benda-benda pusaka sejarah."
     }
 ];
 
