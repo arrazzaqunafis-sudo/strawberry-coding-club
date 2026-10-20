@@ -14,7 +14,7 @@
     cursor: pointer;
     transition: 0.3s;
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     gap: 20px;
 }
 
@@ -31,6 +31,11 @@
     margin: 0;
     font-size: 1.2rem;
     color: #7e328f;
+}
+
+.kartu-sejarah p{
+    width: 80%;
+    margin: 0;
 }
 
 .kartu-sejarah:hover {
