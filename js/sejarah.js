@@ -25,7 +25,23 @@ const dataSejarah = [
         judul: "Situs Jambansari",
         gambar: "./jpg/situs-jambansari.jpg",
         deskripsi: "Kompleks makam keluarga Bupati Ciamis terdahulu, khususnya Raden Tumenggung Aria (R.A.A.) Kusumadiningrat (Kanjeng Prebu) yang memimpin Ciamis pada abad ke-19, lengkap dengan museum benda-benda pusaka sejarah."
-    }
+    },
+    {
+        judul: "Situs Gunung Susuru",
+        gambar: "./jpg/situs-Gunung-Susuru.jpg",
+        deskripsi: " Kompleks situs peninggalan masa Kerajaan Galuh yang dikelilingi oleh lanskap alam dan struktur bebatuan masa lalu."
+    },
+    {
+        judul: " Situs Batu Panjang",
+        gambar: "./jpg/situs-Kampung-Adat-Kuta.jpg",
+        deskripsi: "Situs peninggalan zaman prasejarah (megalitikum) berupa susunan batu panjang yang disakralkan dan dikeramatkan oleh warga sekitar."
+    },
+    {
+        judul: " Kampung Adat Kuta",
+        gambar: "./jpg/situs-Batu-Panjang.jpg",
+        deskripsi: "Kawasan perkampungan tradisional yang masih memegang teguh adat istiadat leluhur secara turun-temurun, lengkap dengan hutan keramat (Leuweung Gede) yang dilindungi aturan adat ketat."
+    },
+    
 ];
 
 
