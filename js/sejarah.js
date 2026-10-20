@@ -20,6 +20,11 @@ const dataSejarah = [
         gambar: "./jpg/astana-gede-kawali.jpeg",
         deskripsi: "Situs Astana Gede Kawali adalah kompleks cagar budaya sekaligus situs sejarah yang terletak di Dusun Indrayasa, Desa Kawali, Kecamatan Kawali, Kabupaten Ciamis, Jawa Barat. Berada di lahan hutan lindung seluas sekitar 5 hektare di kaki Gunung Sawal, kawasan ini dahulu merupakan ibu kota Kerajaan Galuh (sekitar abad ke-14 Masehi) dengan keratonnya yang bernama Surawisesa."
                     +"\nSebagai salah satu pusat peradaban Sunda kuno, situs ini sangat unik karena menyimpan peninggalan dari tiga periode sekaligus: prasejarah, klasik (Hindu-Buddha), hingga masa penyebaran Islam."
+    },
+    {
+        judul: "Situs Jambansari",
+        gambar: "./jpg/situs-jambansari.jpg",
+        deskripsi: "Kompleks makam keluarga Bupati Ciamis terdahulu, khususnya Raden Tumenggung Aria (R.A.A.) Kusumadiningrat (Kanjeng Prebu) yang memimpin Ciamis pada abad ke-19, lengkap dengan museum benda-benda pusaka sejarah."
     }
 ];
 
