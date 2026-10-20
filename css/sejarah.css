@@ -82,13 +82,15 @@
     display: none;
 }
 
-/* Tampilan HP */
-@media (max-width: 600px) {
-    .kumpulan-sejarah {
-        grid-template-columns: 1fr;
+/* Kode ini akan aktif saat layar berukuran 768px ke bawah (Tablet/HP) */
+@media (max-width: 768px) {
+    .kartu-sejarah {
+        flex-direction: column; /* Mengubah arah menjadi ke bawah */
+        align-items: flex-start; /* Teks rata kiri */
     }
 
-    #detail-sejarah {
-        padding: 15px;
+    .kartu-sejarah img {
+        width: 100%; /* Gambar memenuhi lebar layar HP */
+        max-width: 400px; /* Batasi lebar gambar agar tidak terlalu raksasa di tablet */
     }
 }
