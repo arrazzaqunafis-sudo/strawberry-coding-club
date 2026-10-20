@@ -33,14 +33,19 @@ const dataSejarah = [
     },
     {
         judul: " Situs Batu Panjang",
-        gambar: "./jpg/situs-Kampung-Adat-Kuta.jpg",
+         gambar: "./jpg/situs-Batu-Panjang.jpg",
         deskripsi: "Situs peninggalan zaman prasejarah (megalitikum) berupa susunan batu panjang yang disakralkan dan dikeramatkan oleh warga sekitar."
     },
     {
         judul: " Kampung Adat Kuta",
-        gambar: "./jpg/situs-Batu-Panjang.jpg",
+        gambar: "./jpg/situs-Kampung-Adat-Kuta.jpg",
         deskripsi: "Kawasan perkampungan tradisional yang masih memegang teguh adat istiadat leluhur secara turun-temurun, lengkap dengan hutan keramat (Leuweung Gede) yang dilindungi aturan adat ketat."
     },
+    {
+        judul: " Situs Samida",
+        gambar: "./jpg/situs-Samida.jpg",
+        deskripsi: "Kawasan hutan larangan / konservasi masa lalu yang merujuk pada catatan buatan peninggalan Sri Baduga Maharaja(Prabu Siliwangi) pada tahun 1445M"
+    }
     
 ];
 
