@@ -41,11 +41,18 @@ button {
 }
 
 .site-header {
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 10;
   inset: 0 0 auto;
-  border-bottom: 1px solid var(--secondary-light);
-  background: var(--primary-light);
+  border-bottom: none ;
+  background: transparent  ! important;
+  background-color: transparent ! important;
+  border: none  ! important;
+  box-shadow: none ! important;
+  backdrop-filter: none  ! important;
   color: var(--text-light);
   transition: background-color 180ms ease, border-color 180ms ease;
 }
