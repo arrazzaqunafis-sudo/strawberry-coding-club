@@ -441,3 +441,36 @@ html[data-theme="dark"] .button {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* --- ANIMASI ELEGAN UNTUK HERO TEXT --- */
+
+/* 1. Definisi Gerakan (Fade In, Slide Up, Blur) */
+@keyframes eleganFadeUp {
+    0% {
+        opacity: 0; 
+        transform: translateY(30px); 
+        filter: blur(8px); 
+    }
+    100% {
+        opacity: 1; 
+        transform: translateY(0); 
+        filter: blur(0); 
+    }
+}
+
+/* 2. Pastikan span bisa digerakkan (inline-block) */
+.hero__content h1 span {
+    display: inline-block;
+    opacity: 0; /* Sembunyikan dulu sebelum animasi jalan */
+}
+
+/* 3. Animasi untuk Baris Pertama (Wilujeng Sumping ka) */
+.hero__content .hero__welcome {
+    animation: eleganFadeUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) 0.3s forwards;
+}
+
+/* 4. Animasi untuk Baris Kedua (Tatar Galuh Ciamis) */
+/* Kita targetkan span yang paling terakhir di dalam h1 */
+.hero__content h1 span:last-child {
+    animation: eleganFadeUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) 0.8s forwards;
+}
