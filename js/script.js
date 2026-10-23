@@ -40,10 +40,7 @@ systemPrefersDark.addEventListener("change", (event) => {
 // Keep the header transparent while it overlaps the hero section.
 const updateHeaderAppearance = () => {
   const heroBottom = hero.getBoundingClientRect().bottom;
-  header.classList.toggle(
-    "is-over-hero",
-    heroBottom > header.offsetHeight,
-  );
+  header.classList.toggle("is-over-hero", heroBottom > header.offsetHeight);
 };
 
 updateHeaderAppearance();
@@ -72,3 +69,16 @@ navigation.addEventListener("click", (event) => {
 if (window.feather) {
   window.feather.replace();
 }
+
+// Script untuk membuat navbar muncul background saat di-scroll
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".site-header");
+
+  // Jika di-scroll lebih dari 50px, tambahkan class 'scrolled'
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    // Jika kembali ke atas, hapus class 'scrolled' (jadi transparan lagi)
+    header.classList.remove("scrolled");
+  }
+});

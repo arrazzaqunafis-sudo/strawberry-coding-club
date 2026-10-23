@@ -5,7 +5,7 @@
   --text-light: #2b2118;
   --text-dark: #f3eaf5;
   --secondary-light: #7e328f;
-  --secondary-dark: #FEF001;
+  --secondary-dark: #fef001;
   --hero-overlay: rgba(255, 255, 255, 0.55);
   --page-gutter: 7%;
   --header-height: 5.5rem;
@@ -47,14 +47,23 @@ button {
   width: 100%;
   z-index: 10;
   inset: 0 0 auto;
-  border-bottom: none ;
-  background: transparent  ! important;
-  background-color: transparent ! important;
-  border: none  ! important;
-  box-shadow: none ! important;
-  backdrop-filter: none  ! important;
+  border-bottom: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
   color: var(--text-light);
-  transition: background-color 180ms ease, border-color 180ms ease;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+.site-header.scrolled {
+  background-color: rgb(251, 245, 233) !important;
+  backdrop-filter: blur(10px) !important;
+  border-bottom: 1px solid #ddd !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
 }
 
 .site-header.is-over-hero {
@@ -382,7 +391,6 @@ html[data-theme="dark"] .button {
   :root {
     --page-gutter: 6%;
   }
-
   .navbar__toggle {
     display: inline-flex;
     position: absolute;
@@ -390,7 +398,6 @@ html[data-theme="dark"] .button {
     align-items: center;
     justify-content: center;
   }
-
   .navbar__links {
     position: absolute;
     top: 100%;
@@ -403,28 +410,22 @@ html[data-theme="dark"] .button {
     padding: 0.5rem var(--page-gutter) 1rem;
     background: var(--primary-light);
   }
-
   .navbar__links {
     align-items: center;
   }
-
   html[data-theme="dark"] .navbar__links {
     background: var(--primary-dark);
   }
-
   .navbar__links.is-open {
     display: flex;
   }
-
   .navbar__links a {
     padding: 0.8rem 0;
   }
-
   .about__row {
     flex-direction: column;
     align-items: stretch;
   }
-
   .about__image {
     min-height: 15rem;
   }
@@ -434,7 +435,6 @@ html[data-theme="dark"] .button {
   html {
     scroll-behavior: auto;
   }
-
   *,
   *::before,
   *::after {
@@ -442,35 +442,28 @@ html[data-theme="dark"] .button {
   }
 }
 
-/* --- ANIMASI ELEGAN UNTUK HERO TEXT --- */
-
-/* 1. Definisi Gerakan (Fade In, Slide Up, Blur) */
 @keyframes eleganFadeUp {
-    0% {
-        opacity: 0; 
-        transform: translateY(30px); 
-        filter: blur(8px); 
-    }
-    100% {
-        opacity: 1; 
-        transform: translateY(0); 
-        filter: blur(0); 
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
-/* 2. Pastikan span bisa digerakkan (inline-block) */
 .hero__content h1 span {
-    display: inline-block;
-    opacity: 0; /* Sembunyikan dulu sebelum animasi jalan */
+  display: inline-block;
+  opacity: 0;
 }
 
-/* 3. Animasi untuk Baris Pertama (Wilujeng Sumping ka) */
 .hero__content .hero__welcome {
-    animation: eleganFadeUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) 0.3s forwards;
+  animation: eleganFadeUp 2s cubic-bezier(0.2, 0.8, 0.2, 1) 0.3s forwards;
 }
 
-/* 4. Animasi untuk Baris Kedua (Tatar Galuh Ciamis) */
-/* Kita targetkan span yang paling terakhir di dalam h1 */
 .hero__content h1 span:last-child {
-    animation: eleganFadeUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) 0.8s forwards;
+  animation: eleganFadeUp 2s cubic-bezier(0.2, 0.8, 0.2, 1) 0.8s forwards;
 }
