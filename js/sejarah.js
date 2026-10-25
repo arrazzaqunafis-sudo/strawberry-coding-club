@@ -36,23 +36,18 @@ const dataSejarah = [
     deskripsi: `Mengenal Situs Jambansari
 
 Kabupaten Ciamis memiliki berbagai peninggalan sejarah yang masih dapat ditemukan hingga sekarang. Salah satunya adalah Situs Jambansari, sebuah kompleks pemakaman yang berkaitan dengan sejarah pemerintahan Galuh. Tempat ini dikenal sebagai lokasi pemakaman Raden Adipati Aria Kusumadiningrat, yang merupakan Bupati Galuh ke-16 dan memimpin pada tahun 1839–1886.
-
 Situs Jambansari berada di kawasan Rancapetir, Kelurahan Linggasari, Kecamatan Ciamis. Berdasarkan informasi dari Galuh Virtual milik Pemerintah Kabupaten Ciamis, kawasan situs ini memiliki luas sekitar empat hektare dan mulai dibangun pada tahun 1872.
 
 Sejarah dan Keunikan Situs Jambansari
 
 Salah satu bagian utama dari Situs Jambansari adalah makam Kanjeng Prebu R.A.A. Kusumadiningrat. Makam tersebut berada di dalam bangunan cungkup berbahan kayu jati dengan bentuk atap menyerupai limas. Di sekelilingnya terdapat makam keluarga dan kerabat.
-
 Tidak hanya memiliki nilai sejarah dari tokoh yang dimakamkan, kawasan ini juga menyimpan sejumlah benda peninggalan masa lalu. Berdasarkan keterangan dalam Galuh Virtual, terdapat berbagai benda seperti lingga, yoni, menhir, arca Ganesha, gong, keris, dan keramik. Benda-benda tersebut menjadi bagian dari koleksi yang tersimpan di kawasan Jambansari.
-
 Keberadaan benda-benda tersebut menunjukkan bahwa Situs Jambansari tidak hanya berkaitan dengan sejarah pemerintahan Galuh, tetapi juga menyimpan peninggalan yang dapat digunakan untuk mempelajari kehidupan masyarakat pada masa lampau.
 
 Tradisi Ziarah yang Masih Berlangsung
 
 Selain dikenal sebagai tempat bersejarah, Situs Jambansari juga menjadi tujuan ziarah bagi masyarakat. Dalam pemberitaan DetikJabar pada 22 November 2022, disebutkan bahwa tempat ini dikunjungi oleh berbagai kalangan, termasuk peziarah dan sejumlah kontestan pemilu.
-
 Kegiatan yang dilakukan pengunjung di antaranya berdoa, berzikir, bertawasul, dan berziarah. Kunjungan juga menjadi perhatian ketika memasuki masa pemilihan umum. Dalam pemberitaan tersebut, juru kunci Situs Jambansari, Nandang Sembada, turut menjelaskan mengenai kegiatan ziarah yang berlangsung di kawasan tersebut.
-
 Ia juga mengingatkan bahwa kegiatan ziarah sebaiknya tetap diarahkan sebagai bentuk ibadah kepada Allah SWT, bukan menjadikan makam sebagai tempat meminta sesuatu.
 
 Situs Jambansari sebagai Sumber Pembelajaran Sejarah
