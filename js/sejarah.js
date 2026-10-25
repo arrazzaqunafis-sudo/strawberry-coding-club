@@ -30,11 +30,11 @@ const dataSejarah = [
       "\nKeunikan: Situs ini terkenal karena memiliki banyak Prasasti Batu Tulis beraksara Sunda Kuno yang memuat aturan penataan kerajaan, pesan moral kepemimpinan, hingga sejarah kejayaan masa lalu. Di sini juga terdapat punden berundak, undakan batu kuno, struktur bekas keraton, serta makam-makam para tokoh leluhur Sunda yang dikeramatkan",
   },
   {
-    judul: "Situs Jambansari",
+    judul: "Situs Jambansari Ciamis: Jejak Sejarah dan Tradisi Ziarah di Tatar Galuh",
     gambar: "./jpg/situs-jambansari.jpg",
     deskripsi:
-      "Karakteristik & Sejarah: Kompleks makam dan kabuyutan penting yang dibangun oleh R.T.A. Kusumadiningrat (Bupati Ciamis ke-16 yang dijuluki Kangjeng Prebu)." +
-      "\nFungsi & Daya Tarik: Situs ini merupakan pusat ziarah utama di Ciamis. Selain makam para bupati dan keluarga besar keraton Ciamis masa lalu, di kompleks ini terdapat kolam pemandian kuno, museum kecil yang menyimpan pusaka serta naskah kuno, dan suasana yang sangat tenang di tengah kota. Tempat ini rutin dikunjungi tokoh masyarakat, peziarah, hingga kontestan pemilu.",
+      "Kabupaten Ciamis memiliki berbagai peninggalan sejarah yang masih dapat ditemukan hingga sekarang. Salah satunya adalah Situs Jambansari, sebuah kompleks pemakaman yang berkaitan dengan sejarah pemerintahan Galuh. Tempat ini dikenal sebagai lokasi pemakaman Raden Adipati Aria Kusumadiningrat, yang merupakan Bupati Galuh ke-16 dan memimpin pada tahun 1839–1886." +
+      "\nSitus Jambansari berada di kawasan Rancapetir, Kelurahan Linggasari, Kecamatan Ciamis. Berdasarkan informasi dari Galuh Virtual milik Pemerintah Kabupaten Ciamis, kawasan situs ini memiliki luas sekitar empat hektare dan mulai dibangun pada tahun 1872.",
   },
   {
     judul: "Situs Gunung Susuru",

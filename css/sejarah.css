@@ -87,20 +87,18 @@
     line-height: 1.8;
 }
 
-/* Pastikan detail yang hidden tidak terlihat */
 #detail-sejarah[hidden] {
     display: none;
 }
 
-/* Kode ini akan aktif saat layar berukuran 768px ke bawah (Tablet/HP) */
 @media (max-width: 768px) {
     .kartu-sejarah {
-        flex-direction: column; /* Mengubah arah menjadi ke bawah */
-        align-items: flex-start; /* Teks rata kiri */
+        flex-direction: column; 
+        align-items: flex-start; 
     }
 
     .kartu-sejarah img {
-        width: 100%; /* Gambar memenuhi lebar layar HP */
-        max-width: 400px; /* Batasi lebar gambar agar tidak terlalu raksasa di tablet */
+        width: 100%; 
+        max-width: 400px; 
     }
 }
