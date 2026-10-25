@@ -30,11 +30,47 @@ const dataSejarah = [
       "\nKeunikan: Situs ini terkenal karena memiliki banyak Prasasti Batu Tulis beraksara Sunda Kuno yang memuat aturan penataan kerajaan, pesan moral kepemimpinan, hingga sejarah kejayaan masa lalu. Di sini juga terdapat punden berundak, undakan batu kuno, struktur bekas keraton, serta makam-makam para tokoh leluhur Sunda yang dikeramatkan",
   },
   {
-    judul: "Situs Jambansari",
+    judul:
+      "Situs Jambansari Ciamis: Jejak Sejarah dan Tradisi Ziarah di Tatar Galuh",
     gambar: "./jpg/situs-jambansari.jpg",
-    deskripsi:
-      "Karakteristik & Sejarah: Kompleks makam dan kabuyutan penting yang dibangun oleh R.T.A. Kusumadiningrat (Bupati Ciamis ke-16 yang dijuluki Kangjeng Prebu)." +
-      "\nFungsi & Daya Tarik: Situs ini merupakan pusat ziarah utama di Ciamis. Selain makam para bupati dan keluarga besar keraton Ciamis masa lalu, di kompleks ini terdapat kolam pemandian kuno, museum kecil yang menyimpan pusaka serta naskah kuno, dan suasana yang sangat tenang di tengah kota. Tempat ini rutin dikunjungi tokoh masyarakat, peziarah, hingga kontestan pemilu.",
+    deskripsi: `Mengenal Situs Jambansari
+
+Kabupaten Ciamis memiliki berbagai peninggalan sejarah yang masih dapat ditemukan hingga sekarang. Salah satunya adalah Situs Jambansari, sebuah kompleks pemakaman yang berkaitan dengan sejarah pemerintahan Galuh. Tempat ini dikenal sebagai lokasi pemakaman Raden Adipati Aria Kusumadiningrat, yang merupakan Bupati Galuh ke-16 dan memimpin pada tahun 1839–1886.
+
+Situs Jambansari berada di kawasan Rancapetir, Kelurahan Linggasari, Kecamatan Ciamis. Berdasarkan informasi dari Galuh Virtual milik Pemerintah Kabupaten Ciamis, kawasan situs ini memiliki luas sekitar empat hektare dan mulai dibangun pada tahun 1872.
+
+Sejarah dan Keunikan Situs Jambansari
+
+Salah satu bagian utama dari Situs Jambansari adalah makam Kanjeng Prebu R.A.A. Kusumadiningrat. Makam tersebut berada di dalam bangunan cungkup berbahan kayu jati dengan bentuk atap menyerupai limas. Di sekelilingnya terdapat makam keluarga dan kerabat.
+
+Tidak hanya memiliki nilai sejarah dari tokoh yang dimakamkan, kawasan ini juga menyimpan sejumlah benda peninggalan masa lalu. Berdasarkan keterangan dalam Galuh Virtual, terdapat berbagai benda seperti lingga, yoni, menhir, arca Ganesha, gong, keris, dan keramik. Benda-benda tersebut menjadi bagian dari koleksi yang tersimpan di kawasan Jambansari.
+
+Keberadaan benda-benda tersebut menunjukkan bahwa Situs Jambansari tidak hanya berkaitan dengan sejarah pemerintahan Galuh, tetapi juga menyimpan peninggalan yang dapat digunakan untuk mempelajari kehidupan masyarakat pada masa lampau.
+
+Tradisi Ziarah yang Masih Berlangsung
+
+Selain dikenal sebagai tempat bersejarah, Situs Jambansari juga menjadi tujuan ziarah bagi masyarakat. Dalam pemberitaan DetikJabar pada 22 November 2022, disebutkan bahwa tempat ini dikunjungi oleh berbagai kalangan, termasuk peziarah dan sejumlah kontestan pemilu.
+
+Kegiatan yang dilakukan pengunjung di antaranya berdoa, berzikir, bertawasul, dan berziarah. Kunjungan juga menjadi perhatian ketika memasuki masa pemilihan umum. Dalam pemberitaan tersebut, juru kunci Situs Jambansari, Nandang Sembada, turut menjelaskan mengenai kegiatan ziarah yang berlangsung di kawasan tersebut.
+
+Ia juga mengingatkan bahwa kegiatan ziarah sebaiknya tetap diarahkan sebagai bentuk ibadah kepada Allah SWT, bukan menjadikan makam sebagai tempat meminta sesuatu.
+
+Situs Jambansari sebagai Sumber Pembelajaran Sejarah
+
+Situs Jambansari juga memiliki hubungan dengan kegiatan pendidikan. Sebuah penelitian yang dilakukan oleh Edi Supriadi pada tahun 2013 membahas pemanfaatan Situs Jambansari sebagai sumber belajar sejarah lokal di SMP Negeri 2 Ciamis.
+Penelitian tersebut menunjukkan bahwa pemanfaatan situs sejarah dalam pembelajaran dapat membantu siswa memahami sejarah lokal, melatih keterampilan mencari sumber sejarah, serta meningkatkan kepedulian terhadap lingkungan sosial, budaya, dan keagamaan.
+Hal ini memperlihatkan bahwa peninggalan sejarah seperti Situs Jambansari tidak hanya dapat dikenal melalui buku atau materi di kelas. Keberadaan situs juga dapat menjadi sumber pembelajaran yang membantu siswa mengenal sejarah daerahnya.
+
+Pelestarian Situs Jambansari
+
+Keberadaan situs sejarah tentu berkaitan dengan upaya perawatan dan pengelolaannya. Penelitian yang diterbitkan dalam Jurnal Dinamika Universitas Galuh pada tahun 2021 membahas kolaborasi antarinstansi dalam pengembangan Situs Jambansari.
+Penelitian tersebut menemukan bahwa kerja sama dalam pengembangan situs belum sepenuhnya berjalan dengan baik. Beberapa kendala yang disebutkan adalah belum optimalnya kerja sama antara pemerintah dan lembaga terkait, kurangnya pendidikan serta pelatihan bagi masyarakat dalam pengelolaan situs, dan masih rendahnya keterlibatan masyarakat.
+Penelitian itu juga menyampaikan beberapa rekomendasi, seperti perlunya kerja sama resmi antarinstansi, peningkatan kesadaran masyarakat, serta program pendidikan mengenai kebudayaan Galuh.
+
+Penutup
+
+Situs Jambansari merupakan salah satu peninggalan sejarah yang berada di Kabupaten Ciamis. Keberadaan makam R.A.A. Kusumadiningrat, berbagai benda peninggalan masa lalu, serta tradisi ziarah yang masih berlangsung menjadikan situs ini memiliki keterkaitan dengan sejarah, budaya, dan kehidupan masyarakat setempat.
+Melalui keberadaan Situs Jambansari, masyarakat dapat mengenal lebih jauh sejarah daerahnya. Oleh karena itu, informasi mengenai situs ini perlu terus dikenalkan agar peninggalan sejarah dan budaya lokal tetap diketahui oleh generasi berikutnya.`,
   },
   {
     judul: "Situs Gunung Susuru",
@@ -132,3 +168,22 @@ tombolKembali.addEventListener("click", function () {
 
   window.scrollTo(0, 0);
 });
+
+function bukaDetail(index) {
+  const situs = dataSitus[index];
+
+  document.getElementById("detail-judul").innerHTML = situs.judul;
+  document.getElementById("detail-gambar").src = situs.gambar;
+  document.getElementById("detail-teks").innerHTML = situs.deskripsi;
+
+  document.getElementById("halaman-daftar").style.display = "none";
+  document.getElementById("halaman-detail").style.display = "block";
+
+  window.scrollTo(0, 0);
+}
+
+function tutupDetail() {
+  document.getElementById("halaman-detail").style.display = "none";
+  document.getElementById("halaman-daftar").style.display = "block";
+}
+qqerr;
