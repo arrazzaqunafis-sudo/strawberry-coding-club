@@ -163,22 +163,3 @@ tombolKembali.addEventListener("click", function () {
 
   window.scrollTo(0, 0);
 });
-
-function bukaDetail(index) {
-  const situs = dataSitus[index];
-
-  document.getElementById("detail-judul").innerHTML = situs.judul;
-  document.getElementById("detail-gambar").src = situs.gambar;
-  document.getElementById("detail-teks").innerHTML = situs.deskripsi;
-
-  document.getElementById("halaman-daftar").style.display = "none";
-  document.getElementById("halaman-detail").style.display = "block";
-
-  window.scrollTo(0, 0);
-}
-
-function tutupDetail() {
-  document.getElementById("halaman-detail").style.display = "none";
-  document.getElementById("halaman-daftar").style.display = "block";
-}
-qqerr;
