@@ -405,6 +405,115 @@ html[data-theme="dark"] .button {
   font-size: 0.9rem;
 }
 
+/* --- STYLING FOOTER (Warna Persis CourseLab) --- */
+.site-footer {
+    /* Warna biru gelap navy sesuai foto */
+    background-color: #fbf5e9; 
+    /* Warna teks abu-abu terang */
+    color: #d1d5db; 
+    padding: 4rem 7% 1.5rem;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem auto; 
+}
+
+.footer-box h4 {
+    color: #000;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+/* Garis kuning di bawah judul (sesuai CourseLab) */
+.footer-box h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 30px;
+    height: 2px;
+    /* Warna kuning emas */
+    background-color: #fbbf24; 
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+/* Tulisan 'ciamis' warnanya dibuat kuning seperti aksen CourseLab */
+.footer-logo span {
+    color: #fbbf24;
+}
+
+.footer-box p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+/* Efek hover jadi kuning */
+.footer-links a:hover {
+    color: #fbbf24; 
+    padding-left: 5px; 
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* Efek hover sosmed jadi kuning */
+.social-links a:hover {
+    background-color: #fbbf24;
+    color: #0b1b36; /* Ikon berubah gelap saat background kuning */
+    transform: translateY(-3px); 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
 @media (max-width: 700px) {
   :root {
     --page-gutter: 6%;
