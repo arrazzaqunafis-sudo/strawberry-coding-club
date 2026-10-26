@@ -1,136 +1,157 @@
+.sejarah-page {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
 
-:root { color-scheme: light; --page-bg: #fbf5e9; --surface: #fff; --text: #2b2118; --accent: #7e328f; --line: #e4d8c7; }
-html[data-theme="dark"] { color-scheme: dark; --page-bg: #17121a; --surface: #241c28; --text: #f3eaf5; --accent: #f0a5ff; --line: #514258; }
+.page-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
 
-/* Daftar sejarah */
+.page-header h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-bar {
+  margin-top: 1.5rem;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  box-shadow: var(--shadow-sm);
+  outline: none;
+}
+
+.search-bar input:focus {
+  border-color: var(--primary);
+}
+
+/* --- GRID SEJARAH --- */
 .kumpulan-sejarah {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: min(100%, 1100px);
-    padding: 40px clamp(16px, 5vw, 60px);
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
 }
 
 .kartu-sejarah {
-    padding: 20px;
-    background-color: var(--surface);
-    border-radius: 15px;
-    box-shadow: 0 3px 10px #00000015;
-    cursor: default;
-    transition: 0.3s;
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.kartu-sejarah:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
 }
 
 .kartu-sejarah img {
-    width: 150px;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 10px;
-    flex-shrink: 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-.foto-slide{
-    transition: opacity 0.45 ease;
+.kartu-sejarah__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .kartu-sejarah h3 {
-    width: 80%;
-    margin: 0;
-    font-size: 1.2rem;
-    color: var(--accent);
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
 }
 
-.kartu-sejarah p{
-    flex: 1 1 0;
-    margin: 0;
+.kartu-sejarah p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.kartu-sejarah h3 { flex: 0 1 30%; }
-
-.kartu-sejarah:hover {
-    box-shadow: 0 6px 18px #00000020;
+.btn-detail {
+  margin-top: auto;
+  align-self: flex-start;
+  background: transparent;
+  color: var(--primary);
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.9rem;
 }
 
-.judul-sejarah {
-  margin-right: 20px;
-  line-height: 1.3;
+.btn-detail:hover {
+  text-decoration: underline;
 }
 
-/* Tombol detail dan kembali */
-.btn-detail,
-#btn-kembali {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-    background-color: #7e328f;
-    color: white;
-    cursor: pointer;
+/* --- DETAIL SEJARAH --- */
+.btn-back {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-dark);
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
 }
 
-.btn-detail:hover, #btn-kembali:hover { background-color: #642873; }
-.btn-detail:focus-visible, #btn-kembali:focus-visible { outline: 3px solid #d7a9e2; outline-offset: 3px; }
-
-/* Halaman detail */
-#detail-sejarah {
-    max-width: 900px;
-    width: min(100% - 32px, 900px);
-    margin: 30px auto;
-    padding: clamp(16px, 4vw, 25px);
-    background-color: var(--surface);
-    border-radius: 15px;
-    white-space: pre-line;
-
+.detail-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
 }
 
-body { margin: 0; background: var(--page-bg); color: var(--text); font-family: "Poppins", sans-serif; line-height: 1.6; }
-h1 { padding: 28px 16px 0; }
-.page-header, .page-footer { padding: 14px clamp(16px, 5vw, 60px); background: var(--page-bg); }
-.page-header { border-bottom: 1px solid var(--line); }
-.page-footer { margin-top: 32px; border-top: 1px solid var(--line); text-align: center; }
-.page-header a, .page-footer a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
-
-body.leaving-for-home main { animation: history-slide-right 380ms cubic-bezier(.6,0,.9,.4) both; }
-body.leaving-for-home .page-header { animation: history-nav-up 380ms ease-in both; }
-body.history-enter .page-header { animation: history-nav-down 420ms cubic-bezier(.2,.75,.25,1) both; }
-@keyframes history-slide-right { to { transform: translateX(100%); } }
-@keyframes history-nav-up { to { transform: translateY(-110%); } }
-@keyframes history-nav-down { from { transform: translateY(-110%); } to { transform: translateY(0); } }
-@media (prefers-reduced-motion: reduce) {
-  body.leaving-for-home main, body.leaving-for-home .page-header,
-  body.history-enter main, body.history-enter .page-header { animation-duration: 1ms !important; }
+.detail-title {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
 }
 
-#gambar-detail {
-    display: block;
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin: 20px 0;
+.detail-image-box {
+  width: 100%;
+  max-height: 450px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 2rem;
 }
 
-#isi-detail {
-    line-height: 1.8;
+.detail-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-#detail-sejarah[hidden] {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .kartu-sejarah {
-        flex-direction: column; 
-        align-items: flex-start; 
-    }
-
-    .kumpulan-sejarah { padding-top: 24px; }
-    .kartu-sejarah h3, .kartu-sejarah p { width: 100%; flex: auto; }
-
-    .kartu-sejarah img {
-        width: 100%; 
-        max-width: 400px; 
-    }
+.detail-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  white-space: pre-line;
 }

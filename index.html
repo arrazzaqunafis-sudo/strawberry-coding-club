@@ -3,163 +3,179 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#fbf5e9" />
-    <title>Budaya Ciamis</title>
+    <meta name="theme-color" content="#FAF8F5" />
+    <title>Budaya & Sejarah Ciamis - Tatar Galuh</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet" />
+
+    <!-- Leaflet CSS for Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://unpkg.com/feather-icons" defer></script>
-    <script src="js/page-transitions.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
     <script src="js/script.js" defer></script>
   </head>
 
   <body>
+    <!-- HEADER / NAVIGASI -->
     <header class="site-header" id="site-header">
-      <nav class="navbar" aria-label="Navigasi utama">
+      <nav class="navbar" aria-label="Navigasi Utama">
         <a class="navbar__logo" href="#home">budaya<span>ciamis</span></a>
 
         <div class="navbar__links" id="primary-navigation">
           <a href="#home">Beranda</a>
           <a href="#about">Tentang</a>
-          <a href="#peta">Peta wisata</a>
-          <a href="#galeri">Galeri</a>
-          <a href="#kuliner">Kuliner</a>
-          <a href="#kredit">Kredit</a>
           <a href="sejarah.html">Sejarah</a>
+          <a href="#peta">Peta Wisata</a>
+          <a href="#galeri">Galeri</a>
         </div>
 
-        <button
-          class="navbar__toggle"
-          id="navbar-toggle"
-          type="button"
-          aria-label="Buka navigasi"
-          aria-controls="primary-navigation"
-          aria-expanded="false"
-        >
-          <i data-feather="menu" aria-hidden="true"></i>
-        </button>
-        <button
-          class="theme-toggle"
-          id="theme-toggle"
-          type="button"
-          aria-label="Aktifkan mode gelap"
-          title="Ganti tema"
-        >
-          <i data-feather="moon" aria-hidden="true"></i>
-        </button>
+        <div class="navbar__actions">
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ganti Tema">
+            <i data-feather="moon" aria-hidden="true"></i>
+          </button>
+          <button class="navbar__toggle" id="navbar-toggle" type="button" aria-label="Buka navigasi">
+            <i data-feather="menu" aria-hidden="true"></i>
+          </button>
+        </div>
       </nav>
     </header>
 
     <main>
-      <section class="hero" id="home" aria-labelledby="hero-title">
-        <video class="hero__video" autoplay loop muted playsinline aria-hidden="true">
+      <!-- HERO SECTION -->
+      <section class="hero" id="home">
+        <video class="hero__video" autoplay loop muted playsinline>
           <source src="./jpg/ciamis.mp4" type="video/mp4" />
         </video>
+        <div class="hero__overlay"></div>
         <div class="hero__content">
-          <h1 id="hero-title">
-            <span class="hero__welcome">Wilujeng Sumping ka</span><br />
-            <span>Tatar Galuh Ciamis</span>
+          <span class="hero__badge">Pesona Tatar Galuh</span>
+          <h1>
+            Wilujeng Sumping ka<br />
+            <span class="highlight">Kabupaten Ciamis</span>
           </h1>
-        </div>
-      </section>
-
-      <section class="map section" id="peta" aria-labelledby="map-title">
-        <h2 class="section__title" id="map-title">Peta <span>Ciamis</span></h2>
-        <p class="map__intro">
-          Temukan tempat wisata dan situs bersejarah di Kabupaten Ciamis.
-        </p>
-        <div
-          class="map__canvas"
-          id="map"
-          role="region"
-          aria-label="Peta wisata dan tempat bersejarah Ciamis"
-        >
-          <p>Peta interaktif Ciamis akan ditampilkan di sini.</p>
-        </div>
-      </section>
-
-      <section class="about section" id="about" aria-labelledby="about-title">
-        <h2 class="section__title" id="about-title">Tentang <span>Ciamis</span></h2>
-        <div class="about__row">
-          <div class="about__image" role="img" aria-label="Suasana alam Ciamis"></div>
-          <div class="about__content">
-            <h3>Warisan budaya yang berharga</h3>
-            <p>
-              Ciamis memiliki kekayaan tradisi, seni, dan alam yang menjadi bagian
-              penting dari identitas masyarakatnya.
-            </p>
-            <p>
-              Mari mengenal lebih dekat cerita dan ragam budaya yang terus dijaga
-              dari generasi ke generasi.
-            </p>
+          <p>
+            Menjelajahi keasrian alam, jejak peradaban Kerajaan Galuh, dan kehangatan tradisi lokal yang senantiasa terjaga.
+          </p>
+          <div class="hero__buttons">
+            <a href="sejarah.html" class="btn btn-primary">Jelajahi Sejarah</a>
+            <a href="#peta" class="btn btn-outline">Lihat Peta Wisata</a>
           </div>
         </div>
       </section>
 
-      <section class="gallery section" id="galeri" aria-labelledby="gallery-title">
-        <h2 class="section__title" id="gallery-title">Galeri <span>Ciamis</span></h2>
-        <p class="gallery__intro">
-          Jelajahi keindahan alam dan kekayaan budaya Ciamis.
-        </p>
-        <div class="gallery__video">
-          <video controls preload="metadata" aria-label="Video tentang Ciamis">
-            <source src="./jpg/ciamis.mp4" type="video/mp4" />
-            Browser Anda tidak mendukung pemutaran video.
-          </video>
+      <!-- TENTANG SECTION -->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="about__grid">
+            <div class="about__image-wrapper">
+              <div class="about__image" style="background-image: url('./jpg/ciungwanara.jpg');"></div>
+              <div class="about__badge">
+                <span class="number">1400+</span>
+                <span class="label">Tahun Warisan Galuh</span>
+              </div>
+            </div>
+            <div class="about__content">
+              <span class="section__subtitle">Identitas & Kebudayaan</span>
+              <h2 class="section__title">Warisan Budaya Yang <span>Sangat Berharga</span></h2>
+              <p>
+                Ciamis memiliki kekayaan tradisi, seni, dan situs bersejarah yang menjadi bagian penting dari jati diri masyarakat Sunda Tatar Galuh.
+              </p>
+              <p>
+                Dari keasrian Hutan Keramat Karangkamulyan hingga kearifan lokal Kampung Adat Kuta, mari mengenal lebih dekat kisah leluhur yang terus dirawat dari generasi ke generasi.
+              </p>
+              <a href="sejarah.html" class="btn-link">Pelajari Selengkapnya →</a>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="credits section" id="kredit" aria-labelledby="credits-title">
-        <h2 class="section__title" id="credits-title">Kredit</h2>
-        <p>Dibuat sebagai pengenalan budaya, wisata, dan sejarah Ciamis.</p>
-        <p class="credits__copyright">&copy; 2026 Budaya Ciamis</p>
+      <!-- PETA WISATA SECTION -->
+      <section class="map section" id="peta">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__subtitle">Eksplorasi Interaktif</span>
+            <h2 class="section__title">Peta Wisata & <span>Situs Ciamis</span></h2>
+            <p class="section__intro">
+              Klik pada penanda peta di bawah ini untuk melihat detail lokasi bersejarah di Kabupaten Ciamis.
+            </p>
+          </div>
+          <div class="map__container">
+            <div class="map__canvas" id="map"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALERI SECTION -->
+      <section class="gallery section" id="galeri">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__subtitle">Dokumentasi Visual</span>
+            <h2 class="section__title">Keindahan <span>Tatar Galuh</span></h2>
+            <p class="section__intro">Saksikan cuplikan keindahan alam dan suasana kebudayaan Ciamis.</p>
+          </div>
+          <div class="gallery__video-card">
+            <video controls preload="metadata" poster="./jpg/ciungwanara.jpg">
+              <source src="./jpg/ciamis.mp4" type="video/mp4" />
+              Browser Anda tidak mendukung pemutaran video.
+            </video>
+          </div>
+        </div>
       </section>
     </main>
 
-<footer class="site-footer">
-    <div class="footer-container">
-        <div class="footer-box">
-            <h2 class="footer-logo">budaya<span>ciamis</span></h2>
-            <p>Platform digital untuk melestarikan dan memperkenalkan kekayaan budaya, sejarah, dan wisata Kabupaten Ciamis.</p>
-        </div>
+    <!-- FOOTER UTAMA -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-box brand-box">
+            <h3 class="footer-logo">budaya<span>ciamis</span></h3>
+            <p>
+              Platform digital pelestarian dan pengenalan kekayaan budaya, destinasi bersejarah, serta kearifan lokal Kabupaten Ciamis.
+            </p>
+          </div>
 
-        <div class="footer-box">
-            <h4>Quick Links</h4>
+          <div class="footer-box">
+            <h4>Tautan Cepat</h4>
             <ul class="footer-links">
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="index.html#about">Tentang</a></li>
-                <li><a href="index.html#peta">Peta Wisata</a></li>
-                <li><a href="sejarah.html">Sejarah</a></li>
-                <li><a href="index.html#galeri">Galeri</a></li>
+              <li><a href="#home">Beranda</a></li>
+              <li><a href="#about">Tentang Ciamis</a></li>
+              <li><a href="sejarah.html">Daftar Sejarah</a></li>
+              <li><a href="#peta">Peta Wisata</a></li>
+              <li><a href="#galeri">Galeri Video</a></li>
             </ul>
-        </div>
+          </div>
 
-        <div class="footer-box">
-            <h4>Location</h4>
-            <p>Kabupaten Ciamis<br>Jawa Barat, Indonesia</p>
-        </div>
+          <div class="footer-box">
+            <h4>Lokasi Utama</h4>
+            <p>Kabupaten Ciamis<br />Provinsi Jawa Barat, Indonesia</p>
+          </div>
 
-        <div class="footer-box">
-            <h4>Contact Us</h4>
-            <p>halo@budayaciamis.id</p>
+          <div class="footer-box">
+            <h4>Sosial Media</h4>
+            <p>Ikuti perkembangan budaya Ciamis melalui kanal digital kami:</p>
             <div class="social-links">
-                <a href="#" aria-label="Instagram">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                </a>
-                <!-- Ikon YouTube -->
-                <a href="#" aria-label="YouTube">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
-                </a>
+              <a href="#" aria-label="Instagram">
+                <i data-feather="instagram"></i>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <i data-feather="youtube"></i>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <i data-feather="facebook"></i>
+              </a>
             </div>
+          </div>
         </div>
-    </div>
 
-    <div class="footer-bottom">
-        <p>Copyright &copy; 2024 Budaya Ciamis. All rights reserved.</p>
-    </div>
-</footer>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Budaya Ciamis. Seluruh Hak Cipta Dilindungi.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
-
