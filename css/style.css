@@ -7,6 +7,9 @@
   --secondary-light: #7e328f;
   --secondary-dark: #fef001;
   --hero-overlay: rgba(255, 255, 255, 0.55);
+  --header-foreground: var(--text-light);
+  --header-glass-background: color-mix(in srgb, var(--primary-light) 72%, transparent);
+  --header-text-shadow: none;
   --section-surface: var(--primary-light);
   --page-gutter: 7%;
   --header-height: 5.5rem;
@@ -62,8 +65,8 @@ button {
 .navbar__links a,
 .navbar-extra a,
 .navbar-extra i {
-    color: #ffffff !important;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7) !important; /* Shadow agar makin jelas */
+    color: var(--header-foreground) !important;
+    text-shadow: var(--header-text-shadow) !important;
 }
 
 body.leaving-for-history .site-header { animation: navbar-slide-up 380ms cubic-bezier(.6,0,.9,.4) both; }
@@ -83,11 +86,11 @@ body.history-enter main { animation: page-slide-right 420ms cubic-bezier(.2,.75,
 }
 
 .site-header.scrolled {
-    background-color: var(--primary-light) !important;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
-    border-bottom: 1px solid #ddd !important;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+    background-color: var(--primary-light);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .site-header.scrolled .navbar__logo,
@@ -105,7 +108,7 @@ body.history-enter main { animation: page-slide-right 420ms cubic-bezier(.2,.75,
 
 .site-header.is-over-hero {
   border-color: transparent;
-  background: color-mix(in srgb, var(--primary-light) 72%, transparent);
+  background: var(--header-glass-background);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
 }
@@ -181,6 +184,9 @@ body.history-enter main { animation: page-slide-right 420ms cubic-bezier(.2,.75,
 
 html[data-theme="dark"] {
   color-scheme: dark;
+  --header-foreground: var(--text-dark);
+  --header-glass-background: color-mix(in srgb, var(--primary-dark) 68%, transparent);
+  --header-text-shadow: none;
   --hero-overlay: rgba(0, 0, 0, 0.62);
   --section-surface: var(--primary-dark);
   background: var(--primary-dark);
@@ -200,17 +206,13 @@ html[data-theme="dark"] .site-header {
 html[data-theme="dark"] .site-header.scrolled {
   background-color: var(--primary-dark);
   border-bottom-color: rgba(243, 234, 245, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 html[data-theme="dark"] .site-header.is-over-hero {
   border-color: transparent;
-  background: color-mix(in srgb, var(--primary-dark) 72%, transparent);
-}
-
-html[data-theme="dark"] .site-header,
-html[data-theme="dark"] .site-header.scrolled,
-html[data-theme="dark"] .site-header.is-over-hero {
-  background-color: color-mix(in srgb, var(--primary-dark) 68%, transparent);
+  background: var(--header-glass-background);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
 }
