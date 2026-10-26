@@ -33,19 +33,35 @@ Kawasan situs ini diapit oleh dua aliran sungai penting, yaitu Sungai Cimuntur d
   {
     judul: " Situs Astana Gede Kawali ",
     gambar: "./jpg/astana-gede-kawali.jpeg",
-    deskripsi:
-      "Karakteristik & Sejarah: Kompleks pusat pemerintahan Kerajaan Sunda (Galuh) pada abad ke-14 hingga ke-15 Masehi (zaman Prabu Niskala Wastu Kancana dan Prabu Surawisesa)" +
-      "\nKeunikan: Situs ini terkenal karena memiliki banyak Prasasti Batu Tulis beraksara Sunda Kuno yang memuat aturan penataan kerajaan, pesan moral kepemimpinan, hingga sejarah kejayaan masa lalu. Di sini juga terdapat punden berundak, undakan batu kuno, struktur bekas keraton, serta makam-makam para tokoh leluhur Sunda yang dikeramatkan",
+    deskripsi: `SEJARAH DAN LOKASI
+Situs Astana Gede Kawali terletak di Dusun Indrayasa, Desa Kawali, Kecamatan Kawali, Kabupaten Ciamis, tepat di kaki Gunung Sawal. Kawasan yang berada di area hutan lindung seluas kurang lebih 5 hektar ini merupakan salah satu situs sejarah paling penting di Jawa Barat. Situs ini telah ditetapkan sebagai cagar budaya tingkat nasional pada 16 Juni 1998.
+
+PRASASTI KAWALI DAN PENINGGALAN
+Peninggalan paling ikonik di situs ini adalah 6 buah batu prasasti yang dikenal sebagai Prasasti Kawali I, II, III, IV, V, dan VI. Prasasti-prasasti ini bertuliskan aksara Sunda Kuno dan menceritakan tentang kebesaran Prabu Wastu Kancana, pembangunan pertahanan, serta nasihat-nasihat untuk rakyatnya. 
+Selain prasasti, terdapat peninggalan lain seperti:
+- Batu Pamuruyan: Batu yang diduga sebagai tempat disemayamkannya abu jenazah Citra Resmi atau Dyah Pitaloka.
+- Petirtaan (Kolam Suci) Cikawali: Kolam yang dipercaya memiliki nilai spiritual dan sering digunakan untuk ritual.
+- Makam Prabu Niskala Wastu Kancana beserta keluarganya.
+
+NILAI SPIRITUAL DAN EDUKASI
+Situs Astana Gede Kawali bukan hanya objek penelitian arkeologi, tetapi juga tempat ziarah yang sakral. Masyarakat setempat meyakini bahwa ziarah ke tempat ini berkaitan dengan peranan Pangeran Usman dan Adipati Singacala dalam menyebarkan agama Islam di wilayah Kawali. Kawasan ini telah dilengkapi fasilitas umum, menjadikannya sebagai sarana pembelajaran sejarah dan budaya Sunda yang lengkap bagi generasi muda.`,
   },
   {
-    judul:
-      "Situs Jambansari Ciamis: Jejak Sejarah dan Tradisi Ziarah di Tatar Galuh",
+    judul: " Situs Jambansari ",
     gambar: "./jpg/situs-jambansari.jpg",
     deskripsi: `MENGENAL SITUS JAMBANSARI
 Kabupaten Ciamis memiliki berbagai peninggalan sejarah yang masih dapat ditemukan hingga sekarang. Salah satunya adalah Situs Jambansari, sebuah kompleks pemakaman yang berkaitan dengan sejarah pemerintahan Galuh. Tempat ini dikenal sebagai lokasi pemakaman Raden Adipati Aria (R.A.A.) Kusumadiningrat, yang merupakan Bupati Galuh ke-16 dan memimpin pada tahun 1839–1886. Situs Jambansari berada di kawasan Rancapetir, Kelurahan Linggasari, Kecamatan Ciamis, dengan luas sekitar empat hektare dan mulai dibangun pada tahun 1872.
 
-Sejarah dan Keunikan Situs Jambansari
+SEJARAH DAN KEUNIKAN SITUS JAMBANSARI
+Salah satu bagian utama dari Situs Jambansari adalah makam Kanjeng Prebu R.A.A. Kusumadiningrat. Makam tersebut berada di dalam bangunan cungkup berbahan kayu jati dengan bentuk atap menyerupai limas. Di sekelilingnya terdapat makam keluarga dan kerabat. Kawasan ini juga menyimpan sejumlah benda peninggalan masa lalu seperti lingga, yoni, menhir, arca Ganesha, gong, keris, dan keramik. Total seluruh arca yang ada di kompleks tersebut adalah 13 arca. Arca-arca ini dikumpulkan oleh R.A.A. Kusumadiningrat dalam rangka dakwah agama Islam.
 
+TRADISI ZIARAH DAN JAMASAN PUSAKA
+Selain dikenal sebagai tempat bersejarah, Situs Jambansari juga menjadi tujuan ziarah bagi masyarakat. Kegiatan yang dilakukan pengunjung di antaranya berdoa, berzikir, bertawasul, dan berziarah. Salah satu tradisi tahunan yang paling sakral adalah Jamasan Pusaka. Ritual ini digelar setiap bulan Rabiul Awal atau Maulid untuk membersihkan delapan pusaka peninggalan R.A.A. Kusumadiningrat, mulai dari keris, tombak, hingga pedang. Air yang digunakan untuk jamasan berasal dari delapan mata air, di antaranya Jambansari, Karangkamulyan, Pulo Majeti, Ciomas, Panjalu, Cakradewa, dan Situs Gandoang.
+
+SITUS JAMBANSARI SEBAGAI SUMBER PEMBELAJARAN SEJARAH
+Situs Jambansari juga memiliki hubungan dengan kegiatan pendidikan. Sebuah penelitian yang dilakukan oleh Edi Supriadi pada tahun 2013 membahas pemanfaatan Situs Jambansari sebagai sumber belajar sejarah lokal di SMP Negeri 2 Ciamis. Pemanfaatan situs sejarah dalam pembelajaran dapat membantu siswa memahami sejarah lokal, melatih keterampilan mencari sumber sejarah, serta meningkatkan kepedulian terhadap lingkungan sosial, budaya, dan keagamaan.
+
+<<<<<<< HEAD
 Salah satu bagian utama dari Situs Jambansari adalah makam Kanjeng Prebu R.A.A. Kusumadiningrat. Makam tersebut berada di dalam bangunan cungkup berbahan kayu jati dengan bentuk atap menyerupai limas. Di sekelilingnya terdapat makam keluarga dan kerabat.
 
 Tidak hanya memiliki nilai sejarah dari tokoh yang dimakamkan, kawasan ini juga menyimpan sejumlah benda peninggalan masa lalu. Berdasarkan keterangan dalam Galuh Virtual, terdapat berbagai benda seperti lingga, yoni, menhir, arca Ganesha, gong, keris, dan keramik. Benda-benda tersebut menjadi bagian dari koleksi yang tersimpan di kawasan Jambansari.
@@ -76,6 +92,11 @@ Penutup
 
 Situs Jambansari merupakan salah satu peninggalan sejarah yang berada di Kabupaten Ciamis. Keberadaan makam R.A.A. Kusumadiningrat, berbagai benda peninggalan masa lalu, serta tradisi ziarah yang masih berlangsung menjadikan situs ini memiliki keterkaitan dengan sejarah, budaya, dan kehidupan masyarakat setempat.
 Melalui keberadaan Situs Jambansari, masyarakat dapat mengenal lebih jauh sejarah daerahnya. Oleh karena itu, informasi mengenai situs ini perlu terus dikenalkan agar peninggalan sejarah dan budaya lokal tetap diketahui oleh generasi berikutnya.`,
+>>>>>>> 52aeed8c7be35d06435a421ed1cab5173661fab0
+=======
+PENUTUP
+Situs Jambansari merupakan salah satu peninggalan sejarah yang berada di Kabupaten Ciamis. Keberadaan makam R.A.A. Kusumadiningrat, berbagai benda peninggalan masa lalu, serta tradisi ziarah yang masih berlangsung menjadikan situs ini memiliki keterkaitan dengan sejarah, budaya, dan kehidupan masyarakat setempat.`,
+>>>>>>> origin/main
   },
   {
     judul: " Situs Gunung Susuru ",

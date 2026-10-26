@@ -6,7 +6,6 @@
   --text-dark: #f3eaf5;
   --secondary-light: #7e328f;
   --secondary-dark: #fef001;
-  --hero-overlay: rgba(255, 255, 255, 0.55);
   --page-gutter: 7%;
   --header-height: 5.5rem;
 }
@@ -54,16 +53,35 @@ button {
   box-shadow: none !important;
   backdrop-filter: none !important;
   color: var(--text-light);
-  transition:
-    background-color 180ms ease,
-    border-color 180ms ease;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.navbar__logo,
+.navbar__links a,
+.navbar-extra a,
+.navbar-extra i {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7) !important; /* Shadow agar makin jelas */
 }
 
 .site-header.scrolled {
-  background-color: rgb(251, 245, 233) !important;
-  backdrop-filter: blur(10px) !important;
-  border-bottom: 1px solid #ddd !important;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+    background-color: rgba(255, 255, 255, 0.95) !important; 
+    backdrop-filter: blur(10px) !important; 
+    border-bottom: 1px solid #ddd !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+}
+
+.site-header.scrolled .navbar__logo,
+.site-header.scrolled .navbar__links a,
+.site-header.scrolled .navbar-extra a,
+.site-header.scrolled .navbar-extra i {
+    color: #222222 !important;
+    text-shadow: none !important;
+}
+
+.navbar__logo span,
+.site-header.scrolled .navbar__logo span {
+    color: #a855f7 !important;
 }
 
 .site-header.is-over-hero {
