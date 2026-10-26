@@ -1,18 +1,23 @@
 
+:root { color-scheme: light; --page-bg: #fbf5e9; --surface: #fff; --text: #2b2118; --accent: #7e328f; --line: #e4d8c7; }
+html[data-theme="dark"] { color-scheme: dark; --page-bg: #17121a; --surface: #241c28; --text: #f3eaf5; --accent: #f0a5ff; --line: #514258; }
+
 /* Daftar sejarah */
 .kumpulan-sejarah {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 70px;
+    width: min(100%, 1100px);
+    padding: 40px clamp(16px, 5vw, 60px);
+    margin: 0 auto;
 }
 
 .kartu-sejarah {
     padding: 20px;
-    background-color: white;
+    background-color: var(--surface);
     border-radius: 15px;
     box-shadow: 0 3px 10px #00000015;
-    cursor: pointer;
+    cursor: default;
     transition: 0.3s;
     display: flex;
     align-items: flex-start;
@@ -35,16 +40,18 @@
     width: 80%;
     margin: 0;
     font-size: 1.2rem;
-    color: #7e328f;
+    color: var(--accent);
 }
 
 .kartu-sejarah p{
-    width: 80%;
+    flex: 1 1 0;
     margin: 0;
 }
 
+.kartu-sejarah h3 { flex: 0 1 30%; }
+
 .kartu-sejarah:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 6px 18px #00000020;
 }
 
 .judul-sejarah {
@@ -63,15 +70,37 @@
     cursor: pointer;
 }
 
+.btn-detail:hover, #btn-kembali:hover { background-color: #642873; }
+.btn-detail:focus-visible, #btn-kembali:focus-visible { outline: 3px solid #d7a9e2; outline-offset: 3px; }
+
 /* Halaman detail */
 #detail-sejarah {
     max-width: 900px;
+    width: min(100% - 32px, 900px);
     margin: 30px auto;
-    padding: 25px;
-    background-color: white;
+    padding: clamp(16px, 4vw, 25px);
+    background-color: var(--surface);
     border-radius: 15px;
     white-space: pre-line;
 
+}
+
+body { margin: 0; background: var(--page-bg); color: var(--text); font-family: "Poppins", sans-serif; line-height: 1.6; }
+h1 { padding: 28px 16px 0; }
+.page-header, .page-footer { padding: 14px clamp(16px, 5vw, 60px); background: var(--page-bg); }
+.page-header { border-bottom: 1px solid var(--line); }
+.page-footer { margin-top: 32px; border-top: 1px solid var(--line); text-align: center; }
+.page-header a, .page-footer a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+
+body.leaving-for-home main { animation: history-slide-right 380ms cubic-bezier(.6,0,.9,.4) both; }
+body.leaving-for-home .page-header { animation: history-nav-up 380ms ease-in both; }
+body.history-enter .page-header { animation: history-nav-down 420ms cubic-bezier(.2,.75,.25,1) both; }
+@keyframes history-slide-right { to { transform: translateX(100%); } }
+@keyframes history-nav-up { to { transform: translateY(-110%); } }
+@keyframes history-nav-down { from { transform: translateY(-110%); } to { transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) {
+  body.leaving-for-home main, body.leaving-for-home .page-header,
+  body.history-enter main, body.history-enter .page-header { animation-duration: 1ms !important; }
 }
 
 #gambar-detail {
@@ -96,6 +125,9 @@
         flex-direction: column; 
         align-items: flex-start; 
     }
+
+    .kumpulan-sejarah { padding-top: 24px; }
+    .kartu-sejarah h3, .kartu-sejarah p { width: 100%; flex: auto; }
 
     .kartu-sejarah img {
         width: 100%; 
