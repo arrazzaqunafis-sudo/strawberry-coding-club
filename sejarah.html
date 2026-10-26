@@ -16,16 +16,22 @@
 
   <body>
     <!-- HEADER NAVIGASI -->
-    <header class="site-header scrolled">
+    <header class="site-header scrolled" id="site-header">
       <nav class="navbar">
         <a class="navbar__logo" href="index.html">budaya<span>ciamis</span></a>
-        <div class="navbar__links">
+        <div class="navbar__links" id="primary-navigation">
           <a href="index.html#home">Beranda</a>
           <a href="index.html#about">Tentang</a>
           <a href="sejarah.html" class="active">Sejarah</a>
           <a href="index.html#peta">Peta Wisata</a>
+          <a href="index.html#galeri">Galeri</a>
         </div>
-        <a href="index.html" class="btn btn-outline-sm">← Kembali ke Beranda</a>
+        <div class="navbar__actions">
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ganti Tema">
+            <i data-feather="moon" aria-hidden="true"></i>
+          </button>
+          <a href="index.html" class="btn btn-outline-sm">← Kembali</a>
+        </div>
       </nav>
     </header>
 
@@ -62,7 +68,17 @@
         </article>
       </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom" style="border:none; padding-top:0;">
+          <p>&copy; 2026 Budaya Ciamis. Seluruh Hak Cipta Dilindungi.</p>
+        </div>
+      </div>
+    </footer>
     
+    <script src="./js/script.js" defer></script>
     <script src="./js/sejarah.js" defer></script>
   </body>
 </html>
