@@ -125,3 +125,30 @@ navigation.addEventListener("click", (event) => {
 if (window.feather) {
   window.feather.replace();
 }
+
+// Hilangkan Loading Screen saat web selesai dimuat
+window.addEventListener("load", function() {
+    const loader = document.getElementById("loading-screen");
+    if(loader) {
+        loader.style.opacity = "0";
+        setTimeout(() => loader.style.display = "none", 500);
+    }
+});
+
+// Logika Scroll Reveal
+window.addEventListener("scroll", function() {
+    const reveals = document.querySelectorAll(".reveal");
+    
+    for (let i = 0; i < reveals.length; i++) {
+        // Hitung posisi elemen
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 100; // Muncul saat 100px dari bawah layar
+        
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        }
+    }
+});
+// Panggil sekali saat pertama kali load agar elemen teratas langsung muncul
+window.dispatchEvent(new Event('scroll'));
