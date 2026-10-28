@@ -82,7 +82,7 @@ Melalui keberadaan Situs Jambansari, masyarakat dapat mengenal lebih jauh sejara
     {
       id: 4,
       judul: "Situs Batu Panjang",
-      gambar: "./jpg/situs-Batu-Panjang.jpg",
+      gambar: "./jpg/situs-batu-panjang.jpg",
       ringkasan:
         "Situs Batu Panjang adalah peninggalan zaman Megalitikum yang berlokasi di perbatasan Ciamis–Majalengka, tepatnya di Tanjakan Puncak Jahim, Desa Cibeureum, Kecamatan Sukamantri, Kabupaten Ciamis.",
       deskripsi: `*mengenal situs batu panjang*
@@ -189,7 +189,7 @@ Situs Samida merupakan salah satu warisan sejarah dan budaya di Kabupaten Ciamis
     {
       id: 7,
       judul: "Situs Geger Emas",
-      gambar: "./jpg/situs-Geger-Emas.jpg",
+      gambar: "./jpg/situs-Geger-emas.jpg",
       ringkasan:
         "Situs Geger Emas adalah cagar budaya yang terletak di Desa Ciomas, Kecamatan Panjalu, Kabupaten Ciamis. Situs ini resmi menyandang status cagar budaya sejak 2022 dan kini tengah diproses menuju Warisan Budaya Takbenda (WBTB) Jawa Barat. Inti dari situs ini adalah makam KH. Panghulu Gusti, seorang penyebar agama Islam di wilayah Panjalu, sekaligus menjadi pusat tradisi adat tahunan masyarakat setempat.",
       deskripsi: `· Lokasi dan Tokoh Utama: Berada di Desa Ciomas, situs ini menyimpan makam KH. Panghulu Gusti (Eyang Panghulu Gusti), yang dihormati sebagai penyebar Islam di Panjalu. Makam ini menjadi pusat ziarah bagi masyarakat.
@@ -247,8 +247,8 @@ Intinya, Situs Gunung Salawe (Galuh Salawe) adalah situs cagar budaya bernilai t
     },
     {
       id: 10,
-      judul: "itus-Gandoang-Wanasigra.jpg",
-      gambar: "./jpg/situs-Gandoang-Wanasigra.jpg",
+      judul: "situs-Gandoang-Wanasigra.jpg",
+      gambar: "./jpg/Situs-Gandoang-Wanasigra.jpg",
       ringkasan:
         "Inti dari situs ini adalah makam Syekh Padamatan (Eyang Syeh Padamatan). Beliau diyakini sebagai utusan khusus dari Sunan Gunung Djati, Cirebon, yang berjasa membuka hutan Wanasigra menjadi permukiman, serta menjadi penyebar Islam pertama di wilayah tersebut . Situs ini telah menjadi cagar budaya resmi dan tradisi tahunannya telah tercatat dalam Warisan Budaya Takbenda (WBTB) ",
       deskripsi: `Situs Gandoang adalah kawasan cagar budaya yang berfungsi sebagai kompleks makam kuno dan situs megalitik di Dusun Cipeucang, Desa Wanasigra, Kecamatan Sindangkasih, Kabupaten Ciamis . Situs ini menjadi bukti jejak penyebaran Islam awal serta harmoni antara peninggalan prasejarah dengan tradisi masyarakat Sunda hingga kini .
