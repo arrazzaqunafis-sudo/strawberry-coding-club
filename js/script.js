@@ -16,7 +16,24 @@ const applyTheme = (theme) => {
     isDark ? "Aktifkan mode terang" : "Aktifkan mode gelap",
   );
   themeToggle.innerHTML = `<i data-feather="${isDark ? "sun" : "moon"}" aria-hidden="true"></i>`;
-  themeColor.setAttribute("content", isDark ? "#17121a" : "#fbf5e9");
+  const applyTheme = (theme) => {
+  const isDark = theme === "dark";
+  document.documentElement.dataset.theme = isDark ? "dark" : "light";
+  
+  // PENGAMAN UNTUK TOMBOL (biar ga error kalau tombol ga ada di halaman)
+  if (themeToggle) {
+    themeToggle.setAttribute(
+      "aria-label",
+      isDark ? "Aktifkan mode terang" : "Aktifkan mode gelap"
+    );
+    themeToggle.innerHTML = `<i data-feather="${isDark ? "sun" : "moon"}"></i>`;
+  }
+  
+  // PENGAMAN UNTUK META COLOR (biar ga error kalau tag meta ga ada)
+  if (themeColor) {
+    themeColor.setAttribute("content", isDark ? "#17121a" : "#ffffff");
+  }
+};
 
   if (window.feather) {
     window.feather.replace();
