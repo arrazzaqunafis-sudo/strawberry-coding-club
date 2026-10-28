@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: 0,
       judul: "Situs Bojong Galuh Karangkamulyan (Ciung Wanara)",
       gambar: "./jpg/ciungwanara.jpg",
-      ringkasan:
+       ringkasan:
         "Cagar budaya peninggalan Kerajaan Galuh yang erat kaitannya dengan legenda Ciung Wanara.",
       deskripsi: `SEJARAH DAN LOKASI
 Situs Bojong Galuh Karangkamulyan merupakan salah satu cagar budaya terpenting di Jawa Barat yang menyimpan jejak peradaban Kerajaan Galuh. Terletak di Jalan Nasional Ciamis-Banjar, Desa Karangkamulyan, Ciamis.
