@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 0,
       judul: "Situs Bojong Galuh Karangkamulyan (Ciung Wanara)",
-      // Sesuaikan path folder gambarnya dengan yang di laptopmu
       gambar: ["./jpg/ciungwanara/ciungwanara.jpg"], 
       ringkasan: "Cagar budaya peninggalan Kerajaan Galuh yang erat kaitannya dengan legenda Ciung Wanara.",
       deskripsi: `SEJARAH DAN LOKASI
@@ -97,8 +96,6 @@ Situs ini berada di sebuah bukit di tepi aliran Sungai Citanduy, sehingga menawa
     {
       id: 11,
       judul: "Kompleks Pendopo Kabupaten Ciamis",
-      // CATATAN: Di screenshot folder sebelumnya, kamu punya folder 'gedung' isinya 'gedung.jpg'. 
-      // Kalau namanya beda, sesuaikan ya.
       gambar: ["./jpg/gedung/gedung.jpg"], 
       ringkasan: "Komplek Pendopo Kabupaten dan Eks Kantor Kewedanaan Ciamis adalah dua bangunan bersejarah yang berdampingan di pusat kota.",
       deskripsi: `LOKASI DAN STATUS
@@ -159,7 +156,7 @@ Berada di Jalan Jenderal Sudirman No. 16, Kelurahan Ciamis. Bangunan ini ditetap
         if (galeri) {
           galeri.innerHTML = ""; 
           
-          // Looping gambar dari data
+          
           data.gambar.forEach((urlFoto, index) => {
             galeri.innerHTML += `
               <div class="galeri-card">

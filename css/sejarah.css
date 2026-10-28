@@ -155,9 +155,6 @@
   white-space: pre-line;
 }
 
-/* ==========================================
-   GAYA GALERI GESER BAWAH (Horizontal Scroll)
-   ========================================== */
 
 .galeri-bawah-wrapper {
     margin-top: 3rem;
@@ -172,18 +169,17 @@
     color: #222;
 }
 
-/* Wadah yang bisa digeser */
 .galeri-scroll-container {
     display: flex;
     overflow-x: auto;
     gap: 15px;
     padding-bottom: 10px;
-    
-    /* Efek magnet saat digeser */
+
+  
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     
-    /* Sembunyikan scrollbar */
+    
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -192,9 +188,9 @@
     display: none;
 }
 
-/* Desain tiap kartu */
+
 .galeri-card {
-    flex: 0 0 220px; /* Lebar fix 220px per kartu */
+    flex: 0 0 220px;
     scroll-snap-align: start;
 }
 
