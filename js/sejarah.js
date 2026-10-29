@@ -169,7 +169,12 @@ document.addEventListener("DOMContentLoaded", () => {
         <article class="kartu-sejarah" data-id="${item.id}" role="button" tabindex="0" aria-label="Lihat detail: ${item.judul}">
           <div class="kartu-sejarah__media">
             <img src="${gambarThumb}" alt="${item.judul}" />
-            <span class="btn-detail" aria-hidden="true">${item.judul}</span>
+            <span class="btn-detail" aria-hidden="true">
+              <span>${item.judul}</span>
+              <svg class="btn-detail__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
           </div>
         </article>
       `;
