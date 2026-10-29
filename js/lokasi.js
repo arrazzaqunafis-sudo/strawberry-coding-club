@@ -1,5 +1,14 @@
 window.lokasiCiamis = [
   {
+    id: "karangkamulyan",
+    situsId: 0,
+    nama: "Situs Bojong Galuh Karangkamulyan",
+    kategori: "Situs sejarah dan arkeologi",
+    jenis: "sejarah",
+    koordinat: [-7.3472428, 108.4922399],
+    sumber: "https://www.openstreetmap.org/way/1260489479",
+  },
+  {
     id: "situ-lengkong",
     nama: "Situ Lengkong Panjalu",
     kategori: "Wisata alam dan sejarah",

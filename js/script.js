@@ -102,6 +102,7 @@ if (mapCanvas && window.L && Array.isArray(window.lokasiCiamis)) {
 
 const galleryContainer = document.querySelector("#galeri-sejarah");
 if (galleryContainer && Array.isArray(window.lokasiCiamis)) {
+  const mapSitesContainer = document.querySelector("#daftar-situs-peta");
   const galeriSejarah = [
     { id: 0, judul: "Situs Bojong Galuh Karangkamulyan", gambar: "./jpg/ciungwanara/ciungwanara.jpg", kategori: "Situs sejarah" },
     { id: 1, judul: "Situs Astana Gede Kawali", gambar: "./jpg/astana-gede-kawali/astana-gede-kawali.jpeg", kategori: "Peninggalan Kerajaan Sunda" },
@@ -116,6 +117,20 @@ if (galleryContainer && Array.isArray(window.lokasiCiamis)) {
     { id: 10, judul: "Situs Gandoang Wanasigra", gambar: "./jpg/situs-Gandoang-Wanasigra/situs-Gandoang-Wanasigra.jpg", kategori: "Situs sejarah" },
     { id: 11, judul: "Pendopo Kabupaten Ciamis", gambar: "./jpg/gedung/gedung.jpg", kategori: "Bangunan bersejarah" },
   ];
+
+  if (mapSitesContainer) {
+    const mappedSiteIds = new Set(
+      window.lokasiCiamis
+        .filter((lokasi) => Number.isInteger(lokasi.situsId))
+        .map((lokasi) => lokasi.situsId),
+    );
+    mapSitesContainer.innerHTML = galeriSejarah.map((item) => `
+      <a class="map-site-link" href="sejarah.html?situs=${item.id}">
+        <span class="map-site-link__name">${item.judul}</span>
+        <span class="map-site-link__status">${mappedSiteIds.has(item.id) ? "Titik terverifikasi di peta" : "Titik belum terverifikasi"}</span>
+      </a>
+    `).join("");
+  }
 
   galleryContainer.innerHTML = galeriSejarah.map((item, index) => `
     <a class="gallery-card${index === 0 ? " gallery-card--featured" : ""}" href="sejarah.html?situs=${item.id}" aria-label="Baca sejarah ${item.judul}">
