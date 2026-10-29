@@ -9,21 +9,32 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Leaflet CSS for Map -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
 
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://unpkg.com/feather-icons" defer></script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      defer
+    ></script>
     <script src="js/lokasi.js" defer></script>
     <script src="js/script.js" defer></script>
   </head>
 
   <body>
     <div id="loading-screen">
-    <div class="spinner"></div>
+      <div class="spinner"></div>
     </div>
     <!-- HEADER / NAVIGASI -->
     <header class="site-header" id="site-header">
@@ -39,10 +50,20 @@
         </div>
 
         <div class="navbar__actions">
-          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ganti Tema">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            type="button"
+            aria-label="Ganti Tema"
+          >
             <i data-feather="moon" aria-hidden="true"></i>
           </button>
-          <button class="navbar__toggle" id="navbar-toggle" type="button" aria-label="Buka navigasi">
+          <button
+            class="navbar__toggle"
+            id="navbar-toggle"
+            type="button"
+            aria-label="Buka navigasi"
+          >
             <i data-feather="menu" aria-hidden="true"></i>
           </button>
         </div>
@@ -63,14 +84,19 @@
             <span class="highlight">Kabupaten Ciamis</span>
           </h1>
           <p>
-            Menjelajahi keasrian alam, jejak peradaban Kerajaan Galuh, dan kehangatan tradisi lokal yang senantiasa terjaga.
+            Menjelajahi keasrian alam, jejak peradaban Kerajaan Galuh, dan
+            kehangatan tradisi lokal yang senantiasa terjaga.
           </p>
           <div class="hero__buttons">
             <a href="sejarah.html" class="btn btn-primary">Jelajahi Sejarah</a>
             <a href="#peta" class="btn btn-outline">Lihat Peta Wisata</a>
           </div>
         </div>
-        <a class="hero__scroll" href="#about" aria-label="Gulir untuk mengenal Tatar Galuh">
+        <a
+          class="hero__scroll"
+          href="#about"
+          aria-label="Gulir untuk mengenal Tatar Galuh"
+        >
           <span></span>
           <small>Jelajahi</small>
         </a>
@@ -81,7 +107,10 @@
         <div class="container">
           <div class="about__grid">
             <div class="about__image-wrapper">
-              <div class="about__image" style="background-image: url('./jpg/air-mancur.jpg');"></div>
+              <div
+                class="about__image"
+                style="background-image: url(&quot;./jpg/air-mancur.jpg&quot;)"
+              ></div>
               <div class="about__badge">
                 <span class="number">1400+</span>
                 <span class="label">Tahun Warisan Galuh</span>
@@ -91,12 +120,18 @@
               <span class="section__subtitle">Identitas & Kebudayaan</span>
               <h2 class="section__title">Mengenal <span>Tatar Galuh</span></h2>
               <p>
-                Kabupaten Ciamis, yang dikenal sebagai Tatar Galuh, menyimpan kekayaan sejarah, seni, tradisi, dan alam yang membentuk identitas masyarakat Sunda.
+                Kabupaten Ciamis, yang dikenal sebagai Tatar Galuh, menyimpan
+                kekayaan sejarah, seni, tradisi, dan alam yang membentuk
+                identitas masyarakat Sunda.
               </p>
               <p>
-                Dari Situs Karangkamulyan hingga Kampung Adat Kuta, setiap peninggalan menyimpan kisah yang diwariskan lintas generasi. Mari mengenal dan menjaga warisan budaya Ciamis bersama.
+                Dari Situs Karangkamulyan hingga Kampung Adat Kuta, setiap
+                peninggalan menyimpan kisah yang diwariskan lintas generasi.
+                Mari mengenal dan menjaga warisan budaya Ciamis bersama.
               </p>
-              <a href="sejarah.html" class="btn-link">Pelajari Selengkapnya →</a>
+              <a href="sejarah.html" class="btn-link"
+                >Pelajari Selengkapnya →</a
+              >
             </div>
           </div>
         </div>
@@ -107,24 +142,31 @@
         <div class="container">
           <div class="section__header">
             <span class="section__subtitle">Eksplorasi Interaktif</span>
-            <h2 class="section__title">Peta Wisata & <span>Situs Ciamis</span></h2>
+            <h2 class="section__title">
+              Peta Wisata & <span>Situs Ciamis</span>
+            </h2>
             <p class="section__intro">
-              Pilih penanda untuk melihat lokasi wisata dan situs bersejarah di Kabupaten Ciamis.
+              Pilih penanda untuk melihat koordinat wisata dan situs sejarah
+              yang sudah terverifikasi.
             </p>
           </div>
           <div class="map__container">
-            <div class="map__canvas" id="map" role="application" aria-label="Peta wisata dan situs bersejarah di Ciamis"></div>
+            <div
+              class="map__canvas"
+              id="map"
+              role="application"
+              aria-label="Peta wisata dan situs bersejarah di Ciamis"
+            ></div>
           </div>
           <div class="map__legend" aria-label="Keterangan penanda peta">
-            <span><i class="map__legend-dot map__legend-dot--wisata"></i> Wisata</span>
-            <span><i class="map__legend-dot map__legend-dot--sejarah"></i> Situs sejarah</span>
-          </div>
-          <div class="map-sites">
-            <h3 class="map-sites__title">12 Situs Sejarah Ciamis</h3>
-            <p class="map-sites__note">
-              Pilih nama situs untuk membaca kisahnya. Penanda hanya ditampilkan jika koordinat lokasi persisnya sudah terverifikasi.
-            </p>
-            <div class="map-sites__grid" id="daftar-situs-peta" aria-label="Daftar 12 situs sejarah"></div>
+            <span
+              ><i class="map__legend-dot map__legend-dot--wisata"></i>
+              Wisata</span
+            >
+            <span
+              ><i class="map__legend-dot map__legend-dot--sejarah"></i> Situs
+              sejarah</span
+            >
           </div>
         </div>
       </section>
@@ -134,12 +176,23 @@
         <div class="container">
           <div class="section__header">
             <span class="section__subtitle">Cerita dalam gambar</span>
-            <h2 class="section__title">Galeri Sejarah <span>Tatar Galuh</span></h2>
-            <p class="section__intro">Jelajahi foto situs dan warisan budaya Ciamis. Pilih foto untuk membaca kisah lengkap setiap tempat.</p>
+            <h2 class="section__title">
+              Galeri Sejarah <span>Tatar Galuh</span>
+            </h2>
+            <p class="section__intro">
+              Jelajahi foto situs dan warisan budaya Ciamis. Pilih foto untuk
+              membaca kisah lengkap setiap tempat.
+            </p>
           </div>
-          <div class="gallery__grid" id="galeri-sejarah" aria-live="polite"></div>
+          <div
+            class="gallery__grid"
+            id="galeri-sejarah"
+            aria-live="polite"
+          ></div>
           <div class="gallery__action">
-            <a href="sejarah.html" class="btn btn-primary">Jelajahi Semua Sejarah</a>
+            <a href="sejarah.html" class="btn btn-primary"
+              >Jelajahi Semua Sejarah</a
+            >
           </div>
         </div>
       </section>
@@ -152,7 +205,8 @@
           <div class="footer-box brand-box">
             <h3 class="footer-logo">budaya<span>ciamis</span></h3>
             <p>
-              Platform digital pelestarian dan pengenalan kekayaan budaya, destinasi bersejarah, serta kearifan lokal Kabupaten Ciamis.
+              Platform digital pelestarian dan pengenalan kekayaan budaya,
+              destinasi bersejarah, serta kearifan lokal Kabupaten Ciamis.
             </p>
           </div>
 

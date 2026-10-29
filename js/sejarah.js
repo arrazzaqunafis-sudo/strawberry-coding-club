@@ -3,8 +3,16 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 0,
       judul: "Situs Bojong Galuh Karangkamulyan",
-      gambar: ["./jpg/ciungwanara/ciungwanara.jpg"], 
-      ringkasan: "Cagar budaya peninggalan Kerajaan Galuh yang erat kaitannya dengan legenda Ciung Wanara.",
+      gambar: [
+        "./jpg/ciungwanara/ciungwanara.jpg",
+        "./jpg/ciungwanara/ciungwanara1.jpg",
+        "./jpg/ciungwanara/ciungwanara2.jpg",
+        "./jpg/ciungwanara/ciungwanara3.jpg",
+        "./jpg/ciungwanara/ciungwanara4.jpg",
+        "./jpg/ciungwanara/ciungwanara5.jpg",
+      ],
+      ringkasan:
+        "Cagar budaya peninggalan Kerajaan Galuh yang erat kaitannya dengan legenda Ciung Wanara.",
       deskripsi: `Situs Bojong Galuh Karangkamulyan merupakan situs peninggalan sejarah yang terletak di Desa Karangkamulyan, Kecamatan Cijeungjing, Kabupaten Ciamis, Jawa Barat. Situs ini dipercaya berkaitan dengan Kerajaan Galuh, salah satu kerajaan Sunda kuno yang memiliki peran penting dalam sejarah masyarakat Tatar Sunda.
             Di kawasan ini terdapat berbagai peninggalan berupa susunan batu kuno, seperti Batu Pangcalikan yang dipercaya sebagai tempat duduk atau singgasana raja, Sanghyang Bedil, Panyandaan, dan Lambang Peribadatan. Fungsi sebagian peninggalan tersebut masih berkaitan dengan cerita dan kepercayaan masyarakat setempat.
             Situs ini juga terkenal dengan legenda Ciung Wanara yang menceritakan kisah Kerajaan Galuh dan perebutan takhta. Salah satu tempat yang dikaitkan dengan cerita tersebut adalah tempat Sabung Ayam. Kisah Ciung Wanara menjadi bagian dari tradisi lisan yang diwariskan secara turun-temurun, meskipun tidak seluruh ceritanya dapat dipastikan sebagai fakta sejarah.
@@ -17,9 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
       gambar: [
         "./jpg/astana-gede-kawali/astana-gede-kawali.jpeg",
         "./jpg/astana-gede-kawali/astana-gede-kawali1.jpeg",
-        "./jpg/astana-gede-kawali/astana-gede-kawali2.jpeg"
+        "./jpg/astana-gede-kawali/astana-gede-kawali2.jpeg",
+        "./jpg/astana-gede-kawali/astana-gede-kawali3.jpeg",
+        "./jpg/astana-gede-kawali/astana-gede-kawali4.jpeg",
+        "./jpg/astana-gede-kawali/astana-gede-kawali5.jpeg",
       ],
-      ringkasan: "Pusat pemerintahan Kerajaan Galuh kuno tempat ditemukannya Prasasti Kawali I-VI.",
+      ringkasan:
+        "Pusat pemerintahan Kerajaan Galuh kuno tempat ditemukannya Prasasti Kawali I-VI.",
       deskripsi: `Situs Astana Gede Kawali merupakan kawasan peninggalan sejarah dan budaya yang terletak di Desa Kawali, Kecamatan Kawali, Kabupaten Ciamis, Jawa Barat. Situs ini dikenal sebagai salah satu kawasan penting yang berkaitan dengan sejarah Kerajaan Sunda pada abad ke-14 Masehi.
             Kawali pernah menjadi pusat pemerintahan pada masa Kerajaan Sunda, terutama pada masa pemerintahan Rahyang Niskala Wastu Kancana. Keberadaan peninggalan sejarah di kawasan ini menjadi bukti penting untuk mempelajari perkembangan pemerintahan dan kebudayaan masyarakat Sunda pada masa lampau.
             Di kawasan Astana Gede Kawali terdapat enam prasasti yang dikenal sebagai Prasasti Kawali I hingga VI. Prasasti tersebut menggunakan tulisan Sunda Kuno dan memuat informasi mengenai kehidupan pada masa kerajaan. Selain itu, terdapat batu-batu kuno, peninggalan tradisi megalitik, serta kompleks makam tokoh yang berkaitan dengan sejarah Kawali.
@@ -29,8 +41,16 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 2,
       judul: "Situs Jambansari",
-      gambar: ["./jpg/situs-jambansari/situs-jambansari.jpg"],
-      ringkasan: "Kompleks cagar budaya dan pemakaman Kanjeng Prebu R.A.A. Kusumadiningrat.",
+      gambar: [
+        "./jpg/situs-jambansari/situs-jambansari.jpg",
+        "./jpg/situs-jambansari/situs-jambansari1.jpg",
+        "./jpg/situs-jambansari/situs-jambansari2.jpg",
+        "./jpg/situs-jambansari/situs-jambansari3.jpg",
+        "./jpg/situs-jambansari/situs-jambansari4.jpg",
+        "./jpg/situs-jambansari/situs-jambansari5.jpg",
+      ],
+      ringkasan:
+        "Kompleks cagar budaya dan pemakaman Kanjeng Prebu R.A.A. Kusumadiningrat.",
       deskripsi: `Situs Jambansari merupakan situs bersejarah yang terletak di Jalan Achmad Dahlan, Kelurahan Linggasari, Kecamatan Ciamis, Kabupaten Ciamis, Jawa Barat. Situs ini berupa kompleks makam yang berkaitan erat dengan sejarah pemerintahan Galuh dan perkembangan Kabupaten Ciamis. 
             Situs Jambansari memiliki hubungan erat dengan Raden Adipati Aria Kusumadiningrat, yang dikenal dengan gelar Kangjeng Prebu. Beliau merupakan Bupati Galuh yang memerintah pada tahun 1839–1886 dan berperan dalam perkembangan pendidikan, pertanian, pembangunan, serta kehidupan masyarakat. Kompleks makam ini dibangun pada tahun 1872 sebagai tempat pemakaman beliau dan sejumlah anggota keluarganya.
             Di kawasan ini terdapat bangunan cungkup berbentuk limas yang menaungi makam Kangjeng Prebu. Selain itu, ditemukan berbagai peninggalan sejarah, seperti arca Ganesha, arca Nandi, lingga, yoni, dan lumpang batu. Peninggalan tersebut menunjukkan adanya nilai sejarah dan arkeologi yang penting bagi perkembangan kebudayaan di Ciamis.
@@ -40,8 +60,16 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 3,
       judul: "Situs Gunung Susuru",
-      gambar: ["./jpg/situs-Gunung-Susuru/situs-Gunung-Susuru.jpg"],
-      ringkasan: "Kompleks punden berundak 17 tingkatan masa Klasik Hindu petilasan Galuh Kertabumi.",
+      gambar: [
+        "./jpg/situs-Gunung-Susuru/situs-Gunung-Susuru.jpg",
+        "./jpg/situs-Gunung-Susuru/situs-Gunung-Susuru1.jpg",
+        "./jpg/situs-Gunung-Susuru/situs-Gunung-Susuru2.jpg",
+        "./jpg/situs-Gunung-Susuru/situs-Gunung-Susuru3.jpg",
+        "./jpg/situs-Gunung-Susuru/situs-Gunung-Susuru4.jpg",
+        "./jpg/situs-Gunung-Susuru/situs-Gunung-Susuru5.jpg",
+      ],
+      ringkasan:
+        "Kompleks punden berundak 17 tingkatan masa Klasik Hindu petilasan Galuh Kertabumi.",
       deskripsi: `Situs Gunung Susuru merupakan kawasan peninggalan sejarah dan arkeologi yang terletak di Dusun Bundar, Desa Kertabumi, Kecamatan Cijeungjing, Kabupaten Ciamis, Jawa Barat. Situs ini dikenal juga sebagai Situs Pasir Susuru dan memiliki nilai sejarah serta budaya bagi masyarakat setempat.
             Situs Gunung Susuru berkaitan dengan sejarah Kerajaan Galuh Kertabumi. Menurut cerita masyarakat, kawasan ini dihubungkan dengan Dewi Tanduran Ageung, putri Raja Galuh Salawe bernama Sanghyang Cipta. Nama Gunung Susuru dipercaya berasal dari tanaman susuru yang konon tumbuh di kawasan tersebut dan digunakan sebagai pagar alami. Namun, cerita tersebut merupakan tradisi lisan yang masih perlu dibedakan dari fakta sejarah.
             Di kawasan ini terdapat berbagai peninggalan, seperti bangunan berundak atau punden, gua-gua pada tebing, dan sumur batu. Selain itu, ditemukan pula benda-benda arkeologi berupa tembikar, keramik, manik-manik, dan batu pipisan. Peninggalan tersebut menjadi sumber informasi untuk mempelajari kehidupan masyarakat pada masa lampau.
@@ -51,8 +79,16 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 4,
       judul: "Situs Batu Panjang",
-      gambar: ["./jpg/situs-Batu-Panjang/situs-Batu-Panjang.jpg"],
-      ringkasan: "Situs Batu Panjang adalah peninggalan zaman Megalitikum yang berlokasi di perbatasan Ciamis–Majalengka.",
+      gambar: [
+        "./jpg/situs-Batu-Panjang/situs-Batu-Panjang.jpg",
+        "./jpg/situs-Batu-Panjang/situs-Batu-Panjang1.jpg",
+        "./jpg/situs-Batu-Panjang/situs-Batu-Panjang2.jpg",
+        "./jpg/situs-Batu-Panjang/situs-Batu-Panjang3.jpg",
+        "./jpg/situs-Batu-Panjang/situs-Batu-Panjang4.jpg",
+        "./jpg/situs-Batu-Panjang/situs-Batu-Panjang5.jpg",
+      ],
+      ringkasan:
+        "Situs Batu Panjang adalah peninggalan zaman Megalitikum yang berlokasi di perbatasan Ciamis–Majalengka.",
       deskripsi: `Situs Batu Panjang Jahim merupakan situs peninggalan budaya yang terletak di Dusun Cimara, Desa Cibeureum, Kecamatan Sukamantri, Kabupaten Ciamis, Jawa Barat. Situs ini berada di kawasan hutan pinus Gunung Madati dan dikenal karena kumpulan batu besar dengan bentuk serta susunan yang beragam.
             Situs Batu Panjang telah lama dikenal oleh masyarakat sekitar sebagai kawasan yang memiliki nilai sejarah dan dianggap sakral. Keberadaan batu-batu tersebut diduga berkaitan dengan tradisi megalitik, yaitu kebudayaan masa lampau yang menggunakan batu berukuran besar untuk keperluan tertentu. Namun, usia dan fungsi asli batu-batu tersebut belum diketahui secara pasti.
             Di kawasan situs ini terdapat batu andesit yang berbentuk memanjang, lonjong, dan pipih. Beberapa di antaranya dikenal sebagai Batu Kendang karena susunannya menyerupai alat musik kendang dan Batu Tapak Maung yang memiliki cekungan kecil menyerupai jejak kaki harimau. Bentuk dan susunan batu tersebut menjadi daya tarik untuk mempelajari peninggalan kebudayaan masa lampau.
@@ -62,8 +98,15 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 5,
       judul: "Kampung Adat Kuta",
-      gambar: ["./jpg/kampung-adat-kuta/kampung-adat-kuta.jpg"],
-      ringkasan: "Kampung tradisional unik yang memegang teguh adat leluhur serta konservasi hutan keramat.",
+      gambar: [
+        "./jpg/situs-kampung-adat-kuta/situs-kampung-adat-kuta.jpg",
+        "./jpg/situs-kampung-adat-kuta/situs-kampung-adat-kuta1.jpg",
+        "./jpg/situs-kampung-adat-kuta/situs-kampung-adat-kuta2.jpg",
+        "./jpg/situs-kampung-adat-kuta/situs-kampung-adat-kuta3.jpg",
+        "./jpg/situs-kampung-adat-kuta/situs-kampung-adat-kuta4.jpg",
+      ],
+      ringkasan:
+        "Kampung tradisional unik yang memegang teguh adat leluhur serta konservasi hutan keramat.",
       deskripsi: `Kampung Adat Kuta merupakan perkampungan tradisional yang terletak di Desa Karangpaningal, Kecamatan Tambaksari, Kabupaten Ciamis, Jawa Barat. Kampung ini dikenal karena masyarakatnya masih mempertahankan adat istiadat Sunda, tradisi leluhur, serta menjaga kelestarian lingkungan.
             Menurut cerita masyarakat setempat, kawasan ini dahulu direncanakan menjadi pusat pemerintahan Kerajaan Galuh, tetapi rencana tersebut tidak terlaksana. Cerita ini diwariskan secara turun-temurun dan menjadi bagian dari sejarah lisan Kampung Adat Kuta.
             Salah satu keunikan kampung ini adalah aturan adat yang disebut pamali, yaitu larangan yang diwariskan oleh leluhur untuk menjaga kehidupan masyarakat dan kelestarian alam. Aturan tersebut juga diterapkan di Leuweung Gede, yaitu hutan keramat yang dilindungi oleh masyarakat. Berkat upaya pelestarian lingkungan, Kampung Adat Kuta menerima penghargaan Kalpataru pada tahun 2002.
@@ -74,8 +117,16 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 6,
       judul: "Situs Samida",
-      gambar: ["./jpg/situs-samida/situs-samida.jpg"],
-      ringkasan: "Samida merupakan situs bersejarah yang terletak di Desa Sirnajaya, Kecamatan Rajadesa.",
+      gambar: [
+        "./jpg/situs-samida/situs-samida.jpg",
+        "./jpg/situs-samida/situs-samida1.jpg",
+        "./jpg/situs-samida/situs-samida2.jpg",
+        "./jpg/situs-samida/situs-samida3.jpg",
+        "./jpg/situs-samida/situs-samida4.jpg",
+        "./jpg/situs-samida/situs-samida5.jpg",
+      ],
+      ringkasan:
+        "Samida merupakan situs bersejarah yang terletak di Desa Sirnajaya, Kecamatan Rajadesa.",
       deskripsi: `Situs Samida merupakan situs bersejarah yang terletak di Desa Sirnajaya, Kecamatan Rajadesa, Kabupaten Ciamis, Jawa Barat. Situs ini memiliki nilai sejarah dan budaya serta dikembangkan sebagai tempat wisata religi dan edukasi.
            Menurut cerita masyarakat setempat, nama Samida berkaitan dengan nama sebuah pohon. Situs ini juga memiliki kisah tentang Prabu Sirnaraja atau Prabu Guru Gantangan yang dipercaya sebagai putra Prabu Siliwangi. Namun, kisah tersebut merupakan cerita turun-temurun yang belum seluruhnya dapat dipastikan secara historis.
            Di kawasan Situs Samida terdapat peninggalan berupa susunan batu melingkar yang dikenal sebagai Teras Batu Samida dan Pagempungan, serta batu tegak yang disebut menhir. Selain itu, terdapat laporan mengenai temuan pecahan keramik dan kerak besi yang dapat menjadi petunjuk untuk mempelajari aktivitas manusia pada masa lampau.
@@ -85,8 +136,16 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 7,
       judul: "Situs Geger Emas",
-      gambar: ["./jpg/situs-Geger-Emas/situs-Geger-Emas.jpg"],
-      ringkasan: "Situs Geger Emas adalah cagar budaya yang terletak di Desa Ciomas, Kecamatan Panjalu.",
+      gambar: [
+        "./jpg/situs-Geger-Emas/situs-Geger-Emas.jpg",
+        "./jpg/situs-Geger-Emas/situs-Geger-Emas1.jpg",
+        "./jpg/situs-Geger-Emas/situs-Geger-Emas2.jpg",
+        "./jpg/situs-Geger-Emas/situs-Geger-Emas3.jpg",
+        "./jpg/situs-Geger-Emas/situs-Geger-Emas4.jpg",
+        "./jpg/situs-Geger-Emas/situs-Geger-Emas5.jpg",
+      ],
+      ringkasan:
+        "Situs Geger Emas adalah cagar budaya yang terletak di Desa Ciomas, Kecamatan Panjalu.",
       deskripsi: `Hutan Geger Omas merupakan kawasan hutan yang berada di Desa Ciomas, Kecamatan Panjalu, Kabupaten Ciamis, Jawa Barat, tepatnya di kaki Gunung Sawal. Kawasan ini dikenal sebagai tempat wisata religi dan memiliki nilai sejarah serta budaya bagi masyarakat setempat. Di dalam hutan terdapat makam tokoh yang dikenal dengan nama Kiai Haji Panghulu Gusti serta sumber mata air yang dihormati oleh masyarakat.
             Menurut cerita yang diwariskan secara turun-temurun, Kiai Haji Panghulu Gusti merupakan tokoh yang berjasa dalam penyebaran agama Islam di Desa Ciomas dan sekitarnya. Makamnya berada di tengah kawasan hutan yang dianggap keramat oleh masyarakat. Karena memiliki hubungan dengan sejarah penyebaran Islam setempat, kawasan ini sering dikunjungi untuk berziarah dan berdoa.
             Di dalam hutan juga terdapat mata air yang dikenal sebagai Geger Omas. Menurut legenda masyarakat, mata air tersebut berkaitan dengan kisah Kiai Haji Panghulu Gusti yang membawa air dari Tanah Suci. Cerita ini menjadi bagian dari kepercayaan masyarakat setempat dan diwariskan sebagai tradisi lisan.
@@ -98,8 +157,16 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 8,
       judul: "Situs Piktograf Citapen",
-      gambar: ["./jpg/situs-Piktograf-Citapen/situs-Piktograf-Citapen.jpg"],
-      ringkasan: "Situs Citapen adalah peninggalan seni cadas prasejarah yang terletak di Dusun Citapen, Desa Sukajaya.",
+      gambar: [
+        "./jpg/situs-Piktograf-Citapen/situs-Piktograf-Citapen.jpg",
+        "./jpg/situs-Piktograf-Citapen/situs-Piktograf-Citapen1.jpg",
+        "./jpg/situs-Piktograf-Citapen/situs-Piktograf-Citapen2.jpg",
+        "./jpg/situs-Piktograf-Citapen/situs-Piktograf-Citapen3.jpg",
+        "./jpg/situs-Piktograf-Citapen/situs-Piktograf-Citapen4.jpg",
+        "./jpg/situs-Piktograf-Citapen/situs-Piktograf-Citapen5.jpg",
+      ],
+      ringkasan:
+        "Situs Citapen adalah peninggalan seni cadas prasejarah yang terletak di Dusun Citapen, Desa Sukajaya.",
       deskripsi: `Situs Batu Tulis Citapen merupakan peninggalan prasejarah yang terletak di Dusun Citapen, Desa Sukajaya, Kecamatan Rajadesa, Kabupaten Ciamis, Jawa Barat. Situs ini berada di tebing berbatu di kawasan Gunung Rahong, tidak jauh dari aliran Sungai Cijolang. Lokasinya cukup tersembunyi dan sulit dijangkau karena jalur menuju situs berupa jalan setapak yang terjal dan licin.
             Situs Batu Tulis Citapen pertama kali tercatat pada tahun 1856 oleh Frans Carel Wilsen, seorang ahli litografi pada masa Hindia Belanda. Situs ini kemudian menjadi salah satu objek penelitian arkeologi karena memiliki goresan batu yang diduga berasal dari masa prasejarah. Pada tahun 2023, situs ini ditetapkan sebagai cagar budaya tingkat Kabupaten Ciamis sebagai bentuk perlindungan terhadap peninggalan sejarah tersebut.
             Keunikan Situs Batu Tulis Citapen terletak pada goresan-goresan yang terdapat di permukaan batu. Motifnya beragam, mulai dari bentuk yang menyerupai manusia, kadal, monyet, telapak tangan, hingga bentuk yang menyerupai dedaunan dan gajah. Goresan tersebut dikenal sebagai *petroglif*, yaitu seni cadas yang dibuat dengan cara mengukir atau menggores permukaan batu.
@@ -110,8 +177,15 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 9,
       judul: "Situs Galuh Salawe",
-      gambar: ["./jpg/situs-Galuh-Salawe/situs-Galuh-Salawe.jpg"],
-      ringkasan: "Situs ini terletak di Dusun Tunggal Rahayu, Desa Cimaragas, Kecamatan Cimaragas.",
+      gambar: [
+        "./jpg/situs-Galuh-Salawe/situs-Galuh-Salawe.jpg",
+        "./jpg/situs-Galuh-Salawe/situs-Galuh-Salawe1.jpg",
+        "./jpg/situs-Galuh-Salawe/situs-Galuh-Salawe2.jpg",
+        "./jpg/situs-Galuh-Salawe/situs-Galuh-Salawe3.jpg",
+        "./jpg/situs-Galuh-Salawe/situs-Galuh-Salawe4.jpg",
+      ],
+      ringkasan:
+        "Situs ini terletak di Dusun Tunggal Rahayu, Desa Cimaragas, Kecamatan Cimaragas.",
       deskripsi: `Situs Kerajaan Galuh Salawe atau Situs Sanghyang Maharaja Cipta Permana Prabudigaluh Salawe merupakan situs bersejarah yang terletak di Dusun Tunggal Rahayu, Desa Cimaragas, Kecamatan Cimaragas, Kabupaten Ciamis, Jawa Barat. Situs ini berkaitan dengan sejarah Kerajaan Galuh Pangauban atau Gara Tengah yang berkembang pada masa peralihan menuju penyebaran Islam di wilayah Galuh.
             Menurut sumber sejarah lokal, kawasan ini berkaitan dengan pemerintahan Sanghyang Maharaja Cipta Permana Prabudigaluh Salawe yang diperkirakan memerintah pada tahun 1595–1618 M. Ia dikenal sebagai salah satu penguasa Galuh yang memeluk agama Islam. Keberadaan situs ini menjadi bagian penting dalam mengenal perkembangan sejarah dan kebudayaan masyarakat Galuh pada masa tersebut.
             Di kawasan Situs Salawe terdapat berbagai peninggalan yang dipercaya berkaitan dengan kehidupan kerajaan pada masa lalu. Beberapa di antaranya adalah Batu Entog atau Trimurti, Batu Pangcalikan yang dikaitkan dengan tempat duduk raja, menhir, serta sejumlah batu patilasan yang dihubungkan dengan tokoh-tokoh sejarah. Peninggalan tersebut memperlihatkan adanya unsur budaya dari masa Hindu-Buddha dan masa Islam. Namun, hubungan setiap batu dengan tokoh atau peristiwa tertentu sebagian bersumber dari tradisi masyarakat setempat.
@@ -122,21 +196,32 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 10,
       judul: "Situs Gandoang Wanasigra",
-      gambar: ["./jpg/situs-Gandoang-Wanasigra/situs-Gandoang-Wanasigra.jpg"],
-      ringkasan: "Inti dari situs ini adalah makam Syekh Padamatan (Eyang Syeh Padamatan).",
+      gambar: [
+        "./jpg/situs-Gandoang-Wanasigra/situs-Gandoang-Wanasigra.jpg",
+        "./jpg/situs-Gandoang-Wanasigra/situs-Gandoang-Wanasigra1.jpg",
+        "./jpg/situs-Gandoang-Wanasigra/situs-Gandoang-Wanasigra2.jpg",
+        "./jpg/situs-Gandoang-Wanasigra/situs-Gandoang-Wanasigra3.jpg",
+      ],
+      ringkasan:
+        "Inti dari situs ini adalah makam Syekh Padamatan (Eyang Syeh Padamatan).",
       deskripsi: `SEJARAH DAN LOKASI<br>Situs Gandoang adalah kawasan cagar budaya yang berfungsi sebagai kompleks makam kuno dan situs megalitik di Dusun Cipeucang, Desa Wanasigra.`,
     },
     {
       id: 11,
       judul: "Kompleks Pendopo Kabupaten Ciamis",
-      gambar: ["./jpg/gedung/gedung.jpg"], // Sesuaikan dengan nama folder gedungmu
-      ringkasan: "Komplek Pendopo Kabupaten dan Eks Kantor Kewedanaan Ciamis adalah dua bangunan bersejarah yang berdampingan.",
+      gambar: [
+        "./jpg/gedung/gedung.jpg",
+        "./jpg/gedung/gedung1.jpg",
+        "./jpg/gedung/gedung2.jpg",
+      ],
+      ringkasan:
+        "Komplek Pendopo Kabupaten dan Eks Kantor Kewedanaan Ciamis adalah dua bangunan bersejarah yang berdampingan.",
       deskripsi: `Pendopo Bupati Ciamis merupakan salah satu bangunan bersejarah yang terletak di Jalan Jenderal Sudirman No. 16, Kabupaten Ciamis, Jawa Barat. Bangunan ini dikenal memiliki gaya arsitektur kolonial Belanda dan masih berdiri kokoh hingga sekarang. Selain menjadi salah satu ikon kota Ciamis, bangunan ini juga menyimpan cerita tentang perkembangan pemerintahan pada masa lalu.
             Menurut catatan sejarah, bangunan tersebut didirikan pada masa pemerintahan Bupati Galuh Raden Adipati Aria Kusumadiningrat atau Kanjeng Prebu, yang memerintah pada tahun 1839–1886. Pada awalnya, bangunan ini digunakan sebagai kantor dan tempat kediaman Asisten Residen Galuh pada masa kolonial Belanda. Sementara itu, pendopo Bupati Galuh pada masa tersebut berada di sebelah selatan Alun-alun Ciamis, yang sekarang digunakan sebagai Gedung DPRD Ciamis.
             Dari segi arsitektur, Pendopo Bupati Ciamis memiliki ciri khas bangunan Eropa atau kolonial Belanda. Hal ini terlihat dari pilar-pilar besar dan tinggi yang berjajar di bagian depan, serta pintu dan jendela berukuran besar. Bangunannya didominasi warna putih sehingga memberikan kesan megah dan klasik. Bentuk bangunan tersebut menjadi salah satu bukti pengaruh arsitektur kolonial yang berkembang di wilayah Ciamis pada masa lalu.
             Letak pendopo juga berkaitan dengan tata ruang pusat pemerintahan zaman dahulu. Kawasannya berdekatan dengan Alun-alun Ciamis, Masjid Agung Ciamis, dan Kantor Pos. Keberadaan bangunan-bangunan tersebut menunjukkan bagaimana pusat pemerintahan, kegiatan masyarakat, dan fasilitas umum berada dalam satu kawasan.
             Seiring berjalannya waktu, bangunan yang dikenal sebagai Gedung Negara ini digunakan sebagai Pendopo Bupati Ciamis. Pada tahun 2024, Pendopo Kabupaten Ciamis ditetapkan sebagai cagar budaya tingkat kabupaten melalui keputusan pemerintah daerah. Penetapan tersebut menjadi bagian dari upaya melindungi bangunan bersejarah yang memiliki nilai penting bagi sejarah dan perkembangan budaya masyarakat Ciamis.`,
-    }
+    },
   ];
 
   const gridContainer = document.getElementById("grid-sejarah");
@@ -151,23 +236,30 @@ document.addEventListener("DOMContentLoaded", () => {
   const mapLocationNote = document.getElementById("map-location-note");
   let detailMap = null;
   const detailMarkers = new Map();
-  const cardObserver = "IntersectionObserver" in window
-    ? new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15 })
-    : null;
+  const cardObserver =
+    "IntersectionObserver" in window
+      ? new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15 },
+        )
+      : null;
 
   function renderCards(items) {
     if (!gridContainer) return;
     gridContainer.innerHTML = "";
-    
+
     items.forEach((item) => {
-      const gambarThumb = (item.gambar && item.gambar.length > 0) ? item.gambar[0] : "./jpg/default.jpg";
+      const gambarThumb =
+        item.gambar && item.gambar.length > 0
+          ? item.gambar[0]
+          : "./jpg/default.jpg";
       gridContainer.innerHTML += `
         <article class="kartu-sejarah" data-id="${item.id}" role="button" tabindex="0" aria-label="Lihat detail: ${item.judul}">
           <div class="kartu-sejarah__media">
@@ -184,7 +276,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const cards = gridContainer.querySelectorAll(".kartu-sejarah");
-    if (!cardObserver || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (
+      !cardObserver ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
       cards.forEach((card) => card.classList.add("is-visible"));
       return;
     }
@@ -198,7 +293,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (inputCari) {
     inputCari.addEventListener("input", (e) => {
       const query = e.target.value.toLowerCase();
-      const filtered = dataSejarah.filter((s) => s.judul.toLowerCase().includes(query));
+      const filtered = dataSejarah.filter((s) =>
+        s.judul.toLowerCase().includes(query),
+      );
       renderCards(filtered);
     });
   }
@@ -219,10 +316,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (petaContainer && window.L && Array.isArray(window.lokasiCiamis)) {
       if (!detailMap) {
         detailMap = window.L.map(petaContainer).setView([-7.29, 108.36], 10);
-        window.L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-          maxZoom: 19,
-        }).addTo(detailMap);
+        window.L.tileLayer(
+          "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+          {
+            attribution:
+              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 19,
+          },
+        ).addTo(detailMap);
 
         window.lokasiCiamis.forEach((lokasi) => {
           const isSelectedSite = lokasi.situsId === data.id;
@@ -233,28 +334,32 @@ document.addEventListener("DOMContentLoaded", () => {
             iconAnchor: [14, 34],
             popupAnchor: [0, -32],
           });
-          const marker = window.L.marker(lokasi.koordinat, { icon: markerIcon }).addTo(detailMap);
+          const marker = window.L.marker(lokasi.koordinat, {
+            icon: markerIcon,
+          }).addTo(detailMap);
+          const [latitude, longitude] = lokasi.koordinat;
+          const storyLink = Number.isInteger(lokasi.situsId)
+            ? `<a href="sejarah.html?situs=${lokasi.situsId}">Baca kisah situs</a><br>`
+            : "";
           marker.bindPopup(
             `<strong>${lokasi.nama}</strong><br>${lokasi.kategori}<br>` +
-            `<a href="${lokasi.sumber}" target="_blank" rel="noopener noreferrer">Sumber koordinat OpenStreetMap</a>`,
+              `Koordinat terverifikasi: ${latitude.toFixed(6)}, ${longitude.toFixed(6)}<br>` +
+              storyLink +
+              `<a href="${lokasi.sumber}" target="_blank" rel="noopener noreferrer">Sumber koordinat OpenStreetMap</a>`,
           );
-          marker.on("click", () => {
-            if (Number.isInteger(lokasi.situsId) && lokasi.situsId !== data.id) {
-              window.location.href = `sejarah.html?situs=${lokasi.situsId}`;
-            } else if (!Number.isInteger(lokasi.situsId)) {
-              window.location.href = lokasi.sumber;
-            }
-          });
-          if (Number.isInteger(lokasi.situsId)) detailMarkers.set(lokasi.situsId, marker);
+          if (Number.isInteger(lokasi.situsId))
+            detailMarkers.set(lokasi.situsId, marker);
         });
       }
 
-      const lokasiSitus = window.lokasiCiamis.find((lokasi) => lokasi.situsId === data.id);
+      const lokasiSitus = window.lokasiCiamis.find(
+        (lokasi) => lokasi.situsId === data.id,
+      );
       if (mapLocationNote) {
         mapLocationNote.hidden = Boolean(lokasiSitus);
         mapLocationNote.textContent = lokasiSitus
           ? ""
-          : `Titik persis ${data.judul} belum tersedia dari sumber peta yang dapat diverifikasi. Peta hanya menampilkan lokasi lain dengan koordinat terverifikasi.`;
+          : `Koordinat persis ${data.judul} belum tersedia pada peta.`;
       }
       if (lokasiSitus) {
         detailMarkers.forEach((marker, situsId) => {
@@ -262,14 +367,18 @@ document.addEventListener("DOMContentLoaded", () => {
           if (pin) pin.classList.toggle("map-pin--active", situsId === data.id);
         });
         detailMap.fitBounds(
-          window.L.latLngBounds(window.lokasiCiamis.map((lokasi) => lokasi.koordinat)),
+          window.L.latLngBounds(
+            window.lokasiCiamis.map((lokasi) => lokasi.koordinat),
+          ),
           { padding: [24, 24] },
         );
         const markerSitus = detailMarkers.get(data.id);
         if (markerSitus) markerSitus.openPopup();
       } else {
         detailMap.fitBounds(
-          window.L.latLngBounds(window.lokasiCiamis.map((lokasi) => lokasi.koordinat)),
+          window.L.latLngBounds(
+            window.lokasiCiamis.map((lokasi) => lokasi.koordinat),
+          ),
           { padding: [24, 24] },
         );
       }
@@ -290,7 +399,8 @@ document.addEventListener("DOMContentLoaded", () => {
           `;
         });
       } else {
-        galeriContainer.innerHTML = "<p>Belum ada foto dokumentasi untuk situs ini.</p>";
+        galeriContainer.innerHTML =
+          "<p>Belum ada foto dokumentasi untuk situs ini.</p>";
       }
     }
 
@@ -311,9 +421,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  const requestedSiteId = new URLSearchParams(window.location.search).get("situs");
+  const requestedSiteId = new URLSearchParams(window.location.search).get(
+    "situs",
+  );
   if (requestedSiteId !== null) {
-    const requestedSite = dataSejarah.find((item) => String(item.id) === requestedSiteId);
+    const requestedSite = dataSejarah.find(
+      (item) => String(item.id) === requestedSiteId,
+    );
     if (requestedSite) showDetail(requestedSite);
   }
 
