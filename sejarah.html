@@ -9,9 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/sejarah.css" />
     <script src="https://unpkg.com/feather-icons" defer></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="./js/lokasi.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/sejarah.js" defer></script>
   </head>
 
   <body>
@@ -67,16 +72,18 @@
 
         <article class="detail-card">
           <h1 id="judul-detail" class="detail-title"></h1>
-          <div class="detail-image-box">
-            <div id="peta-lokasi" style="width: 100%; height: 350px; margin-bottom: 2rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); background-color: #f0f0f0;"></div>
+          <div id="peta-lokasi" class="detail-map" role="application" aria-label="Peta semua wisata dan situs sejarah Ciamis"></div>
+          <p id="map-location-note" class="map-location-note" hidden></p>
+          <div class="map__legend" aria-label="Keterangan penanda peta">
+            <span><i class="map__legend-dot map__legend-dot--wisata"></i> Wisata</span>
+            <span><i class="map__legend-dot map__legend-dot--sejarah"></i> Situs sejarah</span>
           </div>
           <div id="isi-detail" class="detail-content"></div>
           
 <div class="galeri-bawah-wrapper">
-    <h3 class="galeri-bawah-title">Galeri Foto</h3>
+    <h3 class="galeri-bawah-title" id="galeri-bawah-title">Galeri Foto</h3>
     <div class="galeri-scroll-container" id="galeri-foto-container">
     </div>
-</div>
 </div>
         </article>
       </section>
@@ -91,7 +98,5 @@
       </div>
     </footer>
     
-    <script src="./js/script.js" defer></script>
-    <script src="./js/sejarah.js" defer></script>
   </body>
 </html>

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://unpkg.com/feather-icons" defer></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="js/lokasi.js" defer></script>
     <script src="js/script.js" defer></script>
   </head>
 
@@ -69,6 +70,10 @@
             <a href="#peta" class="btn btn-outline">Lihat Peta Wisata</a>
           </div>
         </div>
+        <a class="hero__scroll" href="#about" aria-label="Gulir untuk mengenal Tatar Galuh">
+          <span></span>
+          <small>Jelajahi</small>
+        </a>
       </section>
 
       <!-- TENTANG SECTION -->
@@ -84,12 +89,12 @@
             </div>
             <div class="about__content">
               <span class="section__subtitle">Identitas & Kebudayaan</span>
-              <h2 class="section__title">Warisan Budaya Yang <span>Sangat Berharga</span></h2>
+              <h2 class="section__title">Mengenal <span>Tatar Galuh</span></h2>
               <p>
-                Ciamis memiliki kekayaan tradisi, seni, dan situs bersejarah yang menjadi bagian penting dari jati diri masyarakat Sunda Tatar Galuh.
+                Kabupaten Ciamis, yang dikenal sebagai Tatar Galuh, menyimpan kekayaan sejarah, seni, tradisi, dan alam yang membentuk identitas masyarakat Sunda.
               </p>
               <p>
-                Dari keasrian Hutan Keramat Karangkamulyan hingga kearifan lokal Kampung Adat Kuta, mari mengenal lebih dekat kisah leluhur yang terus dirawat dari generasi ke generasi.
+                Dari Situs Karangkamulyan hingga Kampung Adat Kuta, setiap peninggalan menyimpan kisah yang diwariskan lintas generasi. Mari mengenal dan menjaga warisan budaya Ciamis bersama.
               </p>
               <a href="sejarah.html" class="btn-link">Pelajari Selengkapnya →</a>
             </div>
@@ -102,14 +107,17 @@
         <div class="container">
           <div class="section__header">
             <span class="section__subtitle">Eksplorasi Interaktif</span>
-            <h2 class="section__title">Peta <span> Ciamis</span></h2>
+            <h2 class="section__title">Peta Wisata & <span>Situs Ciamis</span></h2>
             <p class="section__intro">
-              Klik pada penanda peta di bawah ini untuk melihat detail lokasi bersejarah di Kabupaten Ciamis.
+              Pilih penanda untuk melihat lokasi wisata dan situs bersejarah di Kabupaten Ciamis.
             </p>
           </div>
           <div class="map__container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126631.21409305424!2d108.25267333257808!3d-7.328557991070212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f5e82ef269cdf%3A0x401e8f1fc28e1b0!2sCiamis%2C%20Kec.%20Ciamis%2C%20Kabupaten%20Ciamis%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1793185178443!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-            <div class="map__canvas" id="map"></div>
+            <div class="map__canvas" id="map" role="application" aria-label="Peta wisata dan situs bersejarah di Ciamis"></div>
+          </div>
+          <div class="map__legend" aria-label="Keterangan penanda peta">
+            <span><i class="map__legend-dot map__legend-dot--wisata"></i> Wisata</span>
+            <span><i class="map__legend-dot map__legend-dot--sejarah"></i> Situs sejarah</span>
           </div>
         </div>
       </section>
@@ -118,15 +126,13 @@
       <section class="gallery section" id="galeri">
         <div class="container">
           <div class="section__header">
-            <span class="section__subtitle">Dokumentasi Visual</span>
-            <h2 class="section__title">Keindahan <span>Tatar Galuh</span></h2>
-            <p class="section__intro">Saksikan cuplikan keindahan alam dan suasana kebudayaan Ciamis.</p>
+            <span class="section__subtitle">Cerita dalam gambar</span>
+            <h2 class="section__title">Galeri Sejarah <span>Tatar Galuh</span></h2>
+            <p class="section__intro">Jelajahi foto situs dan warisan budaya Ciamis. Pilih foto untuk membaca kisah lengkap setiap tempat.</p>
           </div>
-          <div class="gallery__video-card">
-            <video controls preload="metadata" poster="./jpg/ciungwanara.jpg">
-              <source src="./jpg/ciamis.mp4" type="video/mp4" />
-              Browser Anda tidak mendukung pemutaran video.
-            </video>
+          <div class="gallery__grid" id="galeri-sejarah" aria-live="polite"></div>
+          <div class="gallery__action">
+            <a href="sejarah.html" class="btn btn-primary">Jelajahi Semua Sejarah</a>
           </div>
         </div>
       </section>
@@ -150,7 +156,7 @@
               <li><a href="#about">Tentang Ciamis</a></li>
               <li><a href="sejarah.html">Daftar Sejarah</a></li>
               <li><a href="#peta">Peta Wisata</a></li>
-              <li><a href="#galeri">Galeri Video</a></li>
+              <li><a href="#galeri">Galeri Sejarah</a></li>
             </ul>
           </div>
 

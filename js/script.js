@@ -55,25 +55,91 @@ systemPrefersDark.addEventListener("change", (event) => {
 
 // Use the glass header while the hero fills the area under the fixed navbar.
 const updateHeaderAppearance = () => {
-  const heroIsBehindHeader = window.scrollY + header.offsetHeight < hero.offsetHeight;
-  header.classList.toggle("is-over-hero", heroIsBehindHeader);
-  header.classList.toggle("scrolled", window.scrollY > 50);
+  const heroIsBehindHeader = hero && window.scrollY + header.offsetHeight < hero.offsetHeight;
+  header.classList.toggle("is-over-hero", Boolean(heroIsBehindHeader));
+  header.classList.toggle("scrolled", !hero || window.scrollY > 50);
 };
 
 updateHeaderAppearance();
 window.addEventListener("scroll", updateHeaderAppearance, { passive: true });
 window.addEventListener("resize", updateHeaderAppearance);
 
+const mapCanvas = document.querySelector("#map");
+if (mapCanvas && window.L && Array.isArray(window.lokasiCiamis)) {
+  const map = window.L.map(mapCanvas).setView([-7.29, 108.36], 10);
+
+  window.L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 19,
+  }).addTo(map);
+
+  const markerBounds = [];
+  window.lokasiCiamis.forEach((lokasi) => {
+    const markerIcon = window.L.divIcon({
+      className: "map-pin-wrapper",
+      html: `<span class="map-pin map-pin--${lokasi.jenis}"><span></span></span>`,
+      iconSize: [28, 36],
+      iconAnchor: [14, 34],
+      popupAnchor: [0, -32],
+    });
+    const marker = window.L.marker(lokasi.koordinat, { icon: markerIcon }).addTo(map);
+    marker.bindPopup(
+      `<strong>${lokasi.nama}</strong><br>${lokasi.kategori}<br>` +
+      `<a href="${lokasi.sumber}" target="_blank" rel="noopener noreferrer">Sumber koordinat OpenStreetMap</a>`,
+    );
+    marker.on("click", () => {
+      if (Number.isInteger(lokasi.situsId)) {
+        window.location.href = `sejarah.html?situs=${lokasi.situsId}`;
+      } else {
+        window.location.href = lokasi.sumber;
+      }
+    });
+    markerBounds.push(lokasi.koordinat);
+  });
+  map.fitBounds(markerBounds, { padding: [24, 24] });
+  window.addEventListener("resize", () => map.invalidateSize());
+}
+
+const galleryContainer = document.querySelector("#galeri-sejarah");
+if (galleryContainer && Array.isArray(window.lokasiCiamis)) {
+  const galeriSejarah = [
+    { id: 0, judul: "Situs Bojong Galuh Karangkamulyan", gambar: "./jpg/ciungwanara/ciungwanara.jpg", kategori: "Situs sejarah" },
+    { id: 1, judul: "Situs Astana Gede Kawali", gambar: "./jpg/astana-gede-kawali/astana-gede-kawali.jpeg", kategori: "Peninggalan Kerajaan Sunda" },
+    { id: 2, judul: "Situs Jambansari", gambar: "./jpg/situs-jambansari/situs-jambansari.jpg", kategori: "Cagar budaya" },
+    { id: 3, judul: "Situs Gunung Susuru", gambar: "./jpg/situs-Gunung-Susuru/situs-Gunung-Susuru.jpg", kategori: "Situs arkeologi" },
+    { id: 4, judul: "Situs Batu Panjang", gambar: "./jpg/situs-Batu-Panjang/situs-Batu-Panjang.jpg", kategori: "Warisan megalitik" },
+    { id: 5, judul: "Kampung Adat Kuta", gambar: "./jpg/kampung-adat-kuta/kampung-adat-kuta.jpg", kategori: "Kearifan lokal" },
+    { id: 6, judul: "Situs Samida", gambar: "./jpg/situs-samida/situs-samida.jpg", kategori: "Situs sejarah" },
+    { id: 7, judul: "Situs Geger Emas", gambar: "./jpg/situs-Geger-Emas/situs-Geger-Emas.jpg", kategori: "Situs sejarah" },
+    { id: 8, judul: "Situs Piktograf Citapen", gambar: "./jpg/situs-Piktograf-Citapen/situs-Piktograf-Citapen.jpg", kategori: "Situs arkeologi" },
+    { id: 9, judul: "Situs Galuh Salawe", gambar: "./jpg/situs-Galuh-Salawe/situs-Galuh-Salawe.jpg", kategori: "Warisan Kerajaan Galuh" },
+    { id: 10, judul: "Situs Gandoang Wanasigra", gambar: "./jpg/situs-Gandoang-Wanasigra/situs-Gandoang-Wanasigra.jpg", kategori: "Situs sejarah" },
+    { id: 11, judul: "Pendopo Kabupaten Ciamis", gambar: "./jpg/gedung/gedung.jpg", kategori: "Bangunan bersejarah" },
+  ];
+
+  galleryContainer.innerHTML = galeriSejarah.map((item, index) => `
+    <a class="gallery-card${index === 0 ? " gallery-card--featured" : ""}" href="sejarah.html?situs=${item.id}" aria-label="Baca sejarah ${item.judul}">
+      <img src="${item.gambar}" alt="${item.judul}" loading="lazy" decoding="async" />
+      <span class="gallery-card__shade"></span>
+      <span class="gallery-card__content">
+        <span class="gallery-card__category">${item.kategori}</span>
+        <span class="gallery-card__title">${item.judul}</span>
+        <span class="gallery-card__link">Baca kisah <span aria-hidden="true">→</span></span>
+      </span>
+    </a>
+  `).join("");
+}
+
 // Reveal sections as they enter the viewport and let the hero ease away on scroll.
 const revealItems = document.querySelectorAll(
-  "main > .section > .section__title, " +
-  "main > .section > .map__intro, " +
-  "main > .section > .about__row, " +
-  "main > .section > .map__canvas, " +
-  ".site-footer > .section > .section__title, " +
-  ".site-footer > .section > .gallery__intro, " +
-  ".site-footer > .section > .gallery__video, " +
-  ".site-footer > .section > .credits p",
+  ".section__header, " +
+  ".about__grid, " +
+  ".map__container, " +
+  ".gallery-card, " +
+  ".footer-container, " +
+  ".footer-bottom, " +
+  ".page-header, " +
+  ".btn-back",
 );
 
 if (reducedMotion.matches) {
@@ -97,44 +163,48 @@ if (reducedMotion.matches) {
   }
 }
 
-let heroFramePending = false;
-const updateHeroScrollEffect = () => {
-  if (heroFramePending) return;
-  heroFramePending = true;
+if (hero) {
+  let heroFramePending = false;
+  const updateHeroScrollEffect = () => {
+    if (heroFramePending) return;
+    heroFramePending = true;
 
-  window.requestAnimationFrame(() => {
-    const progress = reducedMotion.matches
-      ? 0
-      : Math.min(1, Math.max(0, window.scrollY / Math.max(hero.offsetHeight, 1)));
-    hero.style.setProperty("--hero-content-opacity", String(1 - progress));
-    hero.style.setProperty("--hero-content-offset", `${progress * -32}px`);
-    hero.style.setProperty("--hero-video-scale", String(1 + progress * 0.08));
-    heroFramePending = false;
-  });
-};
+    window.requestAnimationFrame(() => {
+      const progress = reducedMotion.matches
+        ? 0
+        : Math.min(1, Math.max(0, window.scrollY / Math.max(hero.offsetHeight, 1)));
+      hero.style.setProperty("--hero-content-opacity", String(1 - progress));
+      hero.style.setProperty("--hero-content-offset", `${progress * -32}px`);
+      hero.style.setProperty("--hero-video-scale", String(1 + progress * 0.08));
+      heroFramePending = false;
+    });
+  };
 
-window.addEventListener("scroll", updateHeroScrollEffect, { passive: true });
-window.addEventListener("resize", updateHeroScrollEffect);
-reducedMotion.addEventListener("change", updateHeroScrollEffect);
-updateHeroScrollEffect();
+  window.addEventListener("scroll", updateHeroScrollEffect, { passive: true });
+  window.addEventListener("resize", updateHeroScrollEffect);
+  reducedMotion.addEventListener("change", updateHeroScrollEffect);
+  updateHeroScrollEffect();
+}
 
 // Toggle the mobile navigation and keep its accessibility state in sync.
-navigationToggle.addEventListener("click", () => {
-  const isOpen = navigation.classList.toggle("is-open");
-  navigationToggle.setAttribute("aria-expanded", String(isOpen));
-  navigationToggle.setAttribute(
-    "aria-label",
-    isOpen ? "Tutup navigasi" : "Buka navigasi",
-  );
-});
+if (navigationToggle && navigation) {
+  navigationToggle.addEventListener("click", () => {
+    const isOpen = navigation.classList.toggle("is-open");
+    navigationToggle.setAttribute("aria-expanded", String(isOpen));
+    navigationToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Tutup navigasi" : "Buka navigasi",
+    );
+  });
 
-navigation.addEventListener("click", (event) => {
-  if (event.target.closest("a")) {
-    navigation.classList.remove("is-open");
-    navigationToggle.setAttribute("aria-expanded", "false");
-    navigationToggle.setAttribute("aria-label", "Buka navigasi");
-  }
-});
+  navigation.addEventListener("click", (event) => {
+    if (event.target.closest("a")) {
+      navigation.classList.remove("is-open");
+      navigationToggle.setAttribute("aria-expanded", "false");
+      navigationToggle.setAttribute("aria-label", "Buka navigasi");
+    }
+  });
+}
 
 // Replace Feather icon placeholders when the library is available.
 if (window.feather) {

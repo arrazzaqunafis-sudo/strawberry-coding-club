@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
             Situs ini juga terkenal dengan legenda Ciung Wanara yang menceritakan kisah Kerajaan Galuh dan perebutan takhta. Salah satu tempat yang dikaitkan dengan cerita tersebut adalah tempat Sabung Ayam. Kisah Ciung Wanara menjadi bagian dari tradisi lisan yang diwariskan secara turun-temurun, meskipun tidak seluruh ceritanya dapat dipastikan sebagai fakta sejarah.
             Selain menyimpan peninggalan bersejarah, Situs Bojong Galuh dikelilingi pepohonan rindang dan berada di kawasan yang berkaitan dengan Sungai Cimuntur serta Sungai Citanduy. Lingkungan alam yang asri menambah daya tarik situs ini sebagai tempat wisata sejarah dan edukasi.
             Keberadaan peninggalan batu kuno dan legenda Ciung Wanara menjadikan Situs Bojong Galuh Karangkamulyan sebagai salah satu warisan sejarah dan budaya penting di Kabupaten Ciamis. Oleh karena itu, situs ini perlu dijaga dan dilestarikan agar nilai sejarah serta cerita budayanya tetap dikenal oleh generasi mendatang`,
-      peta: "https://maps.google.com/maps?q=Situs+Bojong+Galuh+Karangkamulyan&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
       id: 1,
@@ -26,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
             Di kawasan Astana Gede Kawali terdapat enam prasasti yang dikenal sebagai Prasasti Kawali I hingga VI. Prasasti tersebut menggunakan tulisan Sunda Kuno dan memuat informasi mengenai kehidupan pada masa kerajaan. Selain itu, terdapat batu-batu kuno, peninggalan tradisi megalitik, serta kompleks makam tokoh yang berkaitan dengan sejarah Kawali.
             Situs ini berada di lingkungan yang dikelilingi pepohonan sehingga terasa sejuk dan asri. Perpaduan antara peninggalan arkeologi dan lingkungan alam menjadikan Astana Gede Kawali sebagai tempat wisata sejarah sekaligus sarana edukasi bagi masyarakat.
             Keberadaan prasasti dan berbagai peninggalan lainnya menjadikan Situs Astana Gede Kawali sebagai warisan budaya penting di Kabupaten Ciamis. Oleh karena itu, situs ini perlu dijaga dan dilestarikan agar nilai sejarah serta kebudayaan Sunda tetap dikenal dan dapat dipelajari oleh generasi mendatang`,
-      peta: "https://maps.google.com/maps?q=Astana+Gede+Kawali&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
       id: 2,
@@ -38,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
             Di kawasan ini terdapat bangunan cungkup berbentuk limas yang menaungi makam Kangjeng Prebu. Selain itu, ditemukan berbagai peninggalan sejarah, seperti arca Ganesha, arca Nandi, lingga, yoni, dan lumpang batu. Peninggalan tersebut menunjukkan adanya nilai sejarah dan arkeologi yang penting bagi perkembangan kebudayaan di Ciamis.
             Situs Jambansari juga menjadi tempat ziarah bagi masyarakat untuk mendoakan dan menghormati tokoh yang dimakamkan di sana. Kawasan ini memiliki lingkungan berupa kolam dan persawahan yang menambah ciri khasnya sebagai tempat bersejarah sekaligus bagian dari kehidupan masyarakat setempat.
             Keberadaan makam Kangjeng Prebu, berbagai artefak, dan tradisi ziarah menjadikan Situs Jambansari sebagai salah satu warisan sejarah dan budaya penting di Kabupaten Ciamis. Oleh karena itu, situs ini perlu dijaga dan dilestarikan agar nilai sejarah serta budayanya tetap dikenal oleh generasi mendatang.`,
-      peta: "https://maps.google.com/maps?q=Situs+Jambansari+Ciamis&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
       id: 3,
@@ -50,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
             Di kawasan ini terdapat berbagai peninggalan, seperti bangunan berundak atau punden, gua-gua pada tebing, dan sumur batu. Selain itu, ditemukan pula benda-benda arkeologi berupa tembikar, keramik, manik-manik, dan batu pipisan. Peninggalan tersebut menjadi sumber informasi untuk mempelajari kehidupan masyarakat pada masa lampau.
             Situs Gunung Susuru memiliki kondisi alam yang khas karena diapit oleh Sungai Cimuntur dan Sungai Cileueur. Kawasan perbukitan serta vegetasi alami di sekitarnya menambah daya tarik situs ini. Selain itu, terdapat laporan mengenai bekas benteng kuno yang menjadi bagian dari peninggalan sejarah kawasan tersebut.
             Keberadaan peninggalan arkeologi dan cerita sejarah lokal menjadikan Situs Gunung Susuru sebagai salah satu warisan budaya penting di Kabupaten Ciamis. Oleh karena itu, situs ini perlu dilestarikan melalui perlindungan peninggalan, pemeliharaan lingkungan, dan penelitian lebih lanjut agar nilai sejarah serta budayanya tetap dikenal oleh generasi mendatang`,
-      peta: "https://maps.google.com/maps?q=Situs+Gunung+Susuru+Ciamis&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
       id: 4,
@@ -62,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
             Di kawasan situs ini terdapat batu andesit yang berbentuk memanjang, lonjong, dan pipih. Beberapa di antaranya dikenal sebagai Batu Kendang karena susunannya menyerupai alat musik kendang dan Batu Tapak Maung yang memiliki cekungan kecil menyerupai jejak kaki harimau. Bentuk dan susunan batu tersebut menjadi daya tarik untuk mempelajari peninggalan kebudayaan masa lampau.
             Selain memiliki nilai sejarah, Situs Batu Panjang dikelilingi hutan pinus dengan udara sejuk dan pemandangan alam yang menarik. Cerita serta kepercayaan masyarakat terhadap batu-batu tertentu juga menjadi bagian dari tradisi budaya setempat. Hal ini menunjukkan bahwa situs tersebut memiliki makna bagi masyarakat di sekitarnya.
             Keberadaan batu-batu bersejarah dan lingkungan alamnya menjadikan Situs Batu Panjang sebagai salah satu warisan budaya yang penting di Kabupaten Ciamis. Oleh karena itu, situs ini perlu dijaga melalui perlindungan peninggalan, pemeliharaan lingkungan, dan penelitian lebih lanjut agar nilai sejarah serta budayanya tetap terpelihara dan dikenal oleh generasi mendatang.`,
-      peta: "https://maps.google.com/maps?q=Situs+Batu+Panjang+Jahim+Ciamis&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
       id: 5,
@@ -75,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
             Selain mempertahankan aturan adat, masyarakat Kampung Adat Kuta juga menjaga arsitektur rumah tradisional Sunda yang umumnya berbentuk rumah panggung dengan bahan kayu dan bambu. Berbagai upacara adat, seperti Hajat Nyuguh, Hajat Bumi, dan Babarit, juga masih dilaksanakan sebagai bentuk rasa syukur sekaligus upaya melestarikan budaya leluhur.
             Dalam kehidupan sehari-hari, masyarakat menjunjung tinggi gotong royong dan bekerja sebagai petani, pengrajin gula aren, serta pengrajin anyaman. Pelestarian kampung juga didukung oleh Peraturan Daerah Kabupaten Ciamis Nomor 15 Tahun 2016 tentang Pengakuan dan Perlindungan Masyarakat Hukum Adat Kampung Kuta.
             Keberadaan tradisi, aturan adat, rumah tradisional, dan hutan keramat menjadikan Kampung Adat Kuta sebagai salah satu warisan budaya penting di Kabupaten Ciamis. Oleh karena itu, adat istiadat dan lingkungan kampung perlu terus dijaga agar nilai-nilai kearifan lokal tetap diwariskan kepada generasi mendatang`,
-      peta: "https://maps.google.com/maps?q=Kampung+Adat+Kuta+Ciamis&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
       id: 6,
@@ -87,7 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
            Di kawasan Situs Samida terdapat peninggalan berupa susunan batu melingkar yang dikenal sebagai Teras Batu Samida dan Pagempungan, serta batu tegak yang disebut menhir. Selain itu, terdapat laporan mengenai temuan pecahan keramik dan kerak besi yang dapat menjadi petunjuk untuk mempelajari aktivitas manusia pada masa lampau.
            Situs Samida juga berkaitan dengan tradisi Nyalin, yaitu kegiatan adat untuk mengganti pembungkus benda pusaka dan membersihkannya. Tradisi ini menjadi bentuk penghormatan terhadap warisan leluhur sekaligus upaya masyarakat dalam menjaga kebudayaan yang diwariskan secara turun-temurun.
            Keberadaan peninggalan sejarah dan tradisi tersebut menjadikan Situs Samida sebagai salah satu warisan budaya penting di Kabupaten Ciamis. Oleh karena itu, situs ini perlu dijaga dan dilestarikan agar nilai sejarah serta kebudayaannya tetap dikenal oleh generasi mendatang..`,
-      peta: "https://maps.google.com/maps?q=Situs+Samida+Rajadesa&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
       id: 7,
@@ -101,7 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
             Dalam pelaksanaannya, masyarakat biasanya mengenakan pakaian putih dan melantunkan selawat selama perjalanan. Kegiatan ini juga menjadi kesempatan untuk mempererat silaturahmi dan mengingat nilai-nilai kebaikan yang diwariskan oleh generasi terdahulu.
             Selain memiliki nilai religi dan sejarah, Hutan Geger Omas dikenal sebagai kawasan yang dijaga kelestariannya oleh masyarakat. Kawasan hutan Sukarame yang dikaitkan dengan situs ini memiliki luas sekitar 35 hektare. Masyarakat setempat menjaga hutan dengan mematuhi aturan adat, termasuk larangan menebang pohon atau mengambil kayu tanpa izin sesepuh.
             Keberadaan hutan, makam, dan mata air menunjukkan hubungan erat antara tradisi masyarakat dengan pelestarian alam. Hingga kini, Hutan Geger Omas menjadi tempat untuk kegiatan ziarah, pelaksanaan tradisi Nyepuh, serta pembelajaran mengenai sejarah dan kearifan lokal masyarakat Ciomas`,
-      peta: "https://maps.google.com/maps?q=Situs+Geger+Emas+Ciomas&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
       id: 8,
@@ -114,7 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
             Berdasarkan penelitian arkeologi yang diterbitkan pada 2024, goresan di situs ini memiliki karakteristik berbeda, yaitu berbentuk U yang cenderung tumpul dan berbentuk V yang lebih tajam. Perbedaan tersebut diduga menunjukkan penggunaan teknik atau alat yang berbeda dalam pembuatannya.
             Berdasarkan kajian para peneliti, seni cadas di Situs Batu Tulis Citapen diperkirakan berasal dari rentang masa Mesolitik hingga Paleometalik. Perkiraan ini menunjukkan bahwa situs tersebut berpotensi memberikan informasi penting mengenai kehidupan manusia pada masa prasejarah. Beberapa motifnya diduga berkaitan dengan makhluk hidup, aktivitas berburu, dan unsur alam. Namun, usia pasti, makna simbolis, serta tujuan pembuatan setiap goresan masih memerlukan penelitian lebih lanjut.
             Meskipun memiliki nilai arkeologis yang penting, kondisi Situs Batu Tulis Citapen menghadapi sejumlah tantangan. Sebagian permukaan batu tertutup material longsoran, sementara akses menuju lokasi cukup berbahaya ketika jalan licin atau cuaca buruk. Selain itu, tindakan vandalisme juga dilaporkan telah merusak sebagian permukaan batu. Karena itu, perlindungan situs perlu dilakukan melalui penelitian lanjutan, pengawasan, dan peningkatan kesadaran masyarakat agar peninggalan prasejarah ini tetap terjaga`,
-      peta: "https://maps.google.com/maps?q=Situs+Piktograf+Citapen&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
       id: 9,
@@ -127,7 +118,6 @@ document.addEventListener("DOMContentLoaded", () => {
             Selain memiliki peninggalan berupa batu-batu bersejarah, Situs Salawe juga dikenal sebagai tempat kegiatan budaya dan ziarah. Salah satu tradisi yang masih dikenal adalah *Misalin*, yaitu upacara adat yang dilaksanakan menjelang bulan Ramadan. Tradisi ini mengandung makna membersihkan diri, mempersiapkan diri secara batin, serta mempererat hubungan masyarakat dengan warisan budaya leluhur.
             Lingkungan situs juga menjadi bagian penting dari keberadaannya. Kawasan ini berada di wilayah Cimaragas yang memiliki hubungan geografis dengan Sungai Citanduy. Keberadaan situs, peninggalan sejarah, dan tradisi masyarakat menjadikan Salawe sebagai tempat untuk mempelajari sejarah lokal, perkembangan kepercayaan, serta kehidupan sosial masyarakat Galuh.
             Saat ini, Situs Salawe dimanfaatkan sebagai tempat wisata sejarah, kegiatan budaya, ziarah, dan pembelajaran bagi masyarakat maupun pelajar. Pemeliharaan peninggalan batu, kebersihan lingkungan, serta pelestarian tradisi menjadi hal penting agar nilai sejarah dan budaya situs ini tetap terjaga`,
-      peta: "https://maps.google.com/maps?q=Situs+Galuh+Salawe&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
       id: 10,
@@ -135,7 +125,6 @@ document.addEventListener("DOMContentLoaded", () => {
       gambar: ["./jpg/situs-Gandoang-Wanasigra/situs-Gandoang-Wanasigra.jpg"],
       ringkasan: "Inti dari situs ini adalah makam Syekh Padamatan (Eyang Syeh Padamatan).",
       deskripsi: `SEJARAH DAN LOKASI<br>Situs Gandoang adalah kawasan cagar budaya yang berfungsi sebagai kompleks makam kuno dan situs megalitik di Dusun Cipeucang, Desa Wanasigra.`,
-      peta: "https://maps.google.com/maps?q=Situs+Gandoang+Wanasigra&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
       id: 11,
@@ -147,7 +136,6 @@ document.addEventListener("DOMContentLoaded", () => {
             Dari segi arsitektur, Pendopo Bupati Ciamis memiliki ciri khas bangunan Eropa atau kolonial Belanda. Hal ini terlihat dari pilar-pilar besar dan tinggi yang berjajar di bagian depan, serta pintu dan jendela berukuran besar. Bangunannya didominasi warna putih sehingga memberikan kesan megah dan klasik. Bentuk bangunan tersebut menjadi salah satu bukti pengaruh arsitektur kolonial yang berkembang di wilayah Ciamis pada masa lalu.
             Letak pendopo juga berkaitan dengan tata ruang pusat pemerintahan zaman dahulu. Kawasannya berdekatan dengan Alun-alun Ciamis, Masjid Agung Ciamis, dan Kantor Pos. Keberadaan bangunan-bangunan tersebut menunjukkan bagaimana pusat pemerintahan, kegiatan masyarakat, dan fasilitas umum berada dalam satu kawasan.
             Seiring berjalannya waktu, bangunan yang dikenal sebagai Gedung Negara ini digunakan sebagai Pendopo Bupati Ciamis. Pada tahun 2024, Pendopo Kabupaten Ciamis ditetapkan sebagai cagar budaya tingkat kabupaten melalui keputusan pemerintah daerah. Penetapan tersebut menjadi bagian dari upaya melindungi bangunan bersejarah yang memiliki nilai penting bagi sejarah dan perkembangan budaya masyarakat Ciamis.`,
-      peta: "https://maps.google.com/maps?q=Pendopo+Bupati+Ciamis&t=&z=15&ie=UTF8&iwloc=&output=embed"
     }
   ];
 
@@ -156,8 +144,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const detailSection = document.getElementById("detail-sejarah");
   const judulDetail = document.getElementById("judul-detail");
   const isiDetail = document.getElementById("isi-detail");
+  const galeriTitle = document.getElementById("galeri-bawah-title");
   const btnKembali = document.getElementById("btn-kembali");
   const inputCari = document.getElementById("input-cari");
+  const petaContainer = document.getElementById("peta-lokasi");
+  const mapLocationNote = document.getElementById("map-location-note");
+  let detailMap = null;
+  const detailMarkers = new Map();
+  const cardObserver = "IntersectionObserver" in window
+    ? new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 })
+    : null;
 
   function renderCards(items) {
     if (!gridContainer) return;
@@ -179,6 +182,15 @@ document.addEventListener("DOMContentLoaded", () => {
         </article>
       `;
     });
+
+    const cards = gridContainer.querySelectorAll(".kartu-sejarah");
+    if (!cardObserver || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      cards.forEach((card) => card.classList.add("is-visible"));
+      return;
+    }
+
+    cardObserver.disconnect();
+    cards.forEach((card) => cardObserver.observe(card));
   }
 
   if (gridContainer) renderCards(dataSejarah);
@@ -191,6 +203,102 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function showDetail(data) {
+    judulDetail.textContent = data.judul;
+    isiDetail.replaceChildren();
+    data.deskripsi
+      .split(/\r?\n/)
+      .map((paragraf) => paragraf.trim())
+      .filter(Boolean)
+      .forEach((paragraf) => {
+        const elemenParagraf = document.createElement("p");
+        elemenParagraf.textContent = paragraf.replace(/\*([^*]+)\*/g, "$1");
+        isiDetail.appendChild(elemenParagraf);
+      });
+
+    if (petaContainer && window.L && Array.isArray(window.lokasiCiamis)) {
+      if (!detailMap) {
+        detailMap = window.L.map(petaContainer).setView([-7.29, 108.36], 10);
+        window.L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          maxZoom: 19,
+        }).addTo(detailMap);
+
+        window.lokasiCiamis.forEach((lokasi) => {
+          const isSelectedSite = lokasi.situsId === data.id;
+          const markerIcon = window.L.divIcon({
+            className: "map-pin-wrapper",
+            html: `<span class="map-pin map-pin--${lokasi.jenis}${isSelectedSite ? " map-pin--active" : ""}"><span></span></span>`,
+            iconSize: [28, 36],
+            iconAnchor: [14, 34],
+            popupAnchor: [0, -32],
+          });
+          const marker = window.L.marker(lokasi.koordinat, { icon: markerIcon }).addTo(detailMap);
+          marker.bindPopup(
+            `<strong>${lokasi.nama}</strong><br>${lokasi.kategori}<br>` +
+            `<a href="${lokasi.sumber}" target="_blank" rel="noopener noreferrer">Sumber koordinat OpenStreetMap</a>`,
+          );
+          marker.on("click", () => {
+            if (Number.isInteger(lokasi.situsId) && lokasi.situsId !== data.id) {
+              window.location.href = `sejarah.html?situs=${lokasi.situsId}`;
+            } else if (!Number.isInteger(lokasi.situsId)) {
+              window.location.href = lokasi.sumber;
+            }
+          });
+          if (Number.isInteger(lokasi.situsId)) detailMarkers.set(lokasi.situsId, marker);
+        });
+      }
+
+      const lokasiSitus = window.lokasiCiamis.find((lokasi) => lokasi.situsId === data.id);
+      if (mapLocationNote) {
+        mapLocationNote.hidden = Boolean(lokasiSitus);
+        mapLocationNote.textContent = lokasiSitus
+          ? ""
+          : `Titik persis ${data.judul} belum tersedia dari sumber peta yang dapat diverifikasi. Peta hanya menampilkan lokasi lain dengan koordinat terverifikasi.`;
+      }
+      if (lokasiSitus) {
+        detailMarkers.forEach((marker, situsId) => {
+          const pin = marker.getElement()?.querySelector(".map-pin");
+          if (pin) pin.classList.toggle("map-pin--active", situsId === data.id);
+        });
+        detailMap.fitBounds(
+          window.L.latLngBounds(window.lokasiCiamis.map((lokasi) => lokasi.koordinat)),
+          { padding: [24, 24] },
+        );
+        const markerSitus = detailMarkers.get(data.id);
+        if (markerSitus) markerSitus.openPopup();
+      } else {
+        detailMap.fitBounds(
+          window.L.latLngBounds(window.lokasiCiamis.map((lokasi) => lokasi.koordinat)),
+          { padding: [24, 24] },
+        );
+      }
+      window.requestAnimationFrame(() => detailMap.invalidateSize());
+    }
+
+    const galeriContainer = document.getElementById("galeri-foto-container");
+    if (galeriContainer) {
+      galeriContainer.innerHTML = "";
+      if (galeriTitle) galeriTitle.textContent = `Galeri Foto ${data.judul}`;
+      if (data.gambar && data.gambar.length > 0) {
+        data.gambar.forEach((urlFoto, index) => {
+          galeriContainer.innerHTML += `
+            <figure class="galeri-card">
+              <img src="${urlFoto}" alt="${data.judul} - foto ${index + 1}" loading="lazy" />
+              <figcaption>Dokumentasi ${index + 1}</figcaption>
+            </figure>
+          `;
+        });
+      } else {
+        galeriContainer.innerHTML = "<p>Belum ada foto dokumentasi untuk situs ini.</p>";
+      }
+    }
+
+    daftarSection.hidden = true;
+    detailSection.hidden = false;
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   document.addEventListener("click", (e) => {
     const card = e.target.closest(".kartu-sejarah");
     if (card) {
@@ -198,43 +306,16 @@ document.addEventListener("DOMContentLoaded", () => {
       const data = dataSejarah.find((item) => item.id == id);
 
       if (data) {
-        judulDetail.textContent = data.judul;
-        isiDetail.innerHTML = data.deskripsi;
-
-        
-        const petaContainer = document.getElementById("peta-lokasi");
-        if (petaContainer) {
-            if (data.peta) {
-                petaContainer.innerHTML = `<iframe src="${data.peta}" width="100%" height="350" style="border:0; display:block;" allowfullscreen="" loading="lazy"></iframe>`;
-                petaContainer.style.backgroundColor = "transparent"; 
-            } else {
-                petaContainer.innerHTML = "";
-            }
-        }
-
-        const galeriContainer = document.getElementById("galeri-foto-container");
-        if (galeriContainer) {
-            galeriContainer.innerHTML = ""; // Bersihkan galeri lama
-            if (data.gambar && data.gambar.length > 0) {
-                data.gambar.forEach((urlFoto, index) => {
-                    galeriContainer.innerHTML += `
-                        <div class="galeri-card">
-                            <img src="${urlFoto}" alt="Foto ${index+1}">
-                            <h4>Foto Dokumentasi ${index + 1}</h4>
-                        </div>
-                    `;
-                });
-            } else {
-                galeriContainer.innerHTML = "<p>Tidak ada foto dokumentasi.</p>";
-            }
-        }
-
-        daftarSection.hidden = true;
-        detailSection.hidden = false;
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        showDetail(data);
       }
     }
   });
+
+  const requestedSiteId = new URLSearchParams(window.location.search).get("situs");
+  if (requestedSiteId !== null) {
+    const requestedSite = dataSejarah.find((item) => String(item.id) === requestedSiteId);
+    if (requestedSite) showDetail(requestedSite);
+  }
 
   if (gridContainer) {
     gridContainer.addEventListener("keydown", (e) => {
@@ -250,6 +331,9 @@ document.addEventListener("DOMContentLoaded", () => {
     btnKembali.addEventListener("click", () => {
       detailSection.hidden = true;
       daftarSection.hidden = false;
+      if (new URLSearchParams(window.location.search).has("situs")) {
+        window.history.replaceState(null, "", window.location.pathname);
+      }
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }

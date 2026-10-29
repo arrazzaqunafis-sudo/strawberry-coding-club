@@ -45,7 +45,7 @@
 
 .kartu-sejarah {
   --heritage-ink: #244238;
-  --heritage-accent: #c8894d;
+  --heritage-accent: #7c3aed;
   position: relative;
   cursor: pointer;
   background: #d9d3c7;
@@ -53,16 +53,24 @@
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(48, 39, 26, 0.08);
   border: 1px solid rgba(115, 93, 62, 0.14);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  animation: cardReveal 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  opacity: 0;
+  transform: translateY(24px);
+  filter: blur(6px);
+  transition: opacity 0.6s ease, transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, filter 0.6s ease;
+}
+
+.kartu-sejarah.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
 }
 
 .kartu-sejarah:nth-child(3n + 2) {
-  animation-delay: 80ms;
+  transition-delay: 80ms;
 }
 
 .kartu-sejarah:nth-child(3n) {
-  animation-delay: 160ms;
+  transition-delay: 160ms;
 }
 
 .kartu-sejarah:hover {
@@ -160,20 +168,9 @@
   outline-offset: 4px;
 }
 
-@keyframes cardReveal {
-  from {
-    opacity: 0;
-    filter: blur(6px);
-  }
-  to {
-    opacity: 1;
-    filter: blur(0);
-  }
-}
-
 html[data-theme="dark"] .kartu-sejarah {
   --heritage-ink: #d6e5d9;
-  --heritage-accent: #e0ad72;
+  --heritage-accent: #c084fc;
   border-color: rgba(226, 190, 142, 0.16);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
 }
@@ -204,7 +201,10 @@ html[data-theme="dark"] .kartu-sejarah:hover {
   }
 
   .kartu-sejarah {
-    animation: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
   }
 }
 
@@ -237,6 +237,23 @@ html[data-theme="dark"] .kartu-sejarah:hover {
   margin-bottom: 1.5rem;
 }
 
+.detail-map {
+  width: 100%;
+  height: clamp(320px, 48vw, 460px);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: #e8e4ef;
+  box-shadow: var(--shadow-sm);
+}
+
+.map-location-note {
+  margin: -1rem 0 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
 .detail-image-box {
   width: 100%;
   max-height: 450px;
@@ -252,69 +269,81 @@ html[data-theme="dark"] .kartu-sejarah:hover {
 }
 
 .detail-content {
-  font-size: 1.05rem;
-  line-height: 1.8;
+  max-width: 78ch;
+  margin: 0 auto;
+  font-size: clamp(1rem, 1.1vw, 1.08rem);
+  line-height: 1.9;
   color: var(--text-dark);
-  white-space: pre-line;
+  letter-spacing: 0.005em;
+}
+
+.detail-content p {
+  margin: 0 0 1.25rem;
+  text-wrap: pretty;
+}
+
+.detail-content p:first-child {
+  font-size: 1.04em;
+}
+
+.detail-content p:last-child {
+  margin-bottom: 0;
 }
 
 
 .galeri-bawah-wrapper {
-    margin-top: 3rem;
-    border-top: 1px solid #eee;
-    padding-top: 2rem;
+  margin-top: 3rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 2rem;
 }
 
 .galeri-bawah-title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #222;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
 }
 
 .galeri-scroll-container {
-    display: flex;
-    overflow-x: auto;
-    gap: 15px;
-    padding-bottom: 10px;
-
-  
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    
-    
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 0.25rem 0 0.75rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .galeri-scroll-container::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-
 .galeri-card {
-    flex: 0 0 220px;
-    scroll-snap-align: start;
+  flex: 0 0 min(240px, 72vw);
+  margin: 0;
+  scroll-snap-align: start;
 }
 
 .galeri-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 8px;
+  display: block;
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
 }
 
-.galeri-card h4 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 0 0 4px 0;
-    color: #333;
+.galeri-card figcaption {
+  margin-top: 0.6rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
-.galeri-card p {
-    font-size: 0.85rem;
-    color: #666;
-    margin: 0;
+@media (prefers-reduced-motion: reduce) {
+  .galeri-scroll-container {
+    scroll-behavior: auto;
+  }
 }
