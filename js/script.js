@@ -91,11 +91,14 @@ if (mapCanvas && window.L && Array.isArray(window.lokasiCiamis)) {
     const storyLink = Number.isInteger(lokasi.situsId)
       ? `<a href="sejarah.html?situs=${lokasi.situsId}">Baca kisah situs</a><br>`
       : "";
+    const sourceLabel = lokasi.sumber.includes("openstreetmap.org")
+      ? "Sumber OpenStreetMap"
+      : "Buka titik di peta";
     marker.bindPopup(
       `<strong>${lokasi.nama}</strong><br>${lokasi.kategori}<br>` +
         `Koordinat terverifikasi: ${latitude.toFixed(6)}, ${longitude.toFixed(6)}<br>` +
         storyLink +
-        `<a href="${lokasi.sumber}" target="_blank" rel="noopener noreferrer">Sumber koordinat OpenStreetMap</a>`,
+        `<a href="${lokasi.sumber}" target="_blank" rel="noopener noreferrer">${sourceLabel}</a>`,
     );
     markerBounds.push(lokasi.koordinat);
   });
