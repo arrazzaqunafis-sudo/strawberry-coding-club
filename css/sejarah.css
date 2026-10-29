@@ -39,70 +39,150 @@
 /* --- GRID SEJARAH --- */
 .kumpulan-sejarah {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 1.5rem;
 }
 
 .kartu-sejarah {
-  background: var(--bg-card);
-  border-radius: var(--radius);
+  --heritage-ink: #244238;
+  --heritage-accent: #c8894d;
+  position: relative;
+  background: #d9d3c7;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--border-color);
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(48, 39, 26, 0.08);
+  border: 1px solid rgba(115, 93, 62, 0.14);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  animation: cardReveal 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.kartu-sejarah:nth-child(3n + 2) {
+  animation-delay: 80ms;
+}
+
+.kartu-sejarah:nth-child(3n) {
+  animation-delay: 160ms;
 }
 
 .kartu-sejarah:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-6px) scale(1.015);
+  box-shadow: 0 18px 38px rgba(48, 39, 26, 0.15);
+  border-color: rgba(200, 137, 77, 0.48);
 }
 
-.kartu-sejarah img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.kartu-sejarah__body {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.kartu-sejarah h3 {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
-  color: var(--text-dark);
-}
-
-.kartu-sejarah p {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
+.kartu-sejarah__media {
+  position: relative;
+  display: block;
   overflow: hidden;
+  aspect-ratio: 1.8;
+  background: #d9d3c7;
+}
+
+.kartu-sejarah__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(17, 26, 22, 0.02) 35%, rgba(17, 26, 22, 0.8));
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.kartu-sejarah__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.55s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.kartu-sejarah:hover .kartu-sejarah__media img,
+.kartu-sejarah:focus-within .kartu-sejarah__media img {
+  transform: scale(1.055);
+}
+
+.kartu-sejarah:hover .kartu-sejarah__media::after,
+.kartu-sejarah:focus-within .kartu-sejarah__media::after {
+  opacity: 1;
 }
 
 .btn-detail {
-  margin-top: auto;
-  align-self: flex-start;
-  background: transparent;
-  color: var(--primary);
-  border: none;
-  font-weight: 700;
-  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  bottom: 0.85rem;
+  left: 1rem;
   padding: 0;
-  font-size: 0.9rem;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: clamp(0.9rem, 1.1vw, 1.05rem);
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.2s ease;
 }
 
-.btn-detail:hover {
-  text-decoration: underline;
+.kartu-sejarah:hover .btn-detail,
+.kartu-sejarah:focus-within .btn-detail {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-detail:focus-visible {
+  outline: 3px solid var(--heritage-accent);
+  outline-offset: 3px;
+}
+
+@keyframes cardReveal {
+  from {
+    opacity: 0;
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+html[data-theme="dark"] .kartu-sejarah {
+  --heritage-ink: #d6e5d9;
+  --heritage-accent: #e0ad72;
+  border-color: rgba(226, 190, 142, 0.16);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] .kartu-sejarah:hover {
+  border-color: rgba(224, 173, 114, 0.5);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.34);
+}
+
+@media (hover: none) {
+  .kartu-sejarah__media::after {
+    opacity: 1;
+  }
+
+  .btn-detail {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kartu-sejarah,
+  .kartu-sejarah__media::after,
+  .kartu-sejarah__media img,
+  .btn-detail {
+    transition: none;
+  }
+
+  .kartu-sejarah {
+    animation: none;
+  }
 }
 
 /* --- DETAIL SEJARAH --- */

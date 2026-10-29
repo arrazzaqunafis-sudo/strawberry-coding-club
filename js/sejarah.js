@@ -130,14 +130,12 @@ document.addEventListener("DOMContentLoaded", () => {
     items.forEach((item) => {
       const gambarThumb = (item.gambar && item.gambar.length > 0) ? item.gambar[0] : "./jpg/default.jpg";
       gridContainer.innerHTML += `
-        <div class="kartu-sejarah">
-          <img src="${gambarThumb}" alt="${item.judul}" style="height: 200px; object-fit: cover;" />
-          <div class="kartu-sejarah__body">
-            <h3>${item.judul}</h3>
-            <p>${item.ringkasan}</p>
-            <button class="btn-detail" data-id="${item.id}">Baca Selengkapnya →</button>
+        <article class="kartu-sejarah">
+          <div class="kartu-sejarah__media">
+            <img src="${gambarThumb}" alt="${item.judul}" />
+            <button class="btn-detail" type="button" data-id="${item.id}">${item.judul}</button>
           </div>
-        </div>
+        </article>
       `;
     });
   }
