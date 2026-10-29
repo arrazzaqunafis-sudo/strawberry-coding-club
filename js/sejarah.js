@@ -5,7 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
       judul: "Situs Bojong Galuh Karangkamulyan",
       gambar: ["./jpg/ciungwanara/ciungwanara.jpg"], 
       ringkasan: "Cagar budaya peninggalan Kerajaan Galuh yang erat kaitannya dengan legenda Ciung Wanara.",
-      deskripsi: `SEJARAH DAN LOKASI<br>Situs Bojong Galuh Karangkamulyan merupakan salah satu cagar budaya terpenting di Jawa Barat yang menyimpan jejak peradaban Kerajaan Galuh. Terletak di Jalan Nasional Ciamis-Banjar, Desa Karangkamulyan, Ciamis.<br><br>LEGENDA CIUNG WANARA<br>Kawasan ini sangat erat kaitannya dengan legenda Ciung Wanara, cerita rakyat Sunda tentang seorang pangeran yang menuntut takhta dari ayahnya.`,
+      deskripsi: `Situs Bojong Galuh Karangkamulyan merupakan situs peninggalan sejarah yang terletak di Desa Karangkamulyan, Kecamatan Cijeungjing, Kabupaten Ciamis, Jawa Barat. Situs ini dipercaya berkaitan dengan Kerajaan Galuh, salah satu kerajaan Sunda kuno yang memiliki peran penting dalam sejarah masyarakat Tatar Sunda.
+            Di kawasan ini terdapat berbagai peninggalan berupa susunan batu kuno, seperti Batu Pangcalikan yang dipercaya sebagai tempat duduk atau singgasana raja, Sanghyang Bedil, Panyandaan, dan Lambang Peribadatan. Fungsi sebagian peninggalan tersebut masih berkaitan dengan cerita dan kepercayaan masyarakat setempat.
+            Situs ini juga terkenal dengan legenda Ciung Wanara yang menceritakan kisah Kerajaan Galuh dan perebutan takhta. Salah satu tempat yang dikaitkan dengan cerita tersebut adalah tempat Sabung Ayam. Kisah Ciung Wanara menjadi bagian dari tradisi lisan yang diwariskan secara turun-temurun, meskipun tidak seluruh ceritanya dapat dipastikan sebagai fakta sejarah.
+            Selain menyimpan peninggalan bersejarah, Situs Bojong Galuh dikelilingi pepohonan rindang dan berada di kawasan yang berkaitan dengan Sungai Cimuntur serta Sungai Citanduy. Lingkungan alam yang asri menambah daya tarik situs ini sebagai tempat wisata sejarah dan edukasi.
+            Keberadaan peninggalan batu kuno dan legenda Ciung Wanara menjadikan Situs Bojong Galuh Karangkamulyan sebagai salah satu warisan sejarah dan budaya penting di Kabupaten Ciamis. Oleh karena itu, situs ini perlu dijaga dan dilestarikan agar nilai sejarah serta cerita budayanya tetap dikenal oleh generasi mendatang`,
       peta: "https://maps.google.com/maps?q=Situs+Bojong+Galuh+Karangkamulyan&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
@@ -17,7 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "./jpg/astana-gede-kawali/astana-gede-kawali2.jpeg"
       ],
       ringkasan: "Pusat pemerintahan Kerajaan Galuh kuno tempat ditemukannya Prasasti Kawali I-VI.",
-      deskripsi: `SEJARAH DAN LOKASI<br>Situs Astana Gede Kawali terletak di kaki Gunung Sawal. Kawasan hutan lindung ini menjadi pusat peradaban Sunda purba tempat ditemukannya enam prasasti bernilai tinggi.`,
+      deskripsi: `Situs Astana Gede Kawali merupakan kawasan peninggalan sejarah dan budaya yang terletak di Desa Kawali, Kecamatan Kawali, Kabupaten Ciamis, Jawa Barat. Situs ini dikenal sebagai salah satu kawasan penting yang berkaitan dengan sejarah Kerajaan Sunda pada abad ke-14 Masehi.
+            Kawali pernah menjadi pusat pemerintahan pada masa Kerajaan Sunda, terutama pada masa pemerintahan Rahyang Niskala Wastu Kancana. Keberadaan peninggalan sejarah di kawasan ini menjadi bukti penting untuk mempelajari perkembangan pemerintahan dan kebudayaan masyarakat Sunda pada masa lampau.
+            Di kawasan Astana Gede Kawali terdapat enam prasasti yang dikenal sebagai Prasasti Kawali I hingga VI. Prasasti tersebut menggunakan tulisan Sunda Kuno dan memuat informasi mengenai kehidupan pada masa kerajaan. Selain itu, terdapat batu-batu kuno, peninggalan tradisi megalitik, serta kompleks makam tokoh yang berkaitan dengan sejarah Kawali.
+            Situs ini berada di lingkungan yang dikelilingi pepohonan sehingga terasa sejuk dan asri. Perpaduan antara peninggalan arkeologi dan lingkungan alam menjadikan Astana Gede Kawali sebagai tempat wisata sejarah sekaligus sarana edukasi bagi masyarakat.
+            Keberadaan prasasti dan berbagai peninggalan lainnya menjadikan Situs Astana Gede Kawali sebagai warisan budaya penting di Kabupaten Ciamis. Oleh karena itu, situs ini perlu dijaga dan dilestarikan agar nilai sejarah serta kebudayaan Sunda tetap dikenal dan dapat dipelajari oleh generasi mendatang`,
       peta: "https://maps.google.com/maps?q=Astana+Gede+Kawali&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
@@ -25,7 +33,11 @@ document.addEventListener("DOMContentLoaded", () => {
       judul: "Situs Jambansari",
       gambar: ["./jpg/situs-jambansari/situs-jambansari.jpg"],
       ringkasan: "Kompleks cagar budaya dan pemakaman Kanjeng Prebu R.A.A. Kusumadiningrat.",
-      deskripsi: `SEJARAH DAN LOKASI<br>Situs Jambansari adalah kompleks pemakaman yang berkaitan dengan sejarah pemerintahan Galuh. Tempat ini dikenal sebagai lokasi pemakaman Raden Adipati Aria Kusumadiningrat, Bupati Galuh ke-16.`,
+      deskripsi: `Situs Jambansari merupakan situs bersejarah yang terletak di Jalan Achmad Dahlan, Kelurahan Linggasari, Kecamatan Ciamis, Kabupaten Ciamis, Jawa Barat. Situs ini berupa kompleks makam yang berkaitan erat dengan sejarah pemerintahan Galuh dan perkembangan Kabupaten Ciamis. 
+            Situs Jambansari memiliki hubungan erat dengan Raden Adipati Aria Kusumadiningrat, yang dikenal dengan gelar Kangjeng Prebu. Beliau merupakan Bupati Galuh yang memerintah pada tahun 1839–1886 dan berperan dalam perkembangan pendidikan, pertanian, pembangunan, serta kehidupan masyarakat. Kompleks makam ini dibangun pada tahun 1872 sebagai tempat pemakaman beliau dan sejumlah anggota keluarganya.
+            Di kawasan ini terdapat bangunan cungkup berbentuk limas yang menaungi makam Kangjeng Prebu. Selain itu, ditemukan berbagai peninggalan sejarah, seperti arca Ganesha, arca Nandi, lingga, yoni, dan lumpang batu. Peninggalan tersebut menunjukkan adanya nilai sejarah dan arkeologi yang penting bagi perkembangan kebudayaan di Ciamis.
+            Situs Jambansari juga menjadi tempat ziarah bagi masyarakat untuk mendoakan dan menghormati tokoh yang dimakamkan di sana. Kawasan ini memiliki lingkungan berupa kolam dan persawahan yang menambah ciri khasnya sebagai tempat bersejarah sekaligus bagian dari kehidupan masyarakat setempat.
+            Keberadaan makam Kangjeng Prebu, berbagai artefak, dan tradisi ziarah menjadikan Situs Jambansari sebagai salah satu warisan sejarah dan budaya penting di Kabupaten Ciamis. Oleh karena itu, situs ini perlu dijaga dan dilestarikan agar nilai sejarah serta budayanya tetap dikenal oleh generasi mendatang.`,
       peta: "https://maps.google.com/maps?q=Situs+Jambansari+Ciamis&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
@@ -33,7 +45,11 @@ document.addEventListener("DOMContentLoaded", () => {
       judul: "Situs Gunung Susuru",
       gambar: ["./jpg/situs-Gunung-Susuru/situs-Gunung-Susuru.jpg"],
       ringkasan: "Kompleks punden berundak 17 tingkatan masa Klasik Hindu petilasan Galuh Kertabumi.",
-      deskripsi: `SEJARAH DAN LOKASI<br>Situs Gunung Susuru terletak di Kertabumi, Cijeungjing. Kawasan ini merupakan punden berundak unik yang mengapit Sungai Cimuntur dan Cileueur.`,
+      deskripsi: `Situs Gunung Susuru merupakan kawasan peninggalan sejarah dan arkeologi yang terletak di Dusun Bundar, Desa Kertabumi, Kecamatan Cijeungjing, Kabupaten Ciamis, Jawa Barat. Situs ini dikenal juga sebagai Situs Pasir Susuru dan memiliki nilai sejarah serta budaya bagi masyarakat setempat.
+            Situs Gunung Susuru berkaitan dengan sejarah Kerajaan Galuh Kertabumi. Menurut cerita masyarakat, kawasan ini dihubungkan dengan Dewi Tanduran Ageung, putri Raja Galuh Salawe bernama Sanghyang Cipta. Nama Gunung Susuru dipercaya berasal dari tanaman susuru yang konon tumbuh di kawasan tersebut dan digunakan sebagai pagar alami. Namun, cerita tersebut merupakan tradisi lisan yang masih perlu dibedakan dari fakta sejarah.
+            Di kawasan ini terdapat berbagai peninggalan, seperti bangunan berundak atau punden, gua-gua pada tebing, dan sumur batu. Selain itu, ditemukan pula benda-benda arkeologi berupa tembikar, keramik, manik-manik, dan batu pipisan. Peninggalan tersebut menjadi sumber informasi untuk mempelajari kehidupan masyarakat pada masa lampau.
+            Situs Gunung Susuru memiliki kondisi alam yang khas karena diapit oleh Sungai Cimuntur dan Sungai Cileueur. Kawasan perbukitan serta vegetasi alami di sekitarnya menambah daya tarik situs ini. Selain itu, terdapat laporan mengenai bekas benteng kuno yang menjadi bagian dari peninggalan sejarah kawasan tersebut.
+            Keberadaan peninggalan arkeologi dan cerita sejarah lokal menjadikan Situs Gunung Susuru sebagai salah satu warisan budaya penting di Kabupaten Ciamis. Oleh karena itu, situs ini perlu dilestarikan melalui perlindungan peninggalan, pemeliharaan lingkungan, dan penelitian lebih lanjut agar nilai sejarah serta budayanya tetap dikenal oleh generasi mendatang`,
       peta: "https://maps.google.com/maps?q=Situs+Gunung+Susuru+Ciamis&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
@@ -78,7 +94,13 @@ document.addEventListener("DOMContentLoaded", () => {
       judul: "Situs Geger Emas",
       gambar: ["./jpg/situs-Geger-Emas/situs-Geger-Emas.jpg"],
       ringkasan: "Situs Geger Emas adalah cagar budaya yang terletak di Desa Ciomas, Kecamatan Panjalu.",
-      deskripsi: `SEJARAH DAN LOKASI<br>Berada di Desa Ciomas, situs ini menyimpan makam KH. Panghulu Gusti, yang dihormati sebagai penyebar Islam di Panjalu. Setiap menjelang Ramadhan, masyarakat menggelar upacara adat Nyepuh.`,
+      deskripsi: `Hutan Geger Omas merupakan kawasan hutan yang berada di Desa Ciomas, Kecamatan Panjalu, Kabupaten Ciamis, Jawa Barat, tepatnya di kaki Gunung Sawal. Kawasan ini dikenal sebagai tempat wisata religi dan memiliki nilai sejarah serta budaya bagi masyarakat setempat. Di dalam hutan terdapat makam tokoh yang dikenal dengan nama Kiai Haji Panghulu Gusti serta sumber mata air yang dihormati oleh masyarakat.
+            Menurut cerita yang diwariskan secara turun-temurun, Kiai Haji Panghulu Gusti merupakan tokoh yang berjasa dalam penyebaran agama Islam di Desa Ciomas dan sekitarnya. Makamnya berada di tengah kawasan hutan yang dianggap keramat oleh masyarakat. Karena memiliki hubungan dengan sejarah penyebaran Islam setempat, kawasan ini sering dikunjungi untuk berziarah dan berdoa.
+            Di dalam hutan juga terdapat mata air yang dikenal sebagai Geger Omas. Menurut legenda masyarakat, mata air tersebut berkaitan dengan kisah Kiai Haji Panghulu Gusti yang membawa air dari Tanah Suci. Cerita ini menjadi bagian dari kepercayaan masyarakat setempat dan diwariskan sebagai tradisi lisan.
+            Hutan Geger Omas berkaitan erat dengan tradisi Nyepuh yang dilaksanakan masyarakat Desa Ciomas menjelang bulan Ramadan. Tradisi ini bertujuan untuk membersihkan diri secara lahir dan batin serta menghormati para leluhur. Rangkaian kegiatannya meliputi berjalan bersama menuju makam Kiai Haji Panghulu Gusti, mengambil air dari mata air Geger Omas, berdoa, dan melakukan ziarah.
+            Dalam pelaksanaannya, masyarakat biasanya mengenakan pakaian putih dan melantunkan selawat selama perjalanan. Kegiatan ini juga menjadi kesempatan untuk mempererat silaturahmi dan mengingat nilai-nilai kebaikan yang diwariskan oleh generasi terdahulu.
+            Selain memiliki nilai religi dan sejarah, Hutan Geger Omas dikenal sebagai kawasan yang dijaga kelestariannya oleh masyarakat. Kawasan hutan Sukarame yang dikaitkan dengan situs ini memiliki luas sekitar 35 hektare. Masyarakat setempat menjaga hutan dengan mematuhi aturan adat, termasuk larangan menebang pohon atau mengambil kayu tanpa izin sesepuh.
+            Keberadaan hutan, makam, dan mata air menunjukkan hubungan erat antara tradisi masyarakat dengan pelestarian alam. Hingga kini, Hutan Geger Omas menjadi tempat untuk kegiatan ziarah, pelaksanaan tradisi Nyepuh, serta pembelajaran mengenai sejarah dan kearifan lokal masyarakat Ciomas`,
       peta: "https://maps.google.com/maps?q=Situs+Geger+Emas+Ciomas&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
@@ -86,7 +108,12 @@ document.addEventListener("DOMContentLoaded", () => {
       judul: "Situs Piktograf Citapen",
       gambar: ["./jpg/situs-Piktograf-Citapen/situs-Piktograf-Citapen.jpg"],
       ringkasan: "Situs Citapen adalah peninggalan seni cadas prasejarah yang terletak di Dusun Citapen, Desa Sukajaya.",
-      deskripsi: `SEJARAH DAN LOKASI<br>Situs berada pada tebing curam di tepi Sungai Cijolang, tepatnya di lereng Gunung Rahong. Medannya sangat terjal dengan kemiringan tebing mendekati 80 derajat.`,
+      deskripsi: `Situs Batu Tulis Citapen merupakan peninggalan prasejarah yang terletak di Dusun Citapen, Desa Sukajaya, Kecamatan Rajadesa, Kabupaten Ciamis, Jawa Barat. Situs ini berada di tebing berbatu di kawasan Gunung Rahong, tidak jauh dari aliran Sungai Cijolang. Lokasinya cukup tersembunyi dan sulit dijangkau karena jalur menuju situs berupa jalan setapak yang terjal dan licin.
+            Situs Batu Tulis Citapen pertama kali tercatat pada tahun 1856 oleh Frans Carel Wilsen, seorang ahli litografi pada masa Hindia Belanda. Situs ini kemudian menjadi salah satu objek penelitian arkeologi karena memiliki goresan batu yang diduga berasal dari masa prasejarah. Pada tahun 2023, situs ini ditetapkan sebagai cagar budaya tingkat Kabupaten Ciamis sebagai bentuk perlindungan terhadap peninggalan sejarah tersebut.
+            Keunikan Situs Batu Tulis Citapen terletak pada goresan-goresan yang terdapat di permukaan batu. Motifnya beragam, mulai dari bentuk yang menyerupai manusia, kadal, monyet, telapak tangan, hingga bentuk yang menyerupai dedaunan dan gajah. Goresan tersebut dikenal sebagai *petroglif*, yaitu seni cadas yang dibuat dengan cara mengukir atau menggores permukaan batu.
+            Berdasarkan penelitian arkeologi yang diterbitkan pada 2024, goresan di situs ini memiliki karakteristik berbeda, yaitu berbentuk U yang cenderung tumpul dan berbentuk V yang lebih tajam. Perbedaan tersebut diduga menunjukkan penggunaan teknik atau alat yang berbeda dalam pembuatannya.
+            Berdasarkan kajian para peneliti, seni cadas di Situs Batu Tulis Citapen diperkirakan berasal dari rentang masa Mesolitik hingga Paleometalik. Perkiraan ini menunjukkan bahwa situs tersebut berpotensi memberikan informasi penting mengenai kehidupan manusia pada masa prasejarah. Beberapa motifnya diduga berkaitan dengan makhluk hidup, aktivitas berburu, dan unsur alam. Namun, usia pasti, makna simbolis, serta tujuan pembuatan setiap goresan masih memerlukan penelitian lebih lanjut.
+            Meskipun memiliki nilai arkeologis yang penting, kondisi Situs Batu Tulis Citapen menghadapi sejumlah tantangan. Sebagian permukaan batu tertutup material longsoran, sementara akses menuju lokasi cukup berbahaya ketika jalan licin atau cuaca buruk. Selain itu, tindakan vandalisme juga dilaporkan telah merusak sebagian permukaan batu. Karena itu, perlindungan situs perlu dilakukan melalui penelitian lanjutan, pengawasan, dan peningkatan kesadaran masyarakat agar peninggalan prasejarah ini tetap terjaga`,
       peta: "https://maps.google.com/maps?q=Situs+Piktograf+Citapen&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
@@ -94,7 +121,12 @@ document.addEventListener("DOMContentLoaded", () => {
       judul: "Situs Galuh Salawe",
       gambar: ["./jpg/situs-Galuh-Salawe/situs-Galuh-Salawe.jpg"],
       ringkasan: "Situs ini terletak di Dusun Tunggal Rahayu, Desa Cimaragas, Kecamatan Cimaragas.",
-      deskripsi: `SEJARAH DAN LOKASI<br>Situs ini berada di sebuah bukit di tepi aliran Sungai Citanduy, sehingga menawarkan perpaduan wisata budaya dan minat khusus berupa rafting.`,
+      deskripsi: `Situs Kerajaan Galuh Salawe atau Situs Sanghyang Maharaja Cipta Permana Prabudigaluh Salawe merupakan situs bersejarah yang terletak di Dusun Tunggal Rahayu, Desa Cimaragas, Kecamatan Cimaragas, Kabupaten Ciamis, Jawa Barat. Situs ini berkaitan dengan sejarah Kerajaan Galuh Pangauban atau Gara Tengah yang berkembang pada masa peralihan menuju penyebaran Islam di wilayah Galuh.
+            Menurut sumber sejarah lokal, kawasan ini berkaitan dengan pemerintahan Sanghyang Maharaja Cipta Permana Prabudigaluh Salawe yang diperkirakan memerintah pada tahun 1595–1618 M. Ia dikenal sebagai salah satu penguasa Galuh yang memeluk agama Islam. Keberadaan situs ini menjadi bagian penting dalam mengenal perkembangan sejarah dan kebudayaan masyarakat Galuh pada masa tersebut.
+            Di kawasan Situs Salawe terdapat berbagai peninggalan yang dipercaya berkaitan dengan kehidupan kerajaan pada masa lalu. Beberapa di antaranya adalah Batu Entog atau Trimurti, Batu Pangcalikan yang dikaitkan dengan tempat duduk raja, menhir, serta sejumlah batu patilasan yang dihubungkan dengan tokoh-tokoh sejarah. Peninggalan tersebut memperlihatkan adanya unsur budaya dari masa Hindu-Buddha dan masa Islam. Namun, hubungan setiap batu dengan tokoh atau peristiwa tertentu sebagian bersumber dari tradisi masyarakat setempat.
+            Selain memiliki peninggalan berupa batu-batu bersejarah, Situs Salawe juga dikenal sebagai tempat kegiatan budaya dan ziarah. Salah satu tradisi yang masih dikenal adalah *Misalin*, yaitu upacara adat yang dilaksanakan menjelang bulan Ramadan. Tradisi ini mengandung makna membersihkan diri, mempersiapkan diri secara batin, serta mempererat hubungan masyarakat dengan warisan budaya leluhur.
+            Lingkungan situs juga menjadi bagian penting dari keberadaannya. Kawasan ini berada di wilayah Cimaragas yang memiliki hubungan geografis dengan Sungai Citanduy. Keberadaan situs, peninggalan sejarah, dan tradisi masyarakat menjadikan Salawe sebagai tempat untuk mempelajari sejarah lokal, perkembangan kepercayaan, serta kehidupan sosial masyarakat Galuh.
+            Saat ini, Situs Salawe dimanfaatkan sebagai tempat wisata sejarah, kegiatan budaya, ziarah, dan pembelajaran bagi masyarakat maupun pelajar. Pemeliharaan peninggalan batu, kebersihan lingkungan, serta pelestarian tradisi menjadi hal penting agar nilai sejarah dan budaya situs ini tetap terjaga`,
       peta: "https://maps.google.com/maps?q=Situs+Galuh+Salawe&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
@@ -110,7 +142,11 @@ document.addEventListener("DOMContentLoaded", () => {
       judul: "Kompleks Pendopo Kabupaten Ciamis",
       gambar: ["./jpg/gedung/gedung.jpg"], // Sesuaikan dengan nama folder gedungmu
       ringkasan: "Komplek Pendopo Kabupaten dan Eks Kantor Kewedanaan Ciamis adalah dua bangunan bersejarah yang berdampingan.",
-      deskripsi: `SEJARAH DAN LOKASI<br>Berada di Jalan Jenderal Sudirman No. 16, Kelurahan Ciamis. Bangunan ini ditetapkan sebagai cagar budaya karena memenuhi kriteria usia di atas 50 tahun.`,
+      deskripsi: `Pendopo Bupati Ciamis merupakan salah satu bangunan bersejarah yang terletak di Jalan Jenderal Sudirman No. 16, Kabupaten Ciamis, Jawa Barat. Bangunan ini dikenal memiliki gaya arsitektur kolonial Belanda dan masih berdiri kokoh hingga sekarang. Selain menjadi salah satu ikon kota Ciamis, bangunan ini juga menyimpan cerita tentang perkembangan pemerintahan pada masa lalu.
+            Menurut catatan sejarah, bangunan tersebut didirikan pada masa pemerintahan Bupati Galuh Raden Adipati Aria Kusumadiningrat atau Kanjeng Prebu, yang memerintah pada tahun 1839–1886. Pada awalnya, bangunan ini digunakan sebagai kantor dan tempat kediaman Asisten Residen Galuh pada masa kolonial Belanda. Sementara itu, pendopo Bupati Galuh pada masa tersebut berada di sebelah selatan Alun-alun Ciamis, yang sekarang digunakan sebagai Gedung DPRD Ciamis.
+            Dari segi arsitektur, Pendopo Bupati Ciamis memiliki ciri khas bangunan Eropa atau kolonial Belanda. Hal ini terlihat dari pilar-pilar besar dan tinggi yang berjajar di bagian depan, serta pintu dan jendela berukuran besar. Bangunannya didominasi warna putih sehingga memberikan kesan megah dan klasik. Bentuk bangunan tersebut menjadi salah satu bukti pengaruh arsitektur kolonial yang berkembang di wilayah Ciamis pada masa lalu.
+            Letak pendopo juga berkaitan dengan tata ruang pusat pemerintahan zaman dahulu. Kawasannya berdekatan dengan Alun-alun Ciamis, Masjid Agung Ciamis, dan Kantor Pos. Keberadaan bangunan-bangunan tersebut menunjukkan bagaimana pusat pemerintahan, kegiatan masyarakat, dan fasilitas umum berada dalam satu kawasan.
+            Seiring berjalannya waktu, bangunan yang dikenal sebagai Gedung Negara ini digunakan sebagai Pendopo Bupati Ciamis. Pada tahun 2024, Pendopo Kabupaten Ciamis ditetapkan sebagai cagar budaya tingkat kabupaten melalui keputusan pemerintah daerah. Penetapan tersebut menjadi bagian dari upaya melindungi bangunan bersejarah yang memiliki nilai penting bagi sejarah dan perkembangan budaya masyarakat Ciamis.`,
       peta: "https://maps.google.com/maps?q=Pendopo+Bupati+Ciamis&t=&z=15&ie=UTF8&iwloc=&output=embed"
     }
   ];
