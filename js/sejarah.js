@@ -166,10 +166,10 @@ document.addEventListener("DOMContentLoaded", () => {
     items.forEach((item) => {
       const gambarThumb = (item.gambar && item.gambar.length > 0) ? item.gambar[0] : "./jpg/default.jpg";
       gridContainer.innerHTML += `
-        <article class="kartu-sejarah">
+        <article class="kartu-sejarah" data-id="${item.id}" role="button" tabindex="0" aria-label="Lihat detail: ${item.judul}">
           <div class="kartu-sejarah__media">
             <img src="${gambarThumb}" alt="${item.judul}" />
-            <button class="btn-detail" type="button" data-id="${item.id}">${item.judul}</button>
+            <span class="btn-detail" aria-hidden="true">${item.judul}</span>
           </div>
         </article>
       `;
@@ -187,8 +187,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   document.addEventListener("click", (e) => {
-    if (e.target.classList.contains("btn-detail")) {
-      const id = e.target.getAttribute("data-id");
+    const card = e.target.closest(".kartu-sejarah");
+    if (card) {
+      const id = card.getAttribute("data-id");
       const data = dataSejarah.find((item) => item.id == id);
 
       if (data) {
@@ -229,6 +230,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
+
+  if (gridContainer) {
+    gridContainer.addEventListener("keydown", (e) => {
+      const card = e.target.closest(".kartu-sejarah");
+      if (card && (e.key === "Enter" || e.key === " ")) {
+        e.preventDefault();
+        card.click();
+      }
+    });
+  }
 
   if (btnKembali) {
     btnKembali.addEventListener("click", () => {

@@ -47,6 +47,7 @@
   --heritage-ink: #244238;
   --heritage-accent: #c8894d;
   position: relative;
+  cursor: pointer;
   background: #d9d3c7;
   border-radius: 20px;
   overflow: hidden;
@@ -136,6 +137,11 @@
 .btn-detail:focus-visible {
   outline: 3px solid var(--heritage-accent);
   outline-offset: 3px;
+}
+
+.kartu-sejarah:focus-visible {
+  outline: 3px solid var(--heritage-accent);
+  outline-offset: 4px;
 }
 
 @keyframes cardReveal {
