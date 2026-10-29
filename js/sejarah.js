@@ -41,7 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
       judul: "Situs Batu Panjang",
       gambar: ["./jpg/situs-Batu-Panjang/situs-Batu-Panjang.jpg"],
       ringkasan: "Situs Batu Panjang adalah peninggalan zaman Megalitikum yang berlokasi di perbatasan Ciamis–Majalengka.",
-      deskripsi: `SEJARAH DAN LOKASI<br>Situs Batu Panjang Jahim merupakan kawasan peninggalan budaya yang terletak di Dusun Cimara, Desa Cibeureum, Kecamatan Sukamantri. Situs ini berada di kawasan hutan pinus Gunung Madati.`,
+      deskripsi: `Situs Batu Panjang Jahim merupakan situs peninggalan budaya yang terletak di Dusun Cimara, Desa Cibeureum, Kecamatan Sukamantri, Kabupaten Ciamis, Jawa Barat. Situs ini berada di kawasan hutan pinus Gunung Madati dan dikenal karena kumpulan batu besar dengan bentuk serta susunan yang beragam.
+            Situs Batu Panjang telah lama dikenal oleh masyarakat sekitar sebagai kawasan yang memiliki nilai sejarah dan dianggap sakral. Keberadaan batu-batu tersebut diduga berkaitan dengan tradisi megalitik, yaitu kebudayaan masa lampau yang menggunakan batu berukuran besar untuk keperluan tertentu. Namun, usia dan fungsi asli batu-batu tersebut belum diketahui secara pasti.
+            Di kawasan situs ini terdapat batu andesit yang berbentuk memanjang, lonjong, dan pipih. Beberapa di antaranya dikenal sebagai Batu Kendang karena susunannya menyerupai alat musik kendang dan Batu Tapak Maung yang memiliki cekungan kecil menyerupai jejak kaki harimau. Bentuk dan susunan batu tersebut menjadi daya tarik untuk mempelajari peninggalan kebudayaan masa lampau.
+            Selain memiliki nilai sejarah, Situs Batu Panjang dikelilingi hutan pinus dengan udara sejuk dan pemandangan alam yang menarik. Cerita serta kepercayaan masyarakat terhadap batu-batu tertentu juga menjadi bagian dari tradisi budaya setempat. Hal ini menunjukkan bahwa situs tersebut memiliki makna bagi masyarakat di sekitarnya.
+            Keberadaan batu-batu bersejarah dan lingkungan alamnya menjadikan Situs Batu Panjang sebagai salah satu warisan budaya yang penting di Kabupaten Ciamis. Oleh karena itu, situs ini perlu dijaga melalui perlindungan peninggalan, pemeliharaan lingkungan, dan penelitian lebih lanjut agar nilai sejarah serta budayanya tetap terpelihara dan dikenal oleh generasi mendatang.`,
       peta: "https://maps.google.com/maps?q=Situs+Batu+Panjang+Jahim+Ciamis&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
@@ -49,7 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
       judul: "Kampung Adat Kuta",
       gambar: ["./jpg/kampung-adat-kuta/kampung-adat-kuta.jpg"],
       ringkasan: "Kampung tradisional unik yang memegang teguh adat leluhur serta konservasi hutan keramat.",
-      deskripsi: `SEJARAH DAN LOKASI<br>Kampung Adat Kuta menjaga ketat leuweung gede (hutan keramat) dan tradisi rumah panggung kayu khas warisan leluhur Sunda Galuh.`,
+      deskripsi: `Kampung Adat Kuta merupakan perkampungan tradisional yang terletak di Desa Karangpaningal, Kecamatan Tambaksari, Kabupaten Ciamis, Jawa Barat. Kampung ini dikenal karena masyarakatnya masih mempertahankan adat istiadat Sunda, tradisi leluhur, serta menjaga kelestarian lingkungan.
+            Menurut cerita masyarakat setempat, kawasan ini dahulu direncanakan menjadi pusat pemerintahan Kerajaan Galuh, tetapi rencana tersebut tidak terlaksana. Cerita ini diwariskan secara turun-temurun dan menjadi bagian dari sejarah lisan Kampung Adat Kuta.
+            Salah satu keunikan kampung ini adalah aturan adat yang disebut pamali, yaitu larangan yang diwariskan oleh leluhur untuk menjaga kehidupan masyarakat dan kelestarian alam. Aturan tersebut juga diterapkan di Leuweung Gede, yaitu hutan keramat yang dilindungi oleh masyarakat. Berkat upaya pelestarian lingkungan, Kampung Adat Kuta menerima penghargaan Kalpataru pada tahun 2002.
+            Selain mempertahankan aturan adat, masyarakat Kampung Adat Kuta juga menjaga arsitektur rumah tradisional Sunda yang umumnya berbentuk rumah panggung dengan bahan kayu dan bambu. Berbagai upacara adat, seperti Hajat Nyuguh, Hajat Bumi, dan Babarit, juga masih dilaksanakan sebagai bentuk rasa syukur sekaligus upaya melestarikan budaya leluhur.
+            Dalam kehidupan sehari-hari, masyarakat menjunjung tinggi gotong royong dan bekerja sebagai petani, pengrajin gula aren, serta pengrajin anyaman. Pelestarian kampung juga didukung oleh Peraturan Daerah Kabupaten Ciamis Nomor 15 Tahun 2016 tentang Pengakuan dan Perlindungan Masyarakat Hukum Adat Kampung Kuta.
+            Keberadaan tradisi, aturan adat, rumah tradisional, dan hutan keramat menjadikan Kampung Adat Kuta sebagai salah satu warisan budaya penting di Kabupaten Ciamis. Oleh karena itu, adat istiadat dan lingkungan kampung perlu terus dijaga agar nilai-nilai kearifan lokal tetap diwariskan kepada generasi mendatang`,
       peta: "https://maps.google.com/maps?q=Kampung+Adat+Kuta+Ciamis&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
@@ -57,7 +66,11 @@ document.addEventListener("DOMContentLoaded", () => {
       judul: "Situs Samida",
       gambar: ["./jpg/situs-samida/situs-samida.jpg"],
       ringkasan: "Samida merupakan situs bersejarah yang terletak di Desa Sirnajaya, Kecamatan Rajadesa.",
-      deskripsi: `SEJARAH DAN LOKASI<br>Menurut informasi dari pemerintah desa, Situs Samida memiliki kaitan dengan sejarah Kerajaan Pajajaran dan tokoh yang dikenal sebagai Prabu Sirnaraja.`,
+      deskripsi: `Situs Samida merupakan situs bersejarah yang terletak di Desa Sirnajaya, Kecamatan Rajadesa, Kabupaten Ciamis, Jawa Barat. Situs ini memiliki nilai sejarah dan budaya serta dikembangkan sebagai tempat wisata religi dan edukasi.
+           Menurut cerita masyarakat setempat, nama Samida berkaitan dengan nama sebuah pohon. Situs ini juga memiliki kisah tentang Prabu Sirnaraja atau Prabu Guru Gantangan yang dipercaya sebagai putra Prabu Siliwangi. Namun, kisah tersebut merupakan cerita turun-temurun yang belum seluruhnya dapat dipastikan secara historis.
+           Di kawasan Situs Samida terdapat peninggalan berupa susunan batu melingkar yang dikenal sebagai Teras Batu Samida dan Pagempungan, serta batu tegak yang disebut menhir. Selain itu, terdapat laporan mengenai temuan pecahan keramik dan kerak besi yang dapat menjadi petunjuk untuk mempelajari aktivitas manusia pada masa lampau.
+           Situs Samida juga berkaitan dengan tradisi Nyalin, yaitu kegiatan adat untuk mengganti pembungkus benda pusaka dan membersihkannya. Tradisi ini menjadi bentuk penghormatan terhadap warisan leluhur sekaligus upaya masyarakat dalam menjaga kebudayaan yang diwariskan secara turun-temurun.
+           Keberadaan peninggalan sejarah dan tradisi tersebut menjadikan Situs Samida sebagai salah satu warisan budaya penting di Kabupaten Ciamis. Oleh karena itu, situs ini perlu dijaga dan dilestarikan agar nilai sejarah serta kebudayaannya tetap dikenal oleh generasi mendatang..`,
       peta: "https://maps.google.com/maps?q=Situs+Samida+Rajadesa&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     {
