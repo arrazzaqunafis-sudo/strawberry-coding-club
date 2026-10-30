@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "./jpg/ciungwanara/ciungwanara3.jpg",
         "./jpg/ciungwanara/ciungwanara4.jpg",
         "./jpg/ciungwanara/ciungwanara5.jpg",
+        "./jpg/ciungwanara/ciungwanara6.jpg",
+        "./jpg/ciungwanara/ciungwanara7.jpg",
       ],
       ringkasan:
         "Cagar budaya peninggalan Kerajaan Galuh yang erat kaitannya dengan legenda Ciung Wanara.",
@@ -48,6 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "./jpg/situs-jambansari/situs-jambansari3.jpg",
         "./jpg/situs-jambansari/situs-jambansari4.jpg",
         "./jpg/situs-jambansari/situs-jambansari5.jpg",
+        "./jpg/situs-jambansari/situs-jambansari6.jpg",
+        "./jpg/situs-jambansari/situs-jambansari7.jpg",
       ],
       ringkasan:
         "Kompleks cagar budaya dan pemakaman Kanjeng Prebu R.A.A. Kusumadiningrat.",
@@ -99,11 +103,11 @@ document.addEventListener("DOMContentLoaded", () => {
       id: 5,
       judul: "Kampung Adat Kuta",
       gambar: [
-        "./jpg/situs-kampung-adat-kuta/situs-kampung-adat-kuta.jpg",
-        "./jpg/situs-kampung-adat-kuta/situs-kampung-adat-kuta1.jpg",
-        "./jpg/situs-kampung-adat-kuta/situs-kampung-adat-kuta2.jpg",
-        "./jpg/situs-kampung-adat-kuta/situs-kampung-adat-kuta3.jpg",
-        "./jpg/situs-kampung-adat-kuta/situs-kampung-adat-kuta4.jpg",
+        "./jpg/kampung-adat-kuta/kampung-adat-kuta.jpg",
+        "./jpg/kampung-adat-kuta/kampung-adat-kuta1.jpg",
+        "./jpg/kampung-adat-kuta/kampung-adat-kuta2.jpg",
+        "./jpg/kampung-adat-kuta/kampung-adat-kuta3.jpg",
+        "./jpg/kampung-adat-kuta/kampung-adat-kuta4.jpg",
       ],
       ringkasan:
         "Kampung tradisional unik yang memegang teguh adat leluhur serta konservasi hutan keramat.",
