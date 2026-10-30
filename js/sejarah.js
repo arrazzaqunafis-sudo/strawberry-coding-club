@@ -255,14 +255,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function renderCards(items) {
     if (!gridContainer) return;
-    gridContainer.innerHTML = "";
 
-    items.forEach((item) => {
-      const gambarThumb =
-        item.gambar && item.gambar.length > 0
-          ? item.gambar[0]
-          : "./jpg/default.jpg";
-      gridContainer.innerHTML += `
+    if (items.length === 0) {
+      gridContainer.innerHTML = `
+        <div class="kosong-sejarah">
+          <p>Tidak ada situs yang cocok dengan pencarian Anda.</p>
+          <p>Coba kata kunci lain, seperti nama situs atau lokasinya.</p>
+        </div>
+      `;
+      return;
+    }
+
+    gridContainer.innerHTML = items
+      .map((item) => {
+        const gambarThumb =
+          item.gambar && item.gambar.length > 0
+            ? item.gambar[0]
+            : "./jpg/default.jpg";
+        return `
         <article class="kartu-sejarah" data-id="${item.id}" role="button" tabindex="0" aria-label="Lihat detail: ${item.judul}">
           <div class="kartu-sejarah__media">
             <img src="${gambarThumb}" alt="${item.judul}" />
@@ -275,7 +285,8 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </article>
       `;
-    });
+      })
+      .join("");
 
     const cards = gridContainer.querySelectorAll(".kartu-sejarah");
     if (
@@ -295,8 +306,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (inputCari) {
     inputCari.addEventListener("input", (e) => {
       const query = e.target.value.toLowerCase();
-      const filtered = dataSejarah.filter((s) =>
-        s.judul.toLowerCase().includes(query),
+      const filtered = dataSejarah.filter(
+        (s) =>
+          s.judul.toLowerCase().includes(query) ||
+          s.ringkasan.toLowerCase().includes(query),
       );
       renderCards(filtered);
     });
