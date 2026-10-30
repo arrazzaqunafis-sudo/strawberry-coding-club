@@ -1,153 +1,159 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Sejarah &amp; Situs Ciamis</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Sejarah &amp; Situs Ciamis</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/sejarah.css">
-    <script src="https://unpkg.com/feather-icons" defer></script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
-    <script src="./js/lokasi.js" defer></script>
-    <script src="./js/lightbox.js" defer></script>
-    <script src="./js/script.js" defer></script>
-    <script src="./js/sejarah.js" defer></script>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:wght@600;800&display=swap"
+    rel="stylesheet">
 
-  <body>
-    <!-- HEADER NAVIGASI -->
-    <header class="site-header scrolled" id="site-header">
-      <nav class="navbar" aria-label="Navigasi Utama">
-        <a class="navbar__logo" href="index.html">budaya<span>ciamis</span></a>
-        <div class="navbar__links" id="primary-navigation">
-          <a href="index.html#home">Beranda</a>
-          <a href="index.html#about">Tentang</a>
-          <a href="sejarah.html" class="active">Sejarah</a>
-          <a href="index.html#peta">Peta Wisata</a>
-          <a href="index.html#galeri">Galeri</a>
-        </div>
-        <div class="navbar__actions">
-          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ganti Tema">
-            <i data-feather="moon" aria-hidden="true"></i>
-          </button>
-          <button class="navbar__toggle" id="navbar-toggle" type="button" aria-label="Buka navigasi">
-            <i data-feather="menu" aria-hidden="true"></i>
-          </button>
-        </div>
-      </nav>
-    </header>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/sejarah.css">
+  <script src="https://unpkg.com/feather-icons" defer></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="./js/lokasi.js" defer></script>
+  <script src="./js/box-sejarah.js" defer></script>
+  <script src="./js/script.js" defer></script>
+  <script src="./js/sejarah.js" defer></script>
+</head>
 
-    <main class="sejarah-page container">
-      <!-- Navigasi Cepat Kembali -->
-      <div class="top-back-bar">
-        <a href="index.html" class="btn-top-back">
-          <i data-feather="arrow-left"></i> Kembali ke Beranda
-        </a>
+<body>
+  <!-- HEADER NAVIGASI -->
+  <header class="site-header scrolled" id="site-header">
+    <nav class="navbar" aria-label="Navigasi Utama">
+      <a class="navbar__logo" href="index.html">budaya<span>ciamis</span></a>
+      <div class="navbar__links" id="primary-navigation">
+        <a href="index.html#home">Beranda</a>
+        <a href="index.html#about">Tentang</a>
+        <a href="sejarah.html" class="active">Sejarah</a>
+        <a href="index.html#peta">Peta Wisata</a>
+        <a href="index.html#galeri">Galeri</a>
       </div>
-
-      <!-- TAMPILAN DAFTAR SEJARAH -->
-      <section id="daftar-sejarah">
-        <div class="page-header">
-          <span class="section__subtitle">Eksplorasi Peninggalan</span>
-          <h1>Sejarah &amp; Cagar Budaya Galuh</h1>
-          <p>Daftar situs arkeologi, prasasti, dan kawasan adat peninggalan Kerajaan Galuh di Ciamis.</p>
-          
-          <div class="search-bar">
-            <input type="text" id="input-cari" placeholder="Cari situs sejarah atau lokasi...">
-          </div>
-        </div>
-
-        <div class="kumpulan-sejarah" id="grid-sejarah">
-          <!-- Item kartu sejarah akan dirender dinamis via Javascript -->
-        </div>
-      </section>
-
-      <!-- TAMPILAN DETAIL SEJARAH -->
-      <section id="detail-sejarah" class="detail-container" hidden>
-        <button id="btn-kembali" class="btn-back">
-          <i data-feather="arrow-left"></i> Kembali ke Daftar Sejarah
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ganti Tema">
+          <i data-feather="moon" aria-hidden="true"></i>
         </button>
+        <button class="navbar__toggle" id="navbar-toggle" type="button" aria-label="Buka navigasi">
+          <i data-feather="menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-        <article class="detail-card">
-          <h1 id="judul-detail" class="detail-title"></h1>
-          
-          <!-- PETA LOKASI INTERAKTIF -->
-          <div class="detail-map-wrapper">
-            <div id="peta-lokasi" class="detail-map" role="application" aria-label="Peta semua wisata dan situs sejarah Ciamis"></div>
-            <p id="map-location-note" class="map-location-note" hidden></p>
-            <div class="map__legend" aria-label="Keterangan penanda peta">
-              <span><i class="map__legend-dot map__legend-dot--wisata"></i> Wisata</span>
-              <span><i class="map__legend-dot map__legend-dot--sejarah"></i> Situs sejarah</span>
-            </div>
-          </div>
+  <main class="sejarah-page container">
+    <!-- Navigasi Cepat Kembali -->
+    <div class="top-back-bar">
+      <a href="index.html" class="btn-top-back">
+        <i data-feather="arrow-left"></i> Kembali ke Beranda
+      </a>
+    </div>
 
-          <!-- DESKRIPSI & NARASI SEJARAH -->
-          <div id="isi-detail" class="detail-content"></div>
-          
-          <!-- GALERI FOTO GRID -->
-          <div class="galeri-bawah-wrapper">
-            <h3 class="galeri-bawah-title" id="galeri-bawah-title">Galeri Foto</h3>
-            <div class="galeri-grid-container" id="galeri-foto-container"></div>
-          </div>
-        </article>
-      </section>
-    </main>
+    <!-- TAMPILAN DAFTAR SEJARAH -->
+    <section id="daftar-sejarah">
+      <div class="page-header">
+        <span class="section__subtitle">Eksplorasi Peninggalan</span>
+        <h1>Sejarah &amp; Cagar Budaya Galuh</h1>
+        <p>Daftar situs arkeologi, prasasti, dan kawasan adat peninggalan Kerajaan Galuh di Ciamis.</p>
 
-    <!-- FOOTER UTAMA -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-container">
-          <div class="footer-box brand-box">
-            <h3 class="footer-logo">budaya<span>ciamis</span></h3>
-            <p>
-              Platform digital pelestarian dan pengenalan kekayaan budaya,
-              destinasi bersejarah, serta kearifan lokal Kabupaten Ciamis.
-            </p>
-          </div>
-
-          <div class="footer-box">
-            <h4>Tautan Cepat</h4>
-            <ul class="footer-links">
-              <li><a href="index.html#home">Beranda</a></li>
-              <li><a href="index.html#about">Tentang Ciamis</a></li>
-              <li><a href="sejarah.html">Daftar Sejarah</a></li>
-              <li><a href="index.html#peta">Peta Wisata</a></li>
-              <li><a href="index.html#galeri">Galeri Sejarah</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-box">
-            <h4>Lokasi Utama</h4>
-            <p>Kabupaten Ciamis<br>Provinsi Jawa Barat, Indonesia</p>
-          </div>
-
-          <div class="footer-box">
-            <h4>Sosial Media</h4>
-            <p>Ikuti perkembangan budaya Ciamis melalui kanal digital kami:</p>
-            <div class="social-links">
-              <a href="#" aria-label="Instagram">
-                <i data-feather="instagram"></i>
-              </a>
-              <a href="#" aria-label="YouTube">
-                <i data-feather="youtube"></i>
-              </a>
-              <a href="#" aria-label="Facebook">
-                <i data-feather="facebook"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <p>&copy; 2026 Budaya Ciamis. Seluruh Hak Cipta Dilindungi.</p>
+        <div class="search-bar">
+          <input type="text" id="input-cari" placeholder="Cari situs sejarah atau lokasi...">
         </div>
       </div>
-    </footer>
-  </body>
+
+      <div class="kumpulan-sejarah" id="grid-sejarah">
+        <!-- Item kartu sejarah akan dirender dinamis via Javascript -->
+      </div>
+    </section>
+
+    <!-- TAMPILAN DETAIL SEJARAH -->
+    <section id="detail-sejarah" class="detail-container" hidden>
+      <button id="btn-kembali" class="btn-back">
+        <i data-feather="arrow-left"></i> Kembali ke Daftar Sejarah
+      </button>
+
+      <article class="detail-card">
+        <h1 id="judul-detail" class="detail-title"></h1>
+
+        <!-- PETA LOKASI INTERAKTIF -->
+        <div class="detail-map-wrapper">
+          <div id="peta-lokasi" class="detail-map" role="application"
+            aria-label="Peta semua wisata dan situs sejarah Ciamis"></div>
+          <p id="map-location-note" class="map-location-note" hidden></p>
+          <div class="map__legend" aria-label="Keterangan penanda peta">
+            <span><i class="map__legend-dot map__legend-dot--wisata"></i> Wisata</span>
+            <span><i class="map__legend-dot map__legend-dot--sejarah"></i> Situs sejarah</span>
+          </div>
+        </div>
+
+        <!-- DESKRIPSI & NARASI SEJARAH -->
+        <div id="isi-detail" class="detail-content"></div>
+
+        <!-- GALERI FOTO GRID -->
+        <div class="galeri-bawah-wrapper">
+          <h3 class="galeri-bawah-title" id="galeri-bawah-title">Galeri Foto</h3>
+          <div class="galeri-grid-container" id="galeri-foto-container"></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- FOOTER UTAMA -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-box brand-box">
+          <h3 class="footer-logo">budaya<span>ciamis</span></h3>
+          <p>
+            Platform digital pelestarian dan pengenalan kekayaan budaya,
+            destinasi bersejarah, serta kearifan lokal Kabupaten Ciamis.
+          </p>
+        </div>
+
+        <div class="footer-box">
+          <h4>Tautan Cepat</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Beranda</a></li>
+            <li><a href="index.html#about">Tentang Ciamis</a></li>
+            <li><a href="sejarah.html">Daftar Sejarah</a></li>
+            <li><a href="index.html#peta">Peta Wisata</a></li>
+            <li><a href="index.html#galeri">Galeri Sejarah</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h4>Lokasi Utama</h4>
+          <p>Kabupaten Ciamis<br>Provinsi Jawa Barat, Indonesia</p>
+        </div>
+
+        <div class="footer-box">
+          <h4>Sosial Media</h4>
+          <p>Ikuti perkembangan budaya Ciamis melalui kanal digital kami:</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">
+              <i data-feather="instagram"></i>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <i data-feather="youtube"></i>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <i data-feather="facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Budaya Ciamis. Seluruh Hak Cipta Dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
