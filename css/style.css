@@ -671,6 +671,123 @@ html[data-theme="dark"] .site-header.scrolled {
   background: #0f766e;
 }
 
+/* --- LEAFLET POPUP STYLING (RESPONSIF & RAPI) --- */
+.leaflet-popup-content-wrapper {
+  border-radius: 14px !important;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18) !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border: 1px solid var(--border-color, rgba(0, 0, 0, 0.1)) !important;
+  background: var(--bg-card, #ffffff) !important;
+  color: var(--text-dark, #1e1b18) !important;
+}
+
+.leaflet-popup-content {
+  margin: 14px 18px !important;
+  min-width: 240px !important;
+  max-width: 300px !important;
+  width: auto !important;
+  line-height: 1.5 !important;
+  font-family: var(--font-body, "Plus Jakarta Sans"), sans-serif !important;
+}
+
+.leaflet-popup-tip {
+  background: var(--bg-card, #ffffff) !important;
+}
+
+.map-popup-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.map-popup-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  margin-bottom: 0.2rem;
+}
+
+.map-popup-badge--sejarah {
+  background: rgba(15, 118, 110, 0.12);
+  color: #0f766e;
+}
+
+.map-popup-badge--wisata {
+  background: rgba(124, 58, 237, 0.12);
+  color: #7c3aed;
+}
+
+.map-popup-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark, #1e1b18);
+  margin: 0;
+  line-height: 1.35;
+}
+
+.map-popup-category {
+  font-size: 0.82rem;
+  color: var(--text-muted, #64748b);
+  margin: 0;
+}
+
+.map-popup-coords {
+  font-size: 0.78rem;
+  color: var(--text-muted, #64748b);
+  font-family: monospace;
+  background: rgba(0, 0, 0, 0.04);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  margin-top: 0.25rem;
+}
+
+html[data-theme="dark"] .map-popup-coords {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.map-popup-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+  font-size: 0.85rem;
+}
+
+.map-popup-link {
+  color: var(--primary, #6b21a8);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.map-popup-link:hover {
+  text-decoration: underline;
+}
+
+.map-popup-current {
+  color: #0f766e;
+  font-weight: 600;
+  font-size: 0.82rem;
+}
+
+.map-popup-source {
+  color: var(--text-muted, #64748b);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.map-popup-source:hover {
+  color: var(--text-dark, #1e1b18);
+  text-decoration: underline;
+}
+
 /* --- GALERI SEJARAH --- */
 
 .gallery__grid {
@@ -687,6 +804,7 @@ html[data-theme="dark"] .site-header.scrolled {
   overflow: hidden;
   border-radius: var(--radius);
   background: #312e3a;
+  cursor: pointer;
   box-shadow: var(--shadow-md);
   isolation: isolate;
   color: #fff;
@@ -694,6 +812,41 @@ html[data-theme="dark"] .site-header.scrolled {
   transition:
     transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1),
     box-shadow 0.45s ease;
+}
+
+.gallery-card__zoom-btn {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  z-index: 3;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.25s ease, transform 0.25s ease, background 0.2s ease;
+}
+
+.gallery-card:hover .gallery-card__zoom-btn,
+.gallery-card:focus-visible .gallery-card__zoom-btn,
+.gallery-card__zoom-btn:focus-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.gallery-card__zoom-btn:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  transform: scale(1.08);
 }
 
 .gallery-card--featured {
@@ -1033,5 +1186,242 @@ html[data-theme="dark"] .site-header.scrolled {
   .about__image,
   .gallery-card {
     transition: none;
+  }
+}
+
+
+/* --- LIGHTBOX MODAL POPUP (FULLSCREEN LUXURY STYLE) --- */
+body.lightbox-open {
+  overflow: hidden !important;
+  touch-action: none;
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  overflow: hidden;
+  user-select: none;
+}
+
+.image-lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-overlay {
+  position: absolute;
+  inset: 0;
+  background: #000000;
+  cursor: zoom-out;
+}
+
+/* TOP BAR (Counter di kiri atas, Aksi di kanan atas) */
+.lightbox-topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 2rem;
+  pointer-events: none;
+}
+
+.lightbox-counter {
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  opacity: 0.88;
+  pointer-events: auto;
+}
+
+.lightbox-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  pointer-events: auto;
+}
+
+.lightbox-icon-btn {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.lightbox-icon-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.lightbox-icon-btn:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* PANAH NAVIGASI KIRI & KANAN */
+.lightbox-arrow-btn {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.75;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  line-height: 1;
+}
+
+.lightbox-arrow-btn:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.15);
+}
+
+.lightbox-arrow-btn:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.lightbox-arrow-btn--prev {
+  left: 1.25rem;
+}
+
+.lightbox-arrow-btn--next {
+  right: 1.25rem;
+}
+
+/* TAMPILAN FOTO BESAR MEMENUHI LAYAR (STAGE) */
+.lightbox-stage {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 5rem 2.5rem;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.lightbox-img-container {
+  width: 100%;
+  height: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  pointer-events: auto;
+}
+
+.lightbox-img {
+  width: 100%;
+  height: 100%;
+  max-width: 92vw;
+  max-height: 84vh;
+  object-fit: contain;
+  transition: opacity 0.2s ease, transform 0.25s ease;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.lightbox-loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+}
+
+.lightbox-spinner {
+  width: 42px;
+  height: 42px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: lb-spin 0.75s linear infinite;
+}
+
+@keyframes lb-spin {
+  to { transform: rotate(360deg); }
+}
+
+.lightbox-bottom-info {
+  position: fixed;
+  bottom: 0.85rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.lightbox-caption {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* RESPONSIVE PADA HP / TABLET */
+@media (max-width: 768px) {
+  .lightbox-topbar {
+    padding: 0.85rem 1.25rem;
+  }
+
+  .lightbox-stage {
+    padding: 3.5rem 1rem 2rem;
+  }
+
+  .lightbox-arrow-btn {
+    padding: 0.75rem;
+  }
+
+  .lightbox-arrow-btn--prev {
+    left: 0.25rem;
+  }
+
+  .lightbox-arrow-btn--next {
+    right: 0.25rem;
+  }
+
+  .lightbox-arrow-btn svg {
+    width: 28px;
+    height: 28px;
   }
 }

@@ -80,17 +80,26 @@ if (mapCanvas && window.L && Array.isArray(window.lokasiCiamis)) {
       icon: markerIcon,
     }).addTo(map);
     const [latitude, longitude] = lokasi.koordinat;
-    const storyLink = Number.isInteger(lokasi.situsId)
-      ? `<a href="sejarah.html?situs=${lokasi.situsId}">Baca kisah situs</a><br>`
+    const storyLinkHtml = Number.isInteger(lokasi.situsId)
+      ? `<a href="sejarah.html?situs=${lokasi.situsId}" class="map-popup-link">Baca kisah situs →</a>`
       : "";
     const sourceLabel = lokasi.sumber.includes("openstreetmap.org")
-      ? "Sumber OpenStreetMap"
-      : "Buka titik di peta";
+      ? "Peta OpenStreetMap"
+      : "Buka titik koordinat";
     marker.bindPopup(
-      `<strong>${lokasi.nama}</strong><br>${lokasi.kategori}<br>` +
-        `Koordinat terverifikasi: ${latitude.toFixed(6)}, ${longitude.toFixed(6)}<br>` +
-        storyLink +
-        `<a href="${lokasi.sumber}" target="_blank" rel="noopener noreferrer">${sourceLabel}</a>`,
+      `
+        <div class="map-popup-card">
+          <span class="map-popup-badge map-popup-badge--${lokasi.jenis}">${lokasi.jenis === "wisata" ? "Wisata" : "Situs Sejarah"}</span>
+          <strong class="map-popup-name">${lokasi.nama}</strong>
+          <span class="map-popup-category">${lokasi.kategori}</span>
+          <div class="map-popup-coords">Koordinat: ${latitude.toFixed(6)}, ${longitude.toFixed(6)}</div>
+          <div class="map-popup-footer">
+            ${storyLinkHtml}
+            <a href="${lokasi.sumber}" target="_blank" rel="noopener noreferrer" class="map-popup-source">${sourceLabel} ↗</a>
+          </div>
+        </div>
+      `,
+      { minWidth: 240, maxWidth: 300 },
     );
     markerBounds.push(lokasi.koordinat);
   });
@@ -178,18 +187,55 @@ if (galleryContainer && Array.isArray(window.lokasiCiamis)) {
   galleryContainer.innerHTML = galeriSejarah
     .map(
       (item, index) => `
-    <a class="gallery-card${index === 0 ? " gallery-card--featured" : ""}" href="sejarah.html?situs=${item.id}" aria-label="Baca sejarah ${item.judul}">
+    <article class="gallery-card${index === 0 ? " gallery-card--featured" : ""}" data-index="${index}" role="button" tabindex="0" aria-label="Lihat foto besar ${item.judul}">
       <img src="${item.gambar}" alt="${item.judul}" loading="lazy" decoding="async" />
       <span class="gallery-card__shade"></span>
+      <button type="button" class="gallery-card__zoom-btn" data-action="zoom" aria-label="Perbesar foto ${item.judul}" title="Perbesar foto">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          <line x1="11" y1="8" x2="11" y2="14"></line>
+          <line x1="8" y1="11" x2="14" y2="11"></line>
+        </svg>
+      </button>
       <span class="gallery-card__content">
         <span class="gallery-card__category">${item.kategori}</span>
         <span class="gallery-card__title">${item.judul}</span>
-        <span class="gallery-card__link">Baca kisah <span aria-hidden="true">→</span></span>
+        <a href="sejarah.html?situs=${item.id}" class="gallery-card__link">Baca kisah <span aria-hidden="true">→</span></a>
       </span>
-    </a>
+    </article>
   `,
     )
     .join("");
+
+  galleryContainer.addEventListener("click", (e) => {
+    if (e.target.closest(".gallery-card__link")) {
+      return;
+    }
+
+    const card = e.target.closest(".gallery-card");
+    if (card && typeof window.openLightbox === "function") {
+      const idx = parseInt(card.getAttribute("data-index"), 10) || 0;
+      const items = galeriSejarah.map((item) => ({
+        src: item.gambar,
+        title: item.judul,
+        caption: `${item.judul} (${item.kategori})`,
+        alt: item.judul,
+        link: `sejarah.html?situs=${item.id}`,
+        linkText: "Baca Kisah Lengkap Situs",
+      }));
+      window.openLightbox(items, idx);
+    }
+  });
+
+  galleryContainer.addEventListener("keydown", (e) => {
+    if (e.target.closest(".gallery-card__link")) return;
+    const card = e.target.closest(".gallery-card");
+    if (card && (e.key === "Enter" || e.key === " ")) {
+      e.preventDefault();
+      card.click();
+    }
+  });
 }
 
 // Efek animasi elemen saat muncul di layar

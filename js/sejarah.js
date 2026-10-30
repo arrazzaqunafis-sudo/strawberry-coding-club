@@ -163,7 +163,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "./jpg/situs-Piktograf-Citapen/situs-Piktograf-Citapen2.jpg",
         "./jpg/situs-Piktograf-Citapen/situs-Piktograf-Citapen3.jpg",
         "./jpg/situs-Piktograf-Citapen/situs-Piktograf-Citapen4.jpg",
-        "./jpg/situs-Piktograf-Citapen/situs-Piktograf-Citapen5.jpg",
       ],
       ringkasan:
         "Situs Citapen adalah peninggalan seni cadas prasejarah yang terletak di Dusun Citapen, Desa Sukajaya.",
@@ -203,8 +202,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "./jpg/situs-Gandoang-Wanasigra/situs-Gandoang-Wanasigra3.jpg",
       ],
       ringkasan:
-        "Inti dari situs ini adalah makam Syekh Padamatan (Eyang Syeh Padamatan).",
-      deskripsi: `SEJARAH DAN LOKASI<br>Situs Gandoang adalah kawasan cagar budaya yang berfungsi sebagai kompleks makam kuno dan situs megalitik di Dusun Cipeucang, Desa Wanasigra.`,
+        "Kompleks cagar budaya makam kuno Syekh Padamatan dan situs tradisi megalitik di Desa Wanasigra.",
+      deskripsi: `Situs Gandoang merupakan kawasan cagar budaya bersejarah yang terletak di Dusun Cipeucang, Desa Wanasigra, Kecamatan Sindangkasih, Kabupaten Ciamis, Jawa Barat. Situs ini berfungsi sebagai kompleks pemakaman kuno sekaligus situs peninggalan tradisi megalitik yang dihormati oleh masyarakat setempat.
+            Di kawasan Situs Gandoang terdapat makam tokoh penyebar agama Islam dan sesepuh Galuh, salah satunya adalah Syekh Padamatan (Eyang Syeh Padamatan). Makam ini menjadi salah satu tujuan ziarah warga sekitar maupun peziarah dari luar daerah untuk mendoakan serta menghormati jasa para leluhur.
+            Selain makam kuno, di situs ini juga ditemukan susunan batu-batu alam yang berkaitan dengan tradisi megalitik peninggalan masa lampau, mencerminkan adanya kesinambungan peradaban kebudayaan Sunda kuno di kawasan Tatar Galuh.
+            Lingkungan alam di sekitar Situs Gandoang masih sangat asri dan teduh dengan pepohonan rindang. Kawasan ini senantiasa dirawat secara gotong royong oleh masyarakat desa Wanasigra sebagai bentuk pelestarian warisan budaya dan kearifan lokal Ciamis.`,
     },
     {
       id: 11,
@@ -323,8 +325,16 @@ document.addEventListener("DOMContentLoaded", () => {
         // Terapkan tata letak kanan-kiri bergantian (zig-zag)
         baris.className = `detail-story__row${index % 2 === 1 ? " detail-story__row--reverse" : ""}`;
         baris.innerHTML = `
-          <div class="detail-story__media">
+          <div class="detail-story__media" data-story-index="${index}" role="button" tabindex="0" aria-label="Lihat foto besar ${data.judul} foto ${index + 1}">
             <img src="${fotoUrl}" alt="${data.judul} - foto ${index + 1}" loading="lazy" />
+            <span class="detail-story__zoom-overlay" title="Perbesar foto">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="11" y1="8" x2="11" y2="14"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+              </svg>
+            </span>
           </div>
           <div class="detail-story__text">
             <p>${isiTeksBersih}</p>
@@ -340,6 +350,28 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       containerCerita.appendChild(baris);
+    });
+
+    containerCerita.addEventListener("click", (e) => {
+      const media = e.target.closest(".detail-story__media");
+      if (media && typeof window.openLightbox === "function") {
+        const idx = parseInt(media.getAttribute("data-story-index"), 10) || 0;
+        const items = daftarFoto.map((url, i) => ({
+          src: url,
+          title: data.judul,
+          caption: `${data.judul} — Dokumentasi ${i + 1}`,
+          alt: `${data.judul} - foto ${i + 1}`,
+        }));
+        window.openLightbox(items, idx);
+      }
+    });
+
+    containerCerita.addEventListener("keydown", (e) => {
+      const media = e.target.closest(".detail-story__media");
+      if (media && (e.key === "Enter" || e.key === " ")) {
+        e.preventDefault();
+        media.click();
+      }
     });
 
     isiDetail.appendChild(containerCerita);
@@ -369,17 +401,30 @@ document.addEventListener("DOMContentLoaded", () => {
             icon: markerIcon,
           }).addTo(detailMap);
           const [latitude, longitude] = lokasi.koordinat;
-          const storyLink = Number.isInteger(lokasi.situsId)
-            ? `<a href="sejarah.html?situs=${lokasi.situsId}">Baca kisah situs</a><br>`
-            : "";
+          const isCurrentSite = lokasi.situsId === data.id;
+          const storyLinkHtml =
+            Number.isInteger(lokasi.situsId) && !isCurrentSite
+              ? `<a href="sejarah.html?situs=${lokasi.situsId}" class="map-popup-link">Lihat situs ini →</a>`
+              : isCurrentSite
+                ? `<span class="map-popup-current">📍 Situs yang sedang dilihat</span>`
+                : "";
           const sourceLabel = lokasi.sumber.includes("openstreetmap.org")
-            ? "Sumber OpenStreetMap"
-            : "Buka titik di peta";
+            ? "Peta OpenStreetMap"
+            : "Buka titik koordinat";
           marker.bindPopup(
-            `<strong>${lokasi.nama}</strong><br>${lokasi.kategori}<br>` +
-              `Koordinat terverifikasi: ${latitude.toFixed(6)}, ${longitude.toFixed(6)}<br>` +
-              storyLink +
-              `<a href="${lokasi.sumber}" target="_blank" rel="noopener noreferrer">${sourceLabel}</a>`,
+            `
+              <div class="map-popup-card">
+                <span class="map-popup-badge map-popup-badge--${lokasi.jenis}">${lokasi.jenis === "wisata" ? "Wisata" : "Situs Sejarah"}</span>
+                <strong class="map-popup-name">${lokasi.nama}</strong>
+                <span class="map-popup-category">${lokasi.kategori}</span>
+                <div class="map-popup-coords">Koordinat: ${latitude.toFixed(6)}, ${longitude.toFixed(6)}</div>
+                <div class="map-popup-footer">
+                  ${storyLinkHtml}
+                  <a href="${lokasi.sumber}" target="_blank" rel="noopener noreferrer" class="map-popup-source">${sourceLabel} ↗</a>
+                </div>
+              </div>
+            `,
+            { minWidth: 240, maxWidth: 300 },
           );
           if (Number.isInteger(lokasi.situsId))
             detailMarkers.set(lokasi.situsId, marker);
@@ -426,12 +471,45 @@ document.addEventListener("DOMContentLoaded", () => {
       if (data.gambar && data.gambar.length > 0) {
         data.gambar.forEach((urlFoto, index) => {
           galeriContainer.innerHTML += `
-            <figure class="galeri-card">
-              <img src="${urlFoto}" alt="${data.judul} - foto ${index + 1}" loading="lazy" />
+            <figure class="galeri-card" data-gallery-index="${index}" role="button" tabindex="0" aria-label="Lihat foto besar ${data.judul} dokumentasi ${index + 1}">
+              <div class="galeri-card__img-wrap">
+                <img src="${urlFoto}" alt="${data.judul} - foto ${index + 1}" loading="lazy" />
+                <span class="galeri-card__overlay">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  <span>Perbesar</span>
+                </span>
+              </div>
               <figcaption>Dokumentasi ${index + 1}</figcaption>
             </figure>
           `;
         });
+
+        galeriContainer.onclick = (e) => {
+          const card = e.target.closest(".galeri-card");
+          if (card && typeof window.openLightbox === "function") {
+            const idx = parseInt(card.getAttribute("data-gallery-index"), 10) || 0;
+            const items = data.gambar.map((url, i) => ({
+              src: url,
+              title: data.judul,
+              caption: `${data.judul} — Dokumentasi ${i + 1}`,
+              alt: `${data.judul} - foto ${i + 1}`,
+            }));
+            window.openLightbox(items, idx);
+          }
+        };
+
+        galeriContainer.onkeydown = (e) => {
+          const card = e.target.closest(".galeri-card");
+          if (card && (e.key === "Enter" || e.key === " ")) {
+            e.preventDefault();
+            card.click();
+          }
+        };
       } else {
         galeriContainer.innerHTML =
           "<p>Belum ada foto dokumentasi untuk situs ini.</p>";

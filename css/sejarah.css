@@ -283,19 +283,19 @@ html[data-theme="dark"] .kartu-sejarah:hover {
 .detail-story__row {
   display: grid;
   grid-template-columns: 1fr 1.35fr;
-  gap: 2.25rem;
+  gap: 2.5rem;
   align-items: center;
-  padding: 1.5rem;
-  background: var(--bg-main);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: 1.5rem 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
 }
 
-.detail-story__row:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+.detail-story__row:last-child {
+  border-bottom: none;
 }
 
 /* Pola Bergantian: Teks di Kiri, Gambar di Kanan */
@@ -322,6 +322,8 @@ html[data-theme="dark"] .kartu-sejarah:hover {
   overflow: hidden;
   box-shadow: var(--shadow-sm);
   background: var(--bg-card);
+  position: relative;
+  cursor: pointer;
 }
 
 .detail-story__media img {
@@ -332,8 +334,34 @@ html[data-theme="dark"] .kartu-sejarah:hover {
   transition: transform 0.35s ease;
 }
 
-.detail-story__row:hover .detail-story__media img {
-  transform: scale(1.03);
+.detail-story__media:hover img {
+  transform: scale(1.04);
+}
+
+.detail-story__zoom-overlay {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.25s ease, transform 0.25s ease, background 0.2s ease;
+  pointer-events: none;
+}
+
+.detail-story__media:hover .detail-story__zoom-overlay,
+.detail-story__media:focus-visible .detail-story__zoom-overlay {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .detail-story__text {
@@ -343,11 +371,13 @@ html[data-theme="dark"] .kartu-sejarah:hover {
 }
 
 .detail-story__text p {
-  font-size: 1.02rem;
-  line-height: 1.85;
+  font-size: 1.05rem;
+  line-height: 1.9;
   color: var(--text-dark);
   margin: 0;
-  text-align: justify;
+  text-align: left;
+  letter-spacing: 0.01em;
+  text-wrap: pretty;
 }
 
 /* Responsif Layar Kecil & Tablet */
@@ -446,6 +476,8 @@ html[data-theme="dark"] .kartu-sejarah:hover {
   overflow: hidden;
   box-shadow: var(--shadow-sm);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  cursor: pointer;
+  position: relative;
 }
 
 .galeri-card:hover {
@@ -454,16 +486,51 @@ html[data-theme="dark"] .kartu-sejarah:hover {
   border-color: var(--accent);
 }
 
+.galeri-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.galeri-card__img-wrap {
+  position: relative;
+  width: 100%;
+  height: 175px;
+  overflow: hidden;
+}
+
 .galeri-card img {
   display: block;
   width: 100%;
-  height: 175px;
+  height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.35s ease;
 }
 
 .galeri-card:hover img {
-  transform: scale(1.04);
+  transform: scale(1.06);
+}
+
+.galeri-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.galeri-card:hover .galeri-card__overlay,
+.galeri-card:focus-visible .galeri-card__overlay {
+  opacity: 1;
 }
 
 .galeri-card figcaption {
