@@ -8,35 +8,27 @@ const savedTheme = localStorage.getItem("ciamis-theme");
 const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-const applyTheme = (theme) => {
+// Pengaturan tema (dark / light mode)
+function applyTheme(theme) {
   const isDark = theme === "dark";
   document.documentElement.dataset.theme = isDark ? "dark" : "light";
-  themeToggle.setAttribute(
-    "aria-label",
-    isDark ? "Aktifkan mode terang" : "Aktifkan mode gelap",
-  );
-  themeToggle.innerHTML = `<i data-feather="${isDark ? "sun" : "moon"}" aria-hidden="true"></i>`;
-  const applyTheme = (theme) => {
-    const isDark = theme === "dark";
-    document.documentElement.dataset.theme = isDark ? "dark" : "light";
 
-    if (themeToggle) {
-      themeToggle.setAttribute(
-        "aria-label",
-        isDark ? "Aktifkan mode terang" : "Aktifkan mode gelap",
-      );
-      themeToggle.innerHTML = `<i data-feather="${isDark ? "sun" : "moon"}"></i>`;
-    }
+  if (themeToggle) {
+    themeToggle.setAttribute(
+      "aria-label",
+      isDark ? "Aktifkan mode terang" : "Aktifkan mode gelap",
+    );
+    themeToggle.innerHTML = `<i data-feather="${isDark ? "sun" : "moon"}"></i>`;
+  }
 
-    if (themeColor) {
-      themeColor.setAttribute("content", isDark ? "#17121a" : "#ffffff");
-    }
-  };
+  if (themeColor) {
+    themeColor.setAttribute("content", isDark ? "#0f172a" : "#faf8f5");
+  }
 
   if (window.feather) {
     window.feather.replace();
   }
-};
+}
 
 applyTheme(savedTheme || (systemPrefersDark.matches ? "dark" : "light"));
 
@@ -53,13 +45,13 @@ systemPrefersDark.addEventListener("change", (event) => {
   }
 });
 
-// Use the glass header while the hero fills the area under the fixed navbar.
-const updateHeaderAppearance = () => {
+// Efek navbar saat di-scroll
+function updateHeaderAppearance() {
   const heroIsBehindHeader =
     hero && window.scrollY + header.offsetHeight < hero.offsetHeight;
   header.classList.toggle("is-over-hero", Boolean(heroIsBehindHeader));
   header.classList.toggle("scrolled", !hero || window.scrollY > 50);
-};
+}
 
 updateHeaderAppearance();
 window.addEventListener("scroll", updateHeaderAppearance, { passive: true });
@@ -142,7 +134,7 @@ if (galleryContainer && Array.isArray(window.lokasiCiamis)) {
     {
       id: 5,
       judul: "Kampung Adat Kuta",
-      gambar: "./jpg/kampung-adat-kuta/kampung-adat-kuta.jpg",
+      gambar: "./jpg/situs-kampung-adat-kuta/situs-kampung-adat-kuta.jpg",
       kategori: "Kearifan lokal",
     },
     {
@@ -200,16 +192,9 @@ if (galleryContainer && Array.isArray(window.lokasiCiamis)) {
     .join("");
 }
 
-// Reveal sections as they enter the viewport and let the hero ease away on scroll.
+// Efek animasi elemen saat muncul di layar
 const revealItems = document.querySelectorAll(
-  ".section__header, " +
-    ".about__grid, " +
-    ".map__container, " +
-    ".gallery-card, " +
-    ".footer-container, " +
-    ".footer-bottom, " +
-    ".page-header, " +
-    ".btn-back",
+  ".section__header, .about__grid, .map__container, .gallery-card, .footer-container, .footer-bottom, .page-header, .btn-back",
 );
 
 if (reducedMotion.matches) {
@@ -262,7 +247,7 @@ if (hero) {
   updateHeroScrollEffect();
 }
 
-// Toggle the mobile navigation and keep its accessibility state in sync.
+// Buka/tutup menu navigasi mobile
 if (navigationToggle && navigation) {
   navigationToggle.addEventListener("click", () => {
     const isOpen = navigation.classList.toggle("is-open");
@@ -282,34 +267,18 @@ if (navigationToggle && navigation) {
   });
 }
 
-// Replace Feather icon placeholders when the library is available.
+// Inisialisasi ikon Feather
 if (window.feather) {
   window.feather.replace();
 }
 
-// Hilangkan Loading Screen saat web selesai dimuat
-window.addEventListener("load", function () {
+// Menghilangkan loading screen setelah halaman selesai dimuat
+window.addEventListener("load", () => {
   const loader = document.getElementById("loading-screen");
   if (loader) {
     loader.style.opacity = "0";
-    setTimeout(() => (loader.style.display = "none"), 500);
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500);
   }
 });
-
-// Logika Scroll Reveal
-window.addEventListener("scroll", function () {
-  const reveals = document.querySelectorAll(".reveal");
-
-  for (let i = 0; i < reveals.length; i++) {
-    // Hitung posisi elemen
-    const windowHeight = window.innerHeight;
-    const elementTop = reveals[i].getBoundingClientRect().top;
-    const elementVisible = 100; // Muncul saat 100px dari bawah layar
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    }
-  }
-});
-// Panggil sekali saat pertama kali load agar elemen teratas langsung muncul
-window.dispatchEvent(new Event("scroll"));

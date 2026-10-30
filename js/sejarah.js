@@ -303,15 +303,46 @@ document.addEventListener("DOMContentLoaded", () => {
   function showDetail(data) {
     judulDetail.textContent = data.judul;
     isiDetail.replaceChildren();
-    data.deskripsi
-      .split(/\r?\n/)
+
+    // Pisahkan teks deskripsi menjadi daftar paragraf
+    const daftarParagraf = data.deskripsi
+      .split(/(?:\r?\n|<br\s*\/?>)+/)
       .map((paragraf) => paragraf.trim())
-      .filter(Boolean)
-      .forEach((paragraf) => {
-        const elemenParagraf = document.createElement("p");
-        elemenParagraf.textContent = paragraf.replace(/\*([^*]+)\*/g, "$1");
-        isiDetail.appendChild(elemenParagraf);
-      });
+      .filter(Boolean);
+
+    const daftarFoto = Array.isArray(data.gambar) ? data.gambar : [];
+    const containerCerita = document.createElement("div");
+    containerCerita.className = "detail-story";
+
+    daftarParagraf.forEach((teksParagraf, index) => {
+      const baris = document.createElement("div");
+      const fotoUrl = daftarFoto[index];
+      const isiTeksBersih = teksParagraf.replace(/\*([^*]+)\*/g, "$1");
+
+      if (fotoUrl) {
+        // Terapkan tata letak kanan-kiri bergantian (zig-zag)
+        baris.className = `detail-story__row${index % 2 === 1 ? " detail-story__row--reverse" : ""}`;
+        baris.innerHTML = `
+          <div class="detail-story__media">
+            <img src="${fotoUrl}" alt="${data.judul} - foto ${index + 1}" loading="lazy" />
+          </div>
+          <div class="detail-story__text">
+            <p>${isiTeksBersih}</p>
+          </div>
+        `;
+      } else {
+        baris.className = "detail-story__row detail-story__row--text-only";
+        baris.innerHTML = `
+          <div class="detail-story__text">
+            <p>${isiTeksBersih}</p>
+          </div>
+        `;
+      }
+
+      containerCerita.appendChild(baris);
+    });
+
+    isiDetail.appendChild(containerCerita);
 
     if (petaContainer && window.L && Array.isArray(window.lokasiCiamis)) {
       if (!detailMap) {
