@@ -1,13 +1,3 @@
-/**
- * Lightbox Fullscreen Cinema / Luxury Style untuk Budaya Ciamis
- * Sesuai referensi:
- * - Latar belakang hitam pekat penuh (solid black fullscreen)
- * - Tampilan foto maksimal memenuhi layar (ultra large)
- * - Counter minimalis di kiri atas (contoh: 1 / 6)
- * - Tombol unduh dan tombol tutup (✕) di kanan atas
- * - Tombol panah ramping (← dan →) di sisi kiri & kanan tengah layar
- * - Navigasi keyboard (Esc, Panah Kiri, Panah Kanan) & swipe di layar sentuh
- */
 (function () {
   let lightboxEl = null;
   let imgEl = null;
