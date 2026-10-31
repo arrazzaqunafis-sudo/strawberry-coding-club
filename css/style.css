@@ -972,7 +972,7 @@ html[data-theme="dark"] .map-popup-coords {
 .site-footer {
   background-color: #0f172a;
   color: #94a3b8;
-  padding: 5rem 0 2rem;
+  padding: 0 0 2rem;
   border-top: 1px solid #1e293b;
 }
 
@@ -1050,7 +1050,6 @@ html[data-theme="dark"] .map-popup-coords {
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid #1e293b;
   font-size: 0.85rem;
 }
 
