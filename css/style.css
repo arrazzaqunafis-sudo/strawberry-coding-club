@@ -1024,7 +1024,7 @@ html[data-theme="dark"] .map-popup-coords {
   color: var(--accent);
 }
 
-.social-links {
+/* .social-links {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
@@ -1045,7 +1045,7 @@ html[data-theme="dark"] .map-popup-coords {
 .social-links a:hover {
   background: var(--accent);
   transform: translateY(-3px);
-}
+} */
 
 .footer-bottom {
   text-align: center;

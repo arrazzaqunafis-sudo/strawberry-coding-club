@@ -109,7 +109,7 @@ window.lokasiCiamis = [
   {
     id: "geger-emas",
     situsId: 7,
-    nama: "Situs Geger Emas",
+    nama: "Situs Geger Omas",
     kategori: "Situs sejarah dan religi",
     jenis: "sejarah",
     akurasi: "terverifikasi",

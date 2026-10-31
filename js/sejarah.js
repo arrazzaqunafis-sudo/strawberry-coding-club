@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "./jpg/situs-Gunung-Susuru/situs-Gunung-Susuru3.jpg",
         "./jpg/situs-Gunung-Susuru/situs-Gunung-Susuru4.jpg",
         "./jpg/situs-Gunung-Susuru/situs-Gunung-Susuru5.jpg",
+        "./jpg/situs-Gunung-Susuru/situs-Gunung-Susuru6.jpg",
       ],
       ringkasan:
         "Kompleks punden berundak 17 tingkatan masa Klasik Hindu petilasan Galuh Kertabumi.",
@@ -88,8 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "./jpg/situs-Batu-Panjang/situs-Batu-Panjang1.jpg",
         "./jpg/situs-Batu-Panjang/situs-Batu-Panjang2.jpg",
         "./jpg/situs-Batu-Panjang/situs-Batu-Panjang3.jpg",
-        "./jpg/situs-Batu-Panjang/situs-Batu-Panjang4.jpg",
-        "./jpg/situs-Batu-Panjang/situs-Batu-Panjang5.jpg",
       ],
       ringkasan:
         "Situs Batu Panjang adalah peninggalan zaman Megalitikum yang berlokasi di perbatasan Ciamis–Majalengka.",
@@ -127,7 +126,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "./jpg/situs-samida/situs-samida2.jpg",
         "./jpg/situs-samida/situs-samida3.jpg",
         "./jpg/situs-samida/situs-samida4.jpg",
-        "./jpg/situs-samida/situs-samida5.jpg",
       ],
       ringkasan:
         "Samida merupakan situs bersejarah yang terletak di Desa Sirnajaya, Kecamatan Rajadesa.",
@@ -139,24 +137,21 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       id: 7,
-      judul: "Situs Geger Emas",
+      judul: "Situs Geger Omas",
       gambar: [
-        "./jpg/situs-Geger-Emas/situs-Geger-Emas.jpg",
-        "./jpg/situs-Geger-Emas/situs-Geger-Emas1.jpg",
-        "./jpg/situs-Geger-Emas/situs-Geger-Emas2.jpg",
-        "./jpg/situs-Geger-Emas/situs-Geger-Emas3.jpg",
-        "./jpg/situs-Geger-Emas/situs-Geger-Emas4.jpg",
-        "./jpg/situs-Geger-Emas/situs-Geger-Emas5.jpg",
+        "./jpg/situs-Geger-Omas/situs-Geger-Omas.jpg",
+        "./jpg/situs-Geger-Omas/situs-Geger-Omas1.jpg",
+        "./jpg/situs-Geger-Omas/situs-Geger-Omas2.jpg",
+        "./jpg/situs-Geger-Omas/situs-Geger-Omas4.jpg",
+        "./jpg/situs-Geger-Omas/situs-Geger-Omas3.jpg",
       ],
       ringkasan:
-        "Situs Geger Emas adalah cagar budaya yang terletak di Desa Ciomas, Kecamatan Panjalu.",
-      deskripsi: `Hutan Geger Omas merupakan kawasan hutan yang berada di Desa Ciomas, Kecamatan Panjalu, Kabupaten Ciamis, Jawa Barat, tepatnya di kaki Gunung Sawal. Kawasan ini dikenal sebagai tempat wisata religi dan memiliki nilai sejarah serta budaya bagi masyarakat setempat. Di dalam hutan terdapat makam tokoh yang dikenal dengan nama Kiai Haji Panghulu Gusti serta sumber mata air yang dihormati oleh masyarakat.
-            Menurut cerita yang diwariskan secara turun-temurun, Kiai Haji Panghulu Gusti merupakan tokoh yang berjasa dalam penyebaran agama Islam di Desa Ciomas dan sekitarnya. Makamnya berada di tengah kawasan hutan yang dianggap keramat oleh masyarakat. Karena memiliki hubungan dengan sejarah penyebaran Islam setempat, kawasan ini sering dikunjungi untuk berziarah dan berdoa.
-            Di dalam hutan juga terdapat mata air yang dikenal sebagai Geger Omas. Menurut legenda masyarakat, mata air tersebut berkaitan dengan kisah Kiai Haji Panghulu Gusti yang membawa air dari Tanah Suci. Cerita ini menjadi bagian dari kepercayaan masyarakat setempat dan diwariskan sebagai tradisi lisan.
-            Hutan Geger Omas berkaitan erat dengan tradisi Nyepuh yang dilaksanakan masyarakat Desa Ciomas menjelang bulan Ramadan. Tradisi ini bertujuan untuk membersihkan diri secara lahir dan batin serta menghormati para leluhur. Rangkaian kegiatannya meliputi berjalan bersama menuju makam Kiai Haji Panghulu Gusti, mengambil air dari mata air Geger Omas, berdoa, dan melakukan ziarah.
-            Dalam pelaksanaannya, masyarakat biasanya mengenakan pakaian putih dan melantunkan selawat selama perjalanan. Kegiatan ini juga menjadi kesempatan untuk mempererat silaturahmi dan mengingat nilai-nilai kebaikan yang diwariskan oleh generasi terdahulu.
-            Selain memiliki nilai religi dan sejarah, Hutan Geger Omas dikenal sebagai kawasan yang dijaga kelestariannya oleh masyarakat. Kawasan hutan Sukarame yang dikaitkan dengan situs ini memiliki luas sekitar 35 hektare. Masyarakat setempat menjaga hutan dengan mematuhi aturan adat, termasuk larangan menebang pohon atau mengambil kayu tanpa izin sesepuh.
-            Keberadaan hutan, makam, dan mata air menunjukkan hubungan erat antara tradisi masyarakat dengan pelestarian alam. Hingga kini, Hutan Geger Omas menjadi tempat untuk kegiatan ziarah, pelaksanaan tradisi Nyepuh, serta pembelajaran mengenai sejarah dan kearifan lokal masyarakat Ciomas`,
+        "Situs Geger Omas adalah cagar budaya yang terletak di Desa Ciomas, Kecamatan Panjalu.",
+      deskripsi: `Hutan Geger Omas merupakan kawasan hutan yang terletak di Desa Ciomas, Kecamatan Panjalu, Kabupaten Ciamis, Jawa Barat, tepatnya di kaki Gunung Sawal. Kawasan ini dikenal sebagai tempat wisata religi yang memiliki nilai sejarah dan budaya bagi masyarakat setempat.
+            Menurut cerita masyarakat, kawasan ini berkaitan dengan tokoh Kiai Haji Panghulu Gusti yang dipercaya berjasa dalam penyebaran agama Islam di Desa Ciomas dan sekitarnya. Di dalam hutan terdapat makam beliau serta mata air yang dikenal dengan nama Geger Omas. Mata air tersebut memiliki cerita turun-temurun yang berkaitan dengan perjalanan Kiai Haji Panghulu Gusti dari Tanah Suci.
+            Hutan Geger Omas juga menjadi tempat pelaksanaan tradisi Nyepuh, yaitu kegiatan adat yang dilakukan menjelang bulan Ramadan. Tradisi ini bertujuan untuk membersihkan diri secara lahir dan batin serta menghormati leluhur. Kegiatannya meliputi ziarah makam, mengambil air dari mata air Geger Omas, berdoa, dan berjalan bersama dengan mengenakan pakaian putih.
+            Selain memiliki nilai religi dan budaya, kawasan hutan ini juga dijaga kelestariannya melalui aturan adat, seperti larangan menebang pohon dan mengambil kayu tanpa izin sesepuh. Hal tersebut menunjukkan kepedulian masyarakat terhadap lingkungan sekaligus menjaga warisan leluhur.
+            Keberadaan makam, mata air, dan tradisi Nyepuh menjadikan Hutan Geger Omas sebagai salah satu warisan budaya penting di Kabupaten Ciamis. Oleh karena itu, kawasan ini perlu dijaga agar nilai sejarah, tradisi, dan kelestarian alamnya tetap terpelihara bagi generasi mendatang.`,
     },
     {
       id: 8,
@@ -170,12 +165,11 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
       ringkasan:
         "Situs Citapen adalah peninggalan seni cadas prasejarah yang terletak di Dusun Citapen, Desa Sukajaya.",
-      deskripsi: `Situs Batu Tulis Citapen merupakan peninggalan prasejarah yang terletak di Dusun Citapen, Desa Sukajaya, Kecamatan Rajadesa, Kabupaten Ciamis, Jawa Barat. Situs ini berada di tebing berbatu di kawasan Gunung Rahong, tidak jauh dari aliran Sungai Cijolang. Lokasinya cukup tersembunyi dan sulit dijangkau karena jalur menuju situs berupa jalan setapak yang terjal dan licin.
-            Situs Batu Tulis Citapen pertama kali tercatat pada tahun 1856 oleh Frans Carel Wilsen, seorang ahli litografi pada masa Hindia Belanda. Situs ini kemudian menjadi salah satu objek penelitian arkeologi karena memiliki goresan batu yang diduga berasal dari masa prasejarah. Pada tahun 2023, situs ini ditetapkan sebagai cagar budaya tingkat Kabupaten Ciamis sebagai bentuk perlindungan terhadap peninggalan sejarah tersebut.
-            Keunikan Situs Batu Tulis Citapen terletak pada goresan-goresan yang terdapat di permukaan batu. Motifnya beragam, mulai dari bentuk yang menyerupai manusia, kadal, monyet, telapak tangan, hingga bentuk yang menyerupai dedaunan dan gajah. Goresan tersebut dikenal sebagai *petroglif*, yaitu seni cadas yang dibuat dengan cara mengukir atau menggores permukaan batu.
-            Berdasarkan penelitian arkeologi yang diterbitkan pada 2024, goresan di situs ini memiliki karakteristik berbeda, yaitu berbentuk U yang cenderung tumpul dan berbentuk V yang lebih tajam. Perbedaan tersebut diduga menunjukkan penggunaan teknik atau alat yang berbeda dalam pembuatannya.
-            Berdasarkan kajian para peneliti, seni cadas di Situs Batu Tulis Citapen diperkirakan berasal dari rentang masa Mesolitik hingga Paleometalik. Perkiraan ini menunjukkan bahwa situs tersebut berpotensi memberikan informasi penting mengenai kehidupan manusia pada masa prasejarah. Beberapa motifnya diduga berkaitan dengan makhluk hidup, aktivitas berburu, dan unsur alam. Namun, usia pasti, makna simbolis, serta tujuan pembuatan setiap goresan masih memerlukan penelitian lebih lanjut.
-            Meskipun memiliki nilai arkeologis yang penting, kondisi Situs Batu Tulis Citapen menghadapi sejumlah tantangan. Sebagian permukaan batu tertutup material longsoran, sementara akses menuju lokasi cukup berbahaya ketika jalan licin atau cuaca buruk. Selain itu, tindakan vandalisme juga dilaporkan telah merusak sebagian permukaan batu. Karena itu, perlindungan situs perlu dilakukan melalui penelitian lanjutan, pengawasan, dan peningkatan kesadaran masyarakat agar peninggalan prasejarah ini tetap terjaga`,
+      deskripsi: `Situs Batu Tulis Citapen merupakan peninggalan prasejarah yang terletak di Dusun Citapen, Desa Sukajaya, Kecamatan Rajadesa, Kabupaten Ciamis, Jawa Barat. Situs ini berada di tebing berbatu kawasan Gunung Rahong, tidak jauh dari aliran Sungai Cijolang.
+            Situs ini pertama kali tercatat pada tahun 1856 oleh Frans Carel Wilsen, seorang ahli litografi pada masa Hindia Belanda. Pada tahun 2023, Situs Batu Tulis Citapen ditetapkan sebagai cagar budaya tingkat Kabupaten Ciamis sebagai bentuk perlindungan terhadap peninggalan sejarahnya.
+            Keunikan situs ini terletak pada goresan batu atau petroglif yang memiliki berbagai bentuk, seperti manusia, kadal, monyet, telapak tangan, dedaunan, dan gajah. Goresan tersebut dibuat dengan teknik mengukir atau menggores permukaan batu. Berdasarkan penelitian, bentuk goresannya memiliki karakteristik berbeda yang diduga menggunakan teknik atau alat yang berlainan.
+            Situs Batu Tulis Citapen diperkirakan berasal dari masa Mesolitik hingga Paleometalik. Gambar-gambar pada batu diduga memberikan gambaran mengenai kehidupan manusia prasejarah dan lingkungan sekitarnya. Namun, usia pasti serta makna dari setiap goresan masih memerlukan penelitian lebih lanjut.
+            Keberadaan goresan prasejarah menjadikan Situs Batu Tulis Citapen sebagai salah satu peninggalan arkeologi penting di Kabupaten Ciamis. Oleh karena itu, situs ini perlu dilindungi dari kerusakan, longsoran, dan vandalisme agar nilai sejarahnya tetap terjaga dan dapat dipelajari oleh generasi mendatang.`,
     },
     {
       id: 9,
@@ -189,12 +183,11 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
       ringkasan:
         "Situs ini terletak di Dusun Tunggal Rahayu, Desa Cimaragas, Kecamatan Cimaragas.",
-      deskripsi: `Situs Kerajaan Galuh Salawe atau Situs Sanghyang Maharaja Cipta Permana Prabudigaluh Salawe merupakan situs bersejarah yang terletak di Dusun Tunggal Rahayu, Desa Cimaragas, Kecamatan Cimaragas, Kabupaten Ciamis, Jawa Barat. Situs ini berkaitan dengan sejarah Kerajaan Galuh Pangauban atau Gara Tengah yang berkembang pada masa peralihan menuju penyebaran Islam di wilayah Galuh.
-            Menurut sumber sejarah lokal, kawasan ini berkaitan dengan pemerintahan Sanghyang Maharaja Cipta Permana Prabudigaluh Salawe yang diperkirakan memerintah pada tahun 1595–1618 M. Ia dikenal sebagai salah satu penguasa Galuh yang memeluk agama Islam. Keberadaan situs ini menjadi bagian penting dalam mengenal perkembangan sejarah dan kebudayaan masyarakat Galuh pada masa tersebut.
-            Di kawasan Situs Salawe terdapat berbagai peninggalan yang dipercaya berkaitan dengan kehidupan kerajaan pada masa lalu. Beberapa di antaranya adalah Batu Entog atau Trimurti, Batu Pangcalikan yang dikaitkan dengan tempat duduk raja, menhir, serta sejumlah batu patilasan yang dihubungkan dengan tokoh-tokoh sejarah. Peninggalan tersebut memperlihatkan adanya unsur budaya dari masa Hindu-Buddha dan masa Islam. Namun, hubungan setiap batu dengan tokoh atau peristiwa tertentu sebagian bersumber dari tradisi masyarakat setempat.
-            Selain memiliki peninggalan berupa batu-batu bersejarah, Situs Salawe juga dikenal sebagai tempat kegiatan budaya dan ziarah. Salah satu tradisi yang masih dikenal adalah *Misalin*, yaitu upacara adat yang dilaksanakan menjelang bulan Ramadan. Tradisi ini mengandung makna membersihkan diri, mempersiapkan diri secara batin, serta mempererat hubungan masyarakat dengan warisan budaya leluhur.
-            Lingkungan situs juga menjadi bagian penting dari keberadaannya. Kawasan ini berada di wilayah Cimaragas yang memiliki hubungan geografis dengan Sungai Citanduy. Keberadaan situs, peninggalan sejarah, dan tradisi masyarakat menjadikan Salawe sebagai tempat untuk mempelajari sejarah lokal, perkembangan kepercayaan, serta kehidupan sosial masyarakat Galuh.
-            Saat ini, Situs Salawe dimanfaatkan sebagai tempat wisata sejarah, kegiatan budaya, ziarah, dan pembelajaran bagi masyarakat maupun pelajar. Pemeliharaan peninggalan batu, kebersihan lingkungan, serta pelestarian tradisi menjadi hal penting agar nilai sejarah dan budaya situs ini tetap terjaga`,
+      deskripsi: `Situs Kerajaan Galuh Salawe atau Situs Sanghyang Maharaja Cipta Permana Prabudigaluh Salawe merupakan situs bersejarah yang terletak di Dusun Tunggal Rahayu, Desa Cimaragas, Kecamatan Cimaragas, Kabupaten Ciamis, Jawa Barat. Situs ini berkaitan dengan sejarah Kerajaan Galuh Pangauban yang berkembang pada masa peralihan menuju penyebaran Islam.
+            Menurut sumber sejarah lokal, kawasan ini berkaitan dengan pemerintahan Sanghyang Maharaja Cipta Permana Prabudigaluh Salawe yang diperkirakan memerintah pada tahun 1595–1618 M. Ia dikenal sebagai salah satu penguasa Galuh yang memeluk agama Islam.
+            Di kawasan ini terdapat berbagai peninggalan berupa Batu Entog atau Trimurti, Batu Pangcalikan yang dipercaya sebagai tempat duduk raja, menhir, serta batu-batu patilasan yang dikaitkan dengan tokoh sejarah. Peninggalan tersebut menunjukkan adanya perkembangan kebudayaan dan kepercayaan masyarakat pada masa lalu.
+            Situs Salawe juga dikenal melalui tradisi Misalin, yaitu upacara adat yang dilaksanakan menjelang bulan Ramadan. Tradisi ini memiliki makna membersihkan diri secara lahir dan batin, mempersiapkan diri menyambut Ramadan, serta mempererat hubungan masyarakat dengan warisan leluhur.
+            Keberadaan peninggalan sejarah dan tradisi Misalin menjadikan Situs Kerajaan Galuh Salawe sebagai salah satu warisan budaya penting di Kabupaten Ciamis. Oleh karena itu, situs ini perlu dijaga dan dilestarikan agar nilai sejarah serta tradisi masyarakat Galuh tetap dikenal oleh generasi mendatang.`,
     },
     {
       id: 10,
@@ -216,9 +209,10 @@ document.addEventListener("DOMContentLoaded", () => {
       id: 11,
       judul: "Kompleks Pendopo Kabupaten Ciamis",
       gambar: [
-        "./jpg/gedung/gedung.jpg",
-        "./jpg/gedung/gedung1.jpg",
-        "./jpg/gedung/gedung2.jpg",
+        "./jpg/kompleks-pendopo/kompleks-pendopo.jpg",
+        "./jpg/kompleks-pendopo/kompleks-pendopo1.jpg",
+        "./jpg/kompleks-pendopo/kompleks-pendopo2.jpg",
+        "./jpg/kompleks-pendopo/kompleks-pendopo3.jpg",
       ],
       ringkasan:
         "Komplek Pendopo Kabupaten dan Eks Kantor Kewedanaan Ciamis adalah dua bangunan bersejarah yang berdampingan.",
