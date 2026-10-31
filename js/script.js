@@ -143,7 +143,7 @@ if (galleryContainer && Array.isArray(window.lokasiCiamis)) {
     {
       id: 5,
       judul: "Kampung Adat Kuta",
-      gambar: "./jpg/situs-kampung-adat-kuta/situs-kampung-adat-kuta.jpg",
+      gambar: "./jpg/kampung-adat-kuta/kampung-adat-kuta.jpg",
       kategori: "Kearifan lokal",
     },
     {
@@ -154,8 +154,8 @@ if (galleryContainer && Array.isArray(window.lokasiCiamis)) {
     },
     {
       id: 7,
-      judul: "Situs Geger Emas",
-      gambar: "./jpg/situs-Geger-Emas/situs-Geger-Emas.jpg",
+      judul: "Situs Geger Omas",
+      gambar: "./jpg/situs-Geger-Omas/situs-Geger-Omas.jpg",
       kategori: "Situs sejarah",
     },
     {
@@ -178,8 +178,8 @@ if (galleryContainer && Array.isArray(window.lokasiCiamis)) {
     },
     {
       id: 11,
-      judul: "Pendopo Kabupaten Ciamis",
-      gambar: "./jpg/gedung/gedung.jpg",
+      judul: "Kompleks Pendopo Kabupaten Ciamis",
+      gambar: "./jpg/kompleks-pendopo/kompleks-pendopo.jpg",
       kategori: "Bangunan bersejarah",
     },
   ];
